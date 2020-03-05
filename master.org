@@ -1,0 +1,539 @@
+#+Title: Master Résumé
+#+Author: Mark Armstrong
+#+Description: Master document for my resume/CV.
+#+Description: Particular documents should import from this document
+#+Description: to put things in the right order.
+#+LaTeX_header: \usepackage{unicode}
+
+* Introduction                                  :noexport:
+:PROPERTIES:
+:CUSTOM_ID: Introduction
+:END:
+
+This is the master document for my resumes, CVs, etc.
+
+** Usage
+:PROPERTIES:
+:CUSTOM_ID: Usage
+:END:
+
+:TODO:
+
+Make sure to set the keywords defined in settings!
+
+* Settings                                      :noexport:
+:PROPERTIES:
+:CUSTOM_ID: Settings
+:END:
+
+We manually enter the title, so do not put title, author, or date.
+#+Options: title:nil author:nil date:nil
+
+Also do not put in a table of contents or number sections.
+#+Options: toc:nil num:nil
+
+We use these keywords in building the title; make sure to set them
+when importing!
+#+Email: [[mailto:markparmstrong@gmail.com][~markparmstrong@gmail.com~]]
+#+Phone: 289-689-8404
+#+Website: [[https://armkeh.github.io][~armkeh.github.io~]]
+#+Github: [[https://github.com/armkeh][~github.com/armkeh~]]
+#+Gitlab: [[https://gitlab.cas.mcmaster.ca/armstmp][~gitlab.cas.mcmaster.ca/armstmp~]]
+
+** “Global” LaTeX header settings
+:PROPERTIES:
+:CUSTOM_ID: “Global”-LaTeX-header-settings
+:END:
+
+More header settings may be included below, where they are relevant
+to the document. The ones here are “global” settings.
+
+*** Page layout
+:PROPERTIES:
+:CUSTOM_ID: Page-layout
+:END:
+
+First, we'll use the simple ~article~ class.
+#+LaTeX_class: article
+#+LaTeX_class_options: [11pt]
+
+Don't show page numbers.
+#+LaTeX_header: \pagenumbering{gobble}
+
+We use ~geometry~ to decrease the margin size;
+the defaults for ~article~ are very large.
+#+LaTeX_header: \usepackage[showframe]{geometry}
+
+We don't define the margins directly here, because
+we will use different margins for different pages,
+to accomodate the sidebar.
+See [[Macros]] to see what sizes the margins are set to.
+
+*** Section headers
+:PROPERTIES:
+:CUSTOM_ID: Section-headers
+:END:
+
+We'll use ~mdframed~ to highlight the section and subsection headers.
+~titlesec~ lets us redefine the formats for those.
+#+LaTeX_header: \usepackage{mdframed}
+#+LaTeX_header: \usepackage{titlesec}
+
+For section headers, define a slightly fainter grey,
+and put the header in a box with that background colour.
+#+LaTeX_header: \definecolor{mygrey}{gray}{0.8}
+#+LaTeX_header: \newcommand{\sectionhead}[1]{
+#+LaTeX_header:     \begin{mdframed}[hidealllines=true,backgroundcolor=mygrey]
+#+LaTeX_header:         \Large #1
+#+LaTeX_header:     \end{mdframed}}
+#+LaTeX_header: \titleformat{name=\section}
+#+LaTeX_header:   [block]           % Shape
+#+LaTeX_header:   {\sffamily\large} % Format (of text)
+#+LaTeX_header:   {}                % Label
+#+LaTeX_header:   {0pt}             % Separation between label and body
+#+LaTeX_header:   {\vspace{-2em}\sectionhead} % Before; last command is title text
+#+LaTeX_header:   [\vspace{-2em}]             % After
+
+Subsection headers are similar, but a fainter grey.
+#+LaTeX_header: \definecolor{myfaintgrey}{gray}{0.9}
+#+LaTeX_header: \newcommand{\subsectionhead}[1]{
+#+LaTeX_header:     \begin{mdframed}[hidealllines=true,backgroundcolor=myfaintgrey]
+#+LaTeX_header:         #1
+#+LaTeX_header:     \end{mdframed}}
+#+LaTeX_header: \titleformat{name=\subsection}
+#+LaTeX_header:   [block]           % Shape
+#+LaTeX_header:   {\sffamily}       % Format (of text)
+#+LaTeX_header:   {}                % Label
+#+LaTeX_header:   {0pt}             % Separation between label and body
+#+LaTeX_header:   {\vspace{-2em}\subsectionhead} % Before; last command is title text
+#+LaTeX_header:   [\vspace{-2em}]                % After
+
+*** Lists
+:PROPERTIES:
+:CUSTOM_ID: Lists
+:END:
+
+Remove the spacing around lists and between list items.
+#+LaTeX_header: \usepackage[shortlabels]{enumitem}
+#+LaTeX_header: \setlist{nosep}
+
+Redefine the bullets to nice unicode characters.
+The first one here is actually the default, but redefine it anyway.
+#+LaTeX_header: \renewcommand{\labelitemii}{•}
+#+LaTeX_header: \renewcommand{\labelitemii}{∘}
+
+*** Hyperlinks
+:PROPERTIES:
+:CUSTOM_ID: Hyperlinks
+:END:
+
+Override the ~hypersetup~ settings for this file;
+I have inserted links, but don't want them coloured in the PDF.
+They'd be eyesores if printed.
+#+begin_src emacs-lisp :exports results :results none :eval export
+(make-variable-buffer-local 'org-latex-hyperref-template)
+(setq org-latex-hyperref-template
+  "\\hypersetup{
+colorlinks=false
+}\n")
+#+end_src
+
+*** Sidebar setup
+:PROPERTIES:
+:CUSTOM_ID: Sidebar-setup
+:END:
+
+We make the sidebar as a framed wrap figure,
+position /outside/ the right margin.
+This requires us to increase the right margin on the page
+where the sidebar appears.
+#+LaTeX_header: \newenvironment{sidebar}[1][r]
+#+LaTeX_header:   {\wrapfigure{#1}[2in]{1.5in}\mdframed}
+#+LaTeX_header:   {\endmdframed\endwrapfigure}
+
+:TODO: maybe put the sidebar on the second page? First page could use the space.
+:TODO: and wouldn't have to fight with the title.
+
+** CSS
+:PROPERTIES:
+:CUSTOM_ID: CSS
+:END:
+
+For self-containedness, we'll just setup the styles inline here.
+#+HTML_head: <style>
+
+*** Page layout
+:PROPERTIES:
+:CUSTOM_ID: Page-layout
+:END:
+
+?
+
+*** Section headers
+:PROPERTIES:
+:CUSTOM_ID: Section-headers
+:END:
+
+Sections are exported as ~h2~'s. Put them on a grey background,
+with sans-serif font, unbolded.
+Also put a little space on the left and right.
+#+HTML_head: h2 {
+#+HTML_head:   font-family: sans-serif;
+#+HTML_head:   font-weight: normal;
+#+HTML_head:   background-color: rgba(0.5,0.5,0.5,0.2);
+#+HTML_head:   padding-left: 0.5em;
+#+HTML_head:   padding-right: 0.5em;
+#+HTML_head: }
+
+Subsections are similar; just a lighter grey.
+#+HTML_head: h3 {
+#+HTML_head:   font-family: sans-serif;
+#+HTML_head:   font-weight: normal;
+#+HTML_head:   background-color: rgba(0.5,0.5,0.5,0.1);
+#+HTML_head:   padding-left: 0.5em;
+#+HTML_head:   padding-right: 0.5em;
+#+HTML_head: }
+
+*** Footer
+:PROPERTIES:
+:CUSTOM_ID: Footer
+:END:
+
+End the style setup.
+#+HTML_head: </style>
+
+* Macros                                        :noexport:
+:PROPERTIES:
+:CUSTOM_ID: Macros
+:END:
+
+** Title (name) macros                         :noexport:
+:PROPERTIES:
+:CUSTOM_ID: Title-(name)-macros
+:END:
+
+Here, we introduce a sequence of Org macros to
+wrap the “title” (my name) in HTML and LaTeX fontication.
+This saves us putting an obscenely long line below.
+
+First, code to fontify the title in HTML.
+#+Macro: htmlize-title @@html:<div style="line-height:0; white-space:nowrap;; font-size:3rem; overflow: visible">@@$1 @@html:</div>@@
+
+This macro forces LaTeX text to be treated as having zero height;
+this way, we can add larger text into tables without affecting the row height.
+#+Macro: latex-zero-height @@latex:\raisebox{0pt}[0pt][0pt]{@@$1 @@latex:}@@
+
+Then, code to “hugify” LaTeX text.
+#+Macro: latex-hugify @@latex:{\huge @@$1 @@latex:}@@  
+
+Combine the LaTeX “zero height” and “hugify” macros to “LaTeXify”
+the title.
+#+Macro: latexify-title {{{latex-zero-height({{{latex-hugify($1)}}})}}}
+
+Now, combine all those macros along with the ~author~ macro to create the title.
+#+Macro: resume-title {{{latexify-title({{{htmlize-title({{{author}}})}}})}}}
+
+** Horizontal filler, alignment
+:PROPERTIES:
+:CUSTOM_ID: HOrizontal-fillers
+:END:
+
+This macro enforces a small amount of horizontal space;
+2 characters widths (~em~'s).
+#+Macro: space @@latex:\hspace{2em}@@@@html:<span style="width:2em"></span>@@
+
+These macros right align their content;
+in LaTeX, this is accomplished by ~hfill~'ing on the left,
+and in HTML, we use a right-aligned span
+#+Macro: begin-right @@latex:\hfill@@@@html:<span style="float:right">@@
+#+Macro: end-right @@html:</span>@@
+
+** LaTeX margin adjustments
+:PROPERTIES:
+:CUSTOM_ID: LaTeX-margin-adjustments
+:END:
+
+#+Macro: latex-margin-extend-right  @@latex:\newgeometry{left=0.5in,top=0.5in,bottom=0.5in,right=2.5in}@@
+
+We make use of ~afterpage~ to adjust the geometry afterwards.
+But we must also use ~\globaldefs=1~, or the ~\newgeometry~ invokation
+will not have an effect; see this
+[[https://tex.stackexchange.com/questions/267067][StackExchage post]].
+#+Macro: latex-margin-reset @@latex:\afterpage{\globaldefs=1 \newgeometry{left=0.5in,top=0.5in,bottom=0.5in,right=0.5in}}@@
+
+It may be useful to add a ~set~ macro, if you want the geometry set
+at the start. Since I start with the sidebar for now,
+it's unnecessary.
+
+** Table (foot)notes
+:PROPERTIES:
+:CUSTOM_ID: Table-(foot)notes
+:END:
+
+#+Macro: tablenote @@html:<span style="font-size:0.5rem">@@@@latex:{\scriptsize@@$1@@latex:}@@@@html:</span>@@
+
+* Sidebar header                                :ignore:
+:PROPERTIES:
+:CUSTOM_ID: Sidebar-header
+:END:
+
+# First, increase the right margin of this page to make room.
+{{{latex-margin-extend-right}}}
+
+# Reset them on the next page.
+#+LaTeX_header: \usepackage{afterpage}
+{{{latex-margin-reset}}}
+
+@@latex:\begin{sidebar}@@
+@@html:<div style="float:right; width: 15%">@@
+
+# An alternative version without defining an environment
+# @@latex:\begin{wrapfigure}{r}{.25\textwidth}\begin{minipage}{.2\textwidth}@@
+
+* Image                                         :ignore:
+:PROPERTIES:
+:CUSTOM_ID: Image
+:END:
+
+#+attr_HTML: :width 100%
+[[file:me.jpg]]
+
+* Skills
+:PROPERTIES:
+:CUSTOM_ID: Hello-world
+:END:
+
+** Programming
+:PROPERTIES:
+:CUSTOM_ID: Programming
+:END:
+
+*** Expert
+:PROPERTIES:
+:CUSTOM_ID: Expert
+:END:
+
+Agda,
+Emacs lisp
+
+*** Experienced
+:PROPERTIES:
+:CUSTOM_ID: Experienced
+:END:
+
+C, C++
+
+*** Familiar
+:PROPERTIES:
+:CUSTOM_ID: Familiar
+:END:
+
+Python, Ruby, Haskell
+
+** Other software
+:PROPERTIES:
+:CUSTOM_ID: Other-software
+:END:
+
+Emacs, Org mode,
+LaTeX
+
+** Soft skills
+:PROPERTIES:
+:CUSTOM_ID: Soft-skills
+:END:
+
+* Sidebar footer                                :ignore:
+:PROPERTIES:
+:CUSTOM_ID: Sidebar-footer
+:END:
+
+@@latex:\end{sidebar}@@
+@@html:</div>@@
+
+# Footer for the alternative version
+# @@latex:\end{minipage}\end{wrapfigure}@@
+
+* Title                                         :ignore:
+:PROPERTIES:
+:CUSTOM_ID: Title
+:END:
+
+# Note: the alignment is done in the table, but repeated in the LaTeX attributes
+# in order to have the left column take up all remaining space.
+
+#+attr_LaTeX: :environment tabularx :width \textwidth+ :align lXr|l
+#+attr_HTML: :frame void
+| <l>                |             |    <r> | <l>                    |
+| /                  |             |      > |                        |
+|                    |             |  email | {{{email}}}            |
+|                    |             |  phone | {{{keyword(Phone)}}}   |
+| {{{resume-title}}} | {{{space}}} |    web | {{{keyword(Website)}}} |
+|                    |             | github | {{{keyword(Github)}}}  |
+|                    |             | gitlab | {{{keyword(Gitlab)}}}  |
+
+* Main header                                   :ignore:
+:PROPERTIES:
+:CUSTOM_ID: Main-header
+:END:
+
+@@html:<div style="float:left; width: 80%">@@
+
+* Education
+:PROPERTIES:
+:CUSTOM_ID: Education
+:END:
+
+** Ph.D. in Computer Science {{{begin-right}}} McMaster University, Sept 2015 - Present {{{end-right}}}
+:PROPERTIES:
+:CUSTOM_ID: PhD-in-Computer-Science
+:END:
+
+- Mechanising models of computability theory.
+- 3^{rd} place in 2019 Computing and Software poster competition.
+- GPA: 11.75 on 12 point scale.
+
+** M.Sc. in Computer Science {{{begin-right}}} McMaster University, Sept 2013 - Sept 2015 {{{end-right}}}
+:PROPERTIES:
+:CUSTOM_ID: M.Sc. in-Computer-Science
+:END:
+
+- Investigated results from classical computability theory
+  in the context of computability over the real numbers.
+- GPA: 11.75 on 12 point scale. Graduated with distinction.
+
+** B.A.Sc. in Computer Science {{{begin-right}}} McMaster University, Sept 2008 - April 2013 {{{end-right}}}
+:PROPERTIES:
+:CUSTOM_ID: B.A.Sc. in-Computer-Science
+:END:
+
+- Research projects:
+  - Summer 2010: on (theoretical) models of concurrency with Dr. Ryszard Janicki.
+  - Summer 2013: on mechanising mathematical knowledge with Dr. Jacques Carette.
+- GPA: 11.1 on 12 point scale. Graduated with distinction.
+  On Dean's Honour List in every year.
+
+* Employment
+:PROPERTIES:
+:CUSTOM_ID: Employment
+:END:
+
+** Sessional faculty {{{begin-right}}} McMaster University, 2013 - Dec 2019 {{{end-right}}}
+:PROPERTIES:
+:CUSTOM_ID: Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}
+:END:
+
+- 4 appointments for Computer Science 3MI3,
+  “Principles of Programming Languages”.
+- Planned and prepared lecture materials and assignments/tests including
+  both written and programming evaluations.
+- Supervised teaching assistants.
+
+** Teaching assistant {{{begin-right}}} McMaster University, 2013 - Dec 2019  {{{end-right}}}
+:PROPERTIES:
+:CUSTOM_ID: Teaching-assistant-{{{begin-right}}}-McMaster-University,-2013---Dec-2019--{{{end-right}}}
+:END:
+
+- 13 appointments, primarily to courses on programming language theory
+  and discrete mathematics.
+- Prepared and led tutorial sessions and office hours, marked student work.
+- In some cases, appointed to supervise other teaching assistants.
+
+** Research assistant {{{begin-right}}} McMaster University, Summers 2010 and 2012 {{{end-right}}}
+:PROPERTIES:
+:CUSTOM_ID: Research-assistant-{{{begin-right}}}-McMaster-University,-Summers-2010-and-2012-{{{end-right}}}
+:END:
+
+- Independently carried out research on topics selected by supervising professors.
+
+** Embedded Systems Test Developer, Intern {{{begin-right}}} Blackberry, May 2011 - Aug 2012 {{{end-right}}}
+:PROPERTIES:
+:CUSTOM_ID: Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}
+:END:
+
+
+
+- Developed automated tests and testing systems for
+  the GPS system of the BB10 operating system.
+
+* PDF Pagebreak                                 :ignore:
+:PROPERTIES:
+:CUSTOM_ID: PDF-Pagebreak
+:END:
+
+@@latex:\pagebreak@@
+
+* Publications
+:PROPERTIES:
+:CUSTOM_ID: Publications
+:END:
+
+- [[https://www.researchgate.net/profile/Mark_Armstrong12][Armstrong, Mark]] & [[https://www.researchgate.net/profile/Jeffery_Zucker][Zucker, Jeffery]],
+  [[https://www.researchgate.net/publication/323301233][Notions of semicomputability in topological algebras over the reals]],
+  Computability, vol. 8, no. 1, pp. 1-26, 2019
+
+* Awards
+:PROPERTIES:
+:CUSTOM_ID: Awards
+:END:
+
+** Graduate studies scholarships and fellowships
+:PROPERTIES:
+:CUSTOM_ID: Graduate-studies-scholarships-and-fellowships
+:END:
+
+|----------------------------------------------+-------------+-----------|
+| Name                                         | Years held  |     Value |
+| <l>                                          | <l>         |       <r> |
+|----------------------------------------------+-------------+-----------|
+| NSERC Postgraduate Scholarship, Doctoral     | 2017 - 2019 |   $42,000 |
+| Ontario Graduate Fellowship                  | 2016 - 2017 |   $12,000 |
+| Dean's Excellence Engineering Doctoral Award | 2015 - 2018 | $127,500¹ |
+| NSERC Canadian Graduate Scholarship, Masters | 2014 - 2015 |   $17,500 |
+| Ontario Graduate Scholarship                 | 2013 - 2014 |   $15,000 |
+|----------------------------------------------+-------------+-----------|
+{{{tablenote(1. Included guaranteed teaching assistant employment income for those years.)}}}
+
+** Other
+:PROPERTIES:
+:CUSTOM_ID: Other
+:END:
+
+|------------------------------------+------+-------+--------------------------------------------------|
+| Name                               | Date | Value | Description                                      |
+|------------------------------------+------+-------+--------------------------------------------------|
+| Gerald L. Keech Medal              | 2013 | ––––  | For highest graduating GPA in program that year. |
+| Ruth and Jack Hall Prize           | 2011 | $225  | For highest 3^{rd} year GPA in program.          |
+| Dr. Harry Lyman Hooker Scholarship | 2011 | $1500 | For academic excellence.                         |
+| Createch Scholarship               | 2010 | $1000 | For highest 2^{nd} year GPA in program.          |
+| Nortel Networks Scholarship        | 2009 | $1000 | For academic excellence.                         |
+| McMaster entry scholarship         | 2008 | $2000 |                                                  |
+|------------------------------------+------+-------+--------------------------------------------------|
+
+* Extracurricular
+:PROPERTIES:
+:CUSTOM_ID: Extracurricular
+:END:
+
+…
+
+* Main footer                                   :ignore:
+:PROPERTIES:
+:CUSTOM_ID: Main-footer
+:END:
+
+@@html:</div>@@
+
+# Anything afterwards (like the “created” footer) is not in the columns.
+@@html:<div style="clear:both"></div>@@
+
+* COMMENT Todos
+:PROPERTIES:
+:CUSTOM_ID: COMMENT-Todos
+:END:
+
+- Create macros for the regular and adjusted PDF margins.
+- Widen PDF title by the amount the margin is shrunk (using macro).
+- Investigate why list bullets are in the left margin in the PDF.
+- Detect if the screen is too narrow in the HTML version,
+  and redirect to the PDF?
