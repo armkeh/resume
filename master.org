@@ -96,21 +96,22 @@ We'll use ~tcolorbox~ to highlight the section and subsection headers
 with a background colour.
 #+LaTeX_header: \usepackage[most]{tcolorbox}
 
+Specifically, we want simple rectangles without coloured borders
+and with a customisable background colour.
+More options are included here from the source where I found this;
+it might be worth playing with later.
 #+LaTeX_header: \newtcolorbox{bgbox}[2][]{
 #+LaTeX_header:   width=\linewidth,
 # LaTeX_header:   frame code={}
 # LaTeX_header:   center title,
-#+LaTeX_header:   left=1em,right=1em,top=0pt,bottom=0pt, % Small margins in the box
+#+LaTeX_header:   left=0pt,right=1em,top=0pt,bottom=0pt, % Small margins in the box
 #+LaTeX_header:   colback=#2,
-#+LaTeX_header:   colframe=white, % No border on the box
+#+LaTeX_header:   colframe=#2, % Border on the box is same as background
 # LaTeX_header:   enlarge left by=0mm,
 # LaTeX_header:   boxsep=5pt,
 #+LaTeX_header:   arc=0pt,outer arc=0pt, % Don't round corners
 #+LaTeX_header:   }
 
-It looks nice to have the boxes be ~textwidth~. But this means
-that the background of my headers will gladly coverup the
-sidebar (although their contents won't).
 For section headers, define a slightly lighter grey,
 and put the header in a box with that background colour.
 #+LaTeX_header: \definecolor{lightgray}{gray}{0.8}
@@ -121,11 +122,12 @@ and put the header in a box with that background colour.
 #+LaTeX_header: }
 
 Subsection headers are similar, but an even lighter grey,
-and without modified text size.
+and a smaller text size —smaller than normal,
+because these are often quite long.
 #+LaTeX_header: \definecolor{lightergray}{gray}{0.9}
 #+LaTeX_header: \newcommand{\subsectionhead}[1]{%
 #+LaTeX_header:   \begin{bgbox}{lightergray}%
-#+LaTeX_header:     #1%
+#+LaTeX_header:     {\small #1}%
 #+LaTeX_header:   \end{bgbox}%
 #+LaTeX_header: }
 
@@ -158,29 +160,6 @@ They'd be eyesores if printed.
 colorlinks=false
 }\n")
 #+end_src
-
-*** Margins and sidebar setup
-:PROPERTIES:
-:CUSTOM_ID: Sidebar-setup
-:END:
-
-#+LaTeX_header: \newlength{\marginDefault}
-#+LaTeX_header: \setlength{\marginDefault}{0.5in}
-#+LaTeX_header: \newlength{\sidebarWidth}
-#+LaTeX_header: \setlength{\sidebarWidth}{1.5in}
-#+LaTeX_header: \newlength{\sidebarPad}
-#+LaTeX_header: \setlength{\sidebarPad}{0.5in}
-
-We make the sidebar as a framed wrap figure,
-position /outside/ the right margin.
-This requires us to increase the right margin on the page
-where the sidebar appears.
-#+LaTeX_header: \newenvironment{sidebar}[1][r]
-#+LaTeX_header:   {\wrapfigure{#1}[\sidebarWidth+\sidebarPad]{\sidebarWidth}\mdframed}
-#+LaTeX_header:   {\endmdframed\endwrapfigure}
-
-:TODO: maybe put the sidebar on the second page? First page could use the space.
-:TODO: and wouldn't have to fight with the title.
 
 ** CSS
 :PROPERTIES:
@@ -296,16 +275,40 @@ it's unnecessary.
 
 #+Macro: tablenote @@html:<span style="font-size:0.5rem">@@@@latex:{\scriptsize@@$1@@latex:}@@@@html:</span>@@
 
+* Title                                         :ignore:
+:PROPERTIES:
+:CUSTOM_ID: Title
+:END:
+
+# Note: the alignment is done in the table, but repeated in the LaTeX attributes
+# in order to have the left column take up all remaining space.
+
+# Note 2: Because the sidebar is included in the first page,
+# the table is widened to run past the margin by the sidebar's width and padding.
+
+#+attr_LaTeX: :environment tabularx :width \textwidth :align lXr|l
+#+attr_HTML: :frame void
+| <l>                |             |    <r> | <l>                    |
+| /                  |             |      > |                        |
+|                    |             |  email | {{{email}}}            |
+|                    |             |  phone | {{{keyword(Phone)}}}   |
+| {{{resume-title}}} | {{{space}}} |    web | {{{keyword(Website)}}} |
+|                    |             | github | {{{keyword(Github)}}}  |
+|                    |             | gitlab | {{{keyword(Gitlab)}}}  |
+
 * Sidebar header                                :ignore:
 :PROPERTIES:
 :CUSTOM_ID: Sidebar-header
 :END:
 
-# First, increase the right margin of this page to make room.
-{{{latex-margin-extend-right}}}
-
-@@latex:\begin{sidebar}@@
-@@html:<div style="float:right; width: 15%">@@
+#+LaTeX_header: \usepackage{paracol}
+#+LaTeX: \columnratio{0.7}
+#+LaTeX: \begin{sloppypar} % The smaller linewidth causes issues otherwise.
+#+LaTeX: \begin{paracol}{2}
+#+LaTeX_header: \definecolor{ghostgray}{gray}{0.975}   
+#+LaTeX:   \backgroundcolor{c[1]}{ghostgray}
+#+LaTeX:   \switchcolumn % go to right column
+#+HTML: <div style="float:right; width: 15%">
 
 # An alternative version without defining an environment
 # @@latex:\begin{wrapfigure}{r}{.25\textwidth}\begin{minipage}{.2\textwidth}@@
@@ -368,32 +371,11 @@ LaTeX
 :CUSTOM_ID: Sidebar-footer
 :END:
 
-@@latex:\end{sidebar}@@
+#+LaTeX:   \switchcolumn % go to left column
 @@html:</div>@@
 
 # Footer for the alternative version
 # @@latex:\end{minipage}\end{wrapfigure}@@
-
-* Title                                         :ignore:
-:PROPERTIES:
-:CUSTOM_ID: Title
-:END:
-
-# Note: the alignment is done in the table, but repeated in the LaTeX attributes
-# in order to have the left column take up all remaining space.
-
-# Note 2: Because the sidebar is included in the first page,
-# the table is widened to run past the margin by the sidebar's width and padding.
-
-#+attr_LaTeX: :environment tabularx :width \textwidth+\sidebarWidth+\sidebarPad :align lXr|l
-#+attr_HTML: :frame void
-| <l>                |             |    <r> | <l>                    |
-| /                  |             |      > |                        |
-|                    |             |  email | {{{email}}}            |
-|                    |             |  phone | {{{keyword(Phone)}}}   |
-| {{{resume-title}}} | {{{space}}} |    web | {{{keyword(Website)}}} |
-|                    |             | github | {{{keyword(Github)}}}  |
-|                    |             | gitlab | {{{keyword(Gitlab)}}}  |
 
 * Main header                                   :ignore:
 :PROPERTIES:
@@ -407,7 +389,7 @@ LaTeX
 :CUSTOM_ID: Education
 :END:
 
-** Ph.D. in Computer Science {{{begin-right}}} McMaster University, Sept 2015 - Present {{{end-right}}}
+** Ph.D. in Computer Science {{{begin-right}}} McMaster University, 2015 - Present {{{end-right}}}
 :PROPERTIES:
 :CUSTOM_ID: PhD-in-Computer-Science
 :END:
@@ -416,7 +398,7 @@ LaTeX
 - 3^{rd} place in 2019 Computing and Software poster competition.
 - GPA: 11.75 on 12 point scale.
 
-** M.Sc. in Computer Science {{{begin-right}}} McMaster University, Sept 2013 - Sept 2015 {{{end-right}}}
+** M.Sc. in Computer Science {{{begin-right}}} McMaster University, 2013 - 2015 {{{end-right}}}
 :PROPERTIES:
 :CUSTOM_ID: M.Sc. in-Computer-Science
 :END:
@@ -425,7 +407,7 @@ LaTeX
   in the context of computability over the real numbers.
 - GPA: 11.75 on 12 point scale. Graduated with distinction.
 
-** B.A.Sc. in Computer Science {{{begin-right}}} McMaster University, Sept 2008 - April 2013 {{{end-right}}}
+** B.A.Sc. in Computer Science {{{begin-right}}} McMaster University, 2008 - 2013 {{{end-right}}}
 :PROPERTIES:
 :CUSTOM_ID: B.A.Sc. in-Computer-Science
 :END:
@@ -469,7 +451,7 @@ LaTeX
 
 - Independently carried out research on topics selected by supervising professors.
 
-** Embedded Systems Test Developer, Intern {{{begin-right}}} Blackberry, May 2011 - Aug 2012 {{{end-right}}}
+** Embedded Systems Test Dev, Intern {{{begin-right}}} Blackberry, May 2011 - Aug 2012 {{{end-right}}}
 :PROPERTIES:
 :CUSTOM_ID: Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}
 :END:
@@ -479,12 +461,17 @@ LaTeX
 - Developed automated tests and testing systems for
   the GPS system of the BB10 operating system.
 
-* End of PDF page                               :ignore:
+* Main footer                                   :ignore:
+:PROPERTIES:
+:CUSTOM_ID: Main-footer
+:END:
 
-#+LaTeX: \newpage
+#+LaTeX: \end{paracol}
+#+LaTeX: \end{sloppypar}
+#+HTML: html:</div>
 
-# Reset the margins
-{{{latex-margin-reset}}}
+# Anything afterwards is not in the columns.
+#+HTML:<div style="clear:both"></div>
 
 * Publications
 :PROPERTIES:
@@ -540,15 +527,12 @@ LaTeX
 
 …
 
-* Main footer                                   :ignore:
-:PROPERTIES:
-:CUSTOM_ID: Main-footer
-:END:
+* Document footer                               :ignore:
 
-@@html:</div>@@
-
-# Anything afterwards (like the “created” footer) is not in the columns.
-@@html:<div style="clear:both"></div>@@
+#+LaTeX: \vfill
+This document available in multiple formats from
+https://github.com/armkeh/resume/,
+including 
 
 * COMMENT Todos
 :PROPERTIES:
