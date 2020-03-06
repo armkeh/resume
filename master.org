@@ -40,6 +40,23 @@ when importing!
 #+Github: [[https://github.com/armkeh][~github.com/armkeh~]]
 #+Gitlab: [[https://gitlab.cas.mcmaster.ca/armstmp][~gitlab.cas.mcmaster.ca/armstmp~]]
 
+** LaTeX Org export settings
+
+For ease of customisability, here we define
+a new ~org-latex-class~ which maps headings to
+our own custom commands, defined below.
+#+begin_src emacs-lisp :exports results :results none :eval export
+(make-variable-buffer-local 'org-latex-hyperref-template)
+(add-to-list
+  'org-latex-classes
+    '("resume"
+      "\\documentclass{article}"
+      ("\\sectionhead{%s}" . "\\sectionhead{%s}") ;; Same with or without numbering
+      ("\\subsectionhead{%s}" . "\\subsectionhead{%s}")))
+#+end_src
+Résumés should not be deeply nested, so we only
+give two levels here. Lower levels would become lists.
+
 ** “Global” LaTeX header settings
 :PROPERTIES:
 :CUSTOM_ID: “Global”-LaTeX-header-settings
@@ -53,8 +70,9 @@ to the document. The ones here are “global” settings.
 :CUSTOM_ID: Page-layout
 :END:
 
-First, we'll use the simple ~article~ class.
-#+LaTeX_class: article
+First, we'll use the ~resume~ class defined above.
+It's definition is added to ~org-latex-classes~ on export.
+#+LaTeX_class: resume
 #+LaTeX_class_options: [11pt]
 
 Don't show page numbers.
@@ -81,32 +99,21 @@ We'll use ~mdframed~ to highlight the section and subsection headers.
 
 For section headers, define a slightly fainter grey,
 and put the header in a box with that background colour.
-#+LaTeX_header: \definecolor{mygrey}{gray}{0.8}
+#+LaTeX_header: \definecolor{mygray}{gray}{0.8}
 #+LaTeX_header: \newcommand{\sectionhead}[1]{
-#+LaTeX_header:     \begin{mdframed}[hidealllines=true,backgroundcolor=mygrey]
-#+LaTeX_header:         \Large #1
-#+LaTeX_header:     \end{mdframed}}
-#+LaTeX_header: \titleformat{name=\section}
-#+LaTeX_header:   [block]           % Shape
-#+LaTeX_header:   {\sffamily\large} % Format (of text)
-#+LaTeX_header:   {}                % Label
-#+LaTeX_header:   {0pt}             % Separation between label and body
-#+LaTeX_header:   {\vspace{-2em}\sectionhead} % Before; last command is title text
-#+LaTeX_header:   [\vspace{-2em}]             % After
+#+LaTeX_header:   \begin{mdframed}[hidealllines=true,backgroundcolor=mygray]
+#+LaTeX_header:     {\Large #1}
+#+LaTeX_header:   \end{mdframed}
+#+LaTeX_header: }
 
-Subsection headers are similar, but a fainter grey.
-#+LaTeX_header: \definecolor{myfaintgrey}{gray}{0.9}
+Subsection headers are similar, but a fainter grey,
+and without modified text size.
+#+LaTeX_header: \definecolor{mylightgray}{gray}{0.9}
 #+LaTeX_header: \newcommand{\subsectionhead}[1]{
-#+LaTeX_header:     \begin{mdframed}[hidealllines=true,backgroundcolor=myfaintgrey]
-#+LaTeX_header:         #1
-#+LaTeX_header:     \end{mdframed}}
-#+LaTeX_header: \titleformat{name=\subsection}
-#+LaTeX_header:   [block]           % Shape
-#+LaTeX_header:   {\sffamily}       % Format (of text)
-#+LaTeX_header:   {}                % Label
-#+LaTeX_header:   {0pt}             % Separation between label and body
-#+LaTeX_header:   {\vspace{-2em}\subsectionhead} % Before; last command is title text
-#+LaTeX_header:   [\vspace{-2em}]                % After
+#+LaTeX_header:   \begin{mdframed}[hidealllines=true,backgroundcolor=mylightgray]
+#+LaTeX_header:     #1
+#+LaTeX_header:   \end{mdframed}
+#+LaTeX_header: }
 
 *** Lists
 :PROPERTIES:
