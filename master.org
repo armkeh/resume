@@ -80,7 +80,7 @@ Don't show page numbers.
 
 We use ~geometry~ to decrease the margin size;
 the defaults for ~article~ are very large.
-#+LaTeX_header: \usepackage[showframe]{geometry}
+#+LaTeX_header: \usepackage[showframe,margin=0.5in]{geometry}
 
 We don't define the margins directly here, because
 we will use different margins for different pages,
@@ -92,27 +92,41 @@ See [[Macros]] to see what sizes the margins are set to.
 :CUSTOM_ID: Section-headers
 :END:
 
-We'll use ~mdframed~ to highlight the section and subsection headers.
-~titlesec~ lets us redefine the formats for those.
-#+LaTeX_header: \usepackage{mdframed}
-#+LaTeX_header: \usepackage{titlesec}
+We'll use ~tcolorbox~ to highlight the section and subsection headers
+with a background colour.
+#+LaTeX_header: \usepackage[most]{tcolorbox}
 
-For section headers, define a slightly fainter grey,
+#+LaTeX_header: \newtcolorbox{bgbox}[2][]{
+#+LaTeX_header:   width=\linewidth,
+# LaTeX_header:   frame code={}
+# LaTeX_header:   center title,
+#+LaTeX_header:   left=1em,right=1em,top=0pt,bottom=0pt, % Small margins in the box
+#+LaTeX_header:   colback=#2,
+#+LaTeX_header:   colframe=white, % No border on the box
+# LaTeX_header:   enlarge left by=0mm,
+# LaTeX_header:   boxsep=5pt,
+#+LaTeX_header:   arc=0pt,outer arc=0pt, % Don't round corners
+#+LaTeX_header:   }
+
+It looks nice to have the boxes be ~textwidth~. But this means
+that the background of my headers will gladly coverup the
+sidebar (although their contents won't).
+For section headers, define a slightly lighter grey,
 and put the header in a box with that background colour.
-#+LaTeX_header: \definecolor{mygray}{gray}{0.8}
-#+LaTeX_header: \newcommand{\sectionhead}[1]{
-#+LaTeX_header:   \begin{mdframed}[hidealllines=true,backgroundcolor=mygray]
-#+LaTeX_header:     {\Large #1}
-#+LaTeX_header:   \end{mdframed}
+#+LaTeX_header: \definecolor{lightgray}{gray}{0.8}
+#+LaTeX_header: \newcommand{\sectionhead}[1]{%
+#+LaTeX_header:   \begin{bgbox}{lightgray}%
+#+LaTeX_header:     {\Large #1}%
+#+LaTeX_header:   \end{bgbox}%
 #+LaTeX_header: }
 
-Subsection headers are similar, but a fainter grey,
+Subsection headers are similar, but an even lighter grey,
 and without modified text size.
-#+LaTeX_header: \definecolor{mylightgray}{gray}{0.9}
-#+LaTeX_header: \newcommand{\subsectionhead}[1]{
-#+LaTeX_header:   \begin{mdframed}[hidealllines=true,backgroundcolor=mylightgray]
-#+LaTeX_header:     #1
-#+LaTeX_header:   \end{mdframed}
+#+LaTeX_header: \definecolor{lightergray}{gray}{0.9}
+#+LaTeX_header: \newcommand{\subsectionhead}[1]{%
+#+LaTeX_header:   \begin{bgbox}{lightergray}%
+#+LaTeX_header:     #1%
+#+LaTeX_header:   \end{bgbox}%
 #+LaTeX_header: }
 
 *** Lists
