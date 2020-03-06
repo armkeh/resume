@@ -41,6 +41,9 @@ when importing!
 #+Gitlab: [[https://gitlab.cas.mcmaster.ca/armstmp][~gitlab.cas.mcmaster.ca/armstmp~]]
 
 ** LaTeX Org export settings
+:PROPERTIES:
+:CUSTOM_ID: LaTeX-Org-export-settings
+:END:
 
 For ease of customisability, here we define
 a new ~org-latex-class~ which maps headings to
@@ -104,7 +107,7 @@ it might be worth playing with later.
 #+LaTeX_header:   width=\linewidth,
 # LaTeX_header:   frame code={}
 # LaTeX_header:   center title,
-#+LaTeX_header:   left=0pt,right=1em,top=0pt,bottom=0pt, % Small margins in the box
+#+LaTeX_header:   left=0pt,right=0pt,top=0pt,bottom=0pt, % No margins in the box
 #+LaTeX_header:   colback=#2,
 #+LaTeX_header:   colframe=#2, % Border on the box is same as background
 # LaTeX_header:   enlarge left by=0mm,
@@ -144,6 +147,13 @@ Redefine the bullets to nice unicode characters.
 The first one here is actually the default, but redefine it anyway.
 #+LaTeX_header: \renewcommand{\labelitemii}{•}
 #+LaTeX_header: \renewcommand{\labelitemii}{∘}
+
+*** Paragraphs
+:PROPERTIES:
+:CUSTOM_ID: Paragraphs
+:END:
+
+#+LaTeX_header: \setlength{\parindent}{0em}
 
 *** Hyperlinks
 :PROPERTIES:
@@ -293,7 +303,7 @@ it's unnecessary.
 |                    |             |  email | {{{email}}}            |
 |                    |             |  phone | {{{keyword(Phone)}}}   |
 | {{{resume-title}}} | {{{space}}} |    web | {{{keyword(Website)}}} |
-|                    |             | github | {{{keyword(Github)}}}  |
+| Ph.D. candidate    |             | github | {{{keyword(Github)}}}  |
 |                    |             | gitlab | {{{keyword(Gitlab)}}}  |
 
 * Sidebar header                                :ignore:
@@ -321,6 +331,20 @@ it's unnecessary.
 #+attr_HTML: :width 100%
 [[file:me.jpg]]
 
+* Objectives
+:PROPERTIES:
+:CUSTOM_ID: Objectives
+:END:
+
+Developing beautiful software projects, emphasising
+- /beauty of purpose/,
+- /correctness/,
+- /generous documentation/.
+
+Learning new languages and design patterns.
+
+Gaining further experience with medium and large-scale development projects.
+
 * Skills
 :PROPERTIES:
 :CUSTOM_ID: Hello-world
@@ -331,33 +355,22 @@ it's unnecessary.
 :CUSTOM_ID: Programming
 :END:
 
-*** Expert
-:PROPERTIES:
-:CUSTOM_ID: Expert
-:END:
+- Expert ::
+  Agda,
+  Emacs lisp
 
-Agda,
-Emacs lisp
+- Experienced ::
+  C, C++
 
-*** Experienced
-:PROPERTIES:
-:CUSTOM_ID: Experienced
-:END:
+- Familiar ::
+  Python, Ruby, Haskell
 
-C, C++
-
-*** Familiar
-:PROPERTIES:
-:CUSTOM_ID: Familiar
-:END:
-
-Python, Ruby, Haskell
-
-** Other software
+** Other software proficiencies
 :PROPERTIES:
 :CUSTOM_ID: Other-software
 :END:
 
+Git, subversion, 
 Emacs, Org mode,
 LaTeX
 
@@ -365,6 +378,8 @@ LaTeX
 :PROPERTIES:
 :CUSTOM_ID: Soft-skills
 :END:
+
+Teaching, mentoring, developing documentation
 
 * Sidebar footer                                :ignore:
 :PROPERTIES:
@@ -377,7 +392,7 @@ LaTeX
 # Footer for the alternative version
 # @@latex:\end{minipage}\end{wrapfigure}@@
 
-* Main header                                   :ignore:
+* Left of sidebar header                        :ignore:
 :PROPERTIES:
 :CUSTOM_ID: Main-header
 :END:
@@ -461,7 +476,7 @@ LaTeX
 - Developed automated tests and testing systems for
   the GPS system of the BB10 operating system.
 
-* Main footer                                   :ignore:
+* Left of sidebar footer                        :ignore:
 :PROPERTIES:
 :CUSTOM_ID: Main-footer
 :END:
@@ -472,6 +487,9 @@ LaTeX
 
 # Anything afterwards is not in the columns.
 #+HTML:<div style="clear:both"></div>
+
+# At this point in the PDF, we should break the page.
+#+LaTeX: \newpage
 
 * Publications
 :PROPERTIES:
@@ -525,14 +543,20 @@ LaTeX
 :CUSTOM_ID: Extracurricular
 :END:
 
-…
+- Father of two.
+- Blog at [[https://armkeh.github.io]].
+- Occasional school trip volunteer at R.A. Riddell Elementary.
+- Church secretary, board member, music and youth leader
+  at Mountain Church of the Nazarene, 2007-2015.
 
 * Document footer                               :ignore:
+:PROPERTIES:
+:CUSTOM_ID: Document-footer
+:END:
 
 #+LaTeX: \vfill
 This document available in multiple formats from
-https://github.com/armkeh/resume/,
-including 
+https://github.com/armkeh/resume/.
 
 * COMMENT Todos
 :PROPERTIES:
