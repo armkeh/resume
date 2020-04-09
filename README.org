@@ -1,0 +1,14 @@
+#+Title: Mark Armstrong's Résumé
+#+Author: Mark Armstrong
+#+Description: My cross-format résumé
+#+Export_file_name: index
+
+Welcome to my résumé/CV homepage.
+
+Through the use Org mode and its ability to export to many formats,
+I offer several ways to view this document: 
+- Printer-friendly [[file:master.pdf][PDF]].
+- Screen-friendly [[file:master.html][HTML]].
+- Rendered markdown on [[https://github.com/armkeh/resume/blob/master/master.md][Github]].
+- Rendered Org code on [[https://github.com/armkeh/resume/blob/master/master.md][Github]].
+  - Includes source code and documentation for the document.
