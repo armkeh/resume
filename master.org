@@ -186,27 +186,31 @@ For self-containedness, we'll just setup the styles inline here.
 :CUSTOM_ID: Page-layout
 :END:
 
-Do note the sizing set here: 24% of the page for the sidebar,
-and 74% for the content to its left.
-This gives a small gap
+Note the sizing set here: 23% of the page for the sidebar,
+and 73% for the content to its left.
+This gives a small gap. Without that, the elements do tend to overlap
+at certain window sizes.
 
 The sidebar does not look good if the window is too narrow,
 such as when the page is loaded on a phone.
 We can use media queries to set the CSS
 for the sidebar based on the window width.
-When the window is narrow, just treat it normally.
+When the window is narrow, just treat it
+—and the content left of it—
+normally.
 #+HTML_head: .sidebar {}
 #+HTML_head: .left-of-sidebar {}
 
+When we're in wide window, set up the sidebar.
 #+HTML_head: @media only screen and (min-width: 768px) {
 #+HTML_head:   .sidebar {
 #+HTML_head:     float: right;
-#+HTML_head:     width: 24%;
+#+HTML_head:     width: 23%;
 #+HTML_head:     background-color: rgba(0.5,0.5,0.5,0.05);
 #+HTML_head:   }
 #+HTML_head:   .left-of-sidebar {
 #+HTML_head:     float: left;
-#+HTML_head:     width: 74%;
+#+HTML_head:     width: 73%;
 #+HTML_head:   }
 #+HTML_head: }
 
@@ -224,7 +228,7 @@ Also put a little space on the left and right.
 #+HTML_head:   background-color: rgba(0.5,0.5,0.5,0.2);
 #+HTML_head:   padding-left: 0.5em;
 #+HTML_head:   padding-right: 0.5em;
-#+HTML_head:   width: 100%;
+#+HTML_head:   width: 90%;
 #+HTML_head:   display: inline-block;
 #+HTML_head: }
 
@@ -235,8 +239,41 @@ Subsections are similar; just a lighter grey.
 #+HTML_head:   background-color: rgba(0.5,0.5,0.5,0.1);
 #+HTML_head:   padding-left: 0.5em;
 #+HTML_head:   padding-right: 0.5em;
-#+HTML_head:   width: 100%;
+#+HTML_head:   width: 90%;
 #+HTML_head:   display: inline-block;
+#+HTML_head: }
+
+*** The title (my name)
+:PROPERTIES:
+:CUSTOM_ID: The-title-(my-name)
+:END:
+
+The title is placed in a table, with the right column
+of the table being various contact information.
+
+In order to increase the fontsize of the title,
+without increasing the size of the row it is in,
+we set its ~line-height~ to 0, and set
+both ~white-space~ to ~nowrap~ and ~overflow~ to ~visible~ so that
+it is still displayed normally.
+
+As with the sidebar, a large title text can be problematic
+in small windows.
+So, we set the size conditionally.
+
+For small windows, only increase the size to 150%.
+#+HTML_head:   .the-title {
+#+HTML_head:     font-size: 1.5rem;
+#+HTML_head:     line-height: 0;
+#+HTML_head:     white-space: nowrap;
+#+HTML_head:     overflow: visible;
+#+HTML_head:   }
+
+In large windows, up it to 300%.
+#+HTML_head: @media only screen and (min-width: 768px) {
+#+HTML_head:   .the-title {
+#+HTML_head:     font-size: 3rem;
+#+HTML_head:   }
 #+HTML_head: }
 
 *** Footer
@@ -285,7 +322,7 @@ wrap the “title” (my name) in HTML and LaTeX fontication.
 This saves us putting an obscenely long line below.
 
 First, code to fontify the title in HTML.
-#+Macro: htmlize-title @@html:<div style="line-height:0; white-space:nowrap;; font-size:3rem; overflow: visible">@@$1 @@html:</div>@@
+#+Macro: htmlize-title @@html:<div class=the-title>@@$1 @@html:</div>@@
 
 This macro forces LaTeX text to be treated as having zero height;
 this way, we can add larger text into tables without affecting the row height.
