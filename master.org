@@ -1,7 +1,7 @@
-#+Title: Master Résumé
+#+Title: Mark Armstrong Résumé
 #+Author: Mark Armstrong
 #+Description: Master document for my resume/CV.
-#+Description: Particular documents should import from this document
+#+Description: Particular versions may import from this document
 #+Description: to put things in the right order.
 #+LaTeX_header: \usepackage{unicode}
 
@@ -34,11 +34,12 @@ Also do not put in a table of contents or number sections.
 
 We use these keywords in building the title; make sure to set them
 when importing!
-#+Email: [[mailto:markparmstrong@gmail.com][~markparmstrong@gmail.com~]]
+#+Email: markparmstrong@gmail.com
 #+Phone: 289-689-8404
 #+Website: [[https://armkeh.github.io][~armkeh.github.io~]]
 #+Github: [[https://github.com/armkeh][~github.com/armkeh~]]
 #+Gitlab: [[https://gitlab.cas.mcmaster.ca/armstmp][~gitlab.cas.mcmaster.ca/armstmp~]]
+#+HTML_footer_image: <img src="me.jpg" alt="Mark Armstrong" style="width:200px">
 
 ** LaTeX Org export settings
 :PROPERTIES:
@@ -83,7 +84,8 @@ Don't show page numbers.
 
 We use ~geometry~ to decrease the margin size;
 the defaults for ~article~ are very large.
-#+LaTeX_header: \usepackage[showframe,margin=0.5in]{geometry}
+Add ~showframe~ to the options to visualise the margins.
+#+LaTeX_header: \usepackage[margin=0.5in]{geometry}
 
 We don't define the margins directly here, because
 we will use different margins for different pages,
@@ -184,7 +186,29 @@ For self-containedness, we'll just setup the styles inline here.
 :CUSTOM_ID: Page-layout
 :END:
 
-?
+Do note the sizing set here: 24% of the page for the sidebar,
+and 74% for the content to its left.
+This gives a small gap
+
+The sidebar does not look good if the window is too narrow,
+such as when the page is loaded on a phone.
+We can use media queries to set the CSS
+for the sidebar based on the window width.
+When the window is narrow, just treat it normally.
+#+HTML_head: .sidebar {}
+#+HTML_head: .left-of-sidebar {}
+
+#+HTML_head: @media only screen and (min-width: 768px) {
+#+HTML_head:   .sidebar {
+#+HTML_head:     float: right;
+#+HTML_head:     width: 24%;
+#+HTML_head:     background-color: rgba(0.5,0.5,0.5,0.05);
+#+HTML_head:   }
+#+HTML_head:   .left-of-sidebar {
+#+HTML_head:     float: left;
+#+HTML_head:     width: 74%;
+#+HTML_head:   }
+#+HTML_head: }
 
 *** Section headers
 :PROPERTIES:
@@ -200,6 +224,8 @@ Also put a little space on the left and right.
 #+HTML_head:   background-color: rgba(0.5,0.5,0.5,0.2);
 #+HTML_head:   padding-left: 0.5em;
 #+HTML_head:   padding-right: 0.5em;
+#+HTML_head:   width: 100%;
+#+HTML_head:   display: inline-block;
 #+HTML_head: }
 
 Subsections are similar; just a lighter grey.
@@ -209,6 +235,8 @@ Subsections are similar; just a lighter grey.
 #+HTML_head:   background-color: rgba(0.5,0.5,0.5,0.1);
 #+HTML_head:   padding-left: 0.5em;
 #+HTML_head:   padding-right: 0.5em;
+#+HTML_head:   width: 100%;
+#+HTML_head:   display: inline-block;
 #+HTML_head: }
 
 *** Footer
@@ -218,6 +246,29 @@ Subsections are similar; just a lighter grey.
 
 End the style setup.
 #+HTML_head: </style>
+
+** HTML postamble
+:PROPERTIES:
+:CUSTOM_ID: HTML-postamble
+:END:
+
+#+Name: the-author
+{{{author}}}
+
+#+Name: the-image
+{{{keyword(HTML_footer_image)}}}
+
+#+begin_src emacs-lisp :results none :exports results :var author=the-author image=the-image
+(setq-local org-html-postamble-format
+ `(("en"
+    ,(format
+     "<p class=\"author\">Author: %s</p>
+      <p class=\"author\">%s</p>
+      <p class=\"author\">Contact: %%e</p>
+      <p class=\"date\">Last updated: %%C</p>
+      <p class=\"creator\">Created using %%c</p>
+      <p class=\"validation\">%%v</p>" author image))))
+#+end_src
 
 * Macros                                        :noexport:
 :PROPERTIES:
@@ -262,7 +313,7 @@ This macro enforces a small amount of horizontal space;
 These macros right align their content;
 in LaTeX, this is accomplished by ~hfill~'ing on the left,
 and in HTML, we use a right-aligned span
-#+Macro: begin-right @@latex:\hfill@@@@html:<span style="float:right">@@
+#+Macro: begin-right @@latex:\hfill@@@@html:<span style="padding-left:3em; float:right">@@
 #+Macro: end-right @@html:</span>@@
 
 ** LaTeX margin adjustments
@@ -296,15 +347,15 @@ it's unnecessary.
 # Note 2: Because the sidebar is included in the first page,
 # the table is widened to run past the margin by the sidebar's width and padding.
 
-#+attr_LaTeX: :environment tabularx :width \textwidth :align lXr|l
-#+attr_HTML: :frame void
-| <l>                |             |    <r> | <l>                    |
-| /                  |             |      > |                        |
-|                    |             |  email | {{{email}}}            |
-|                    |             |  phone | {{{keyword(Phone)}}}   |
-| {{{resume-title}}} | {{{space}}} |    web | {{{keyword(Website)}}} |
-| Ph.D. candidate    |             | github | {{{keyword(Github)}}}  |
-|                    |             | gitlab | {{{keyword(Gitlab)}}}  |
+#+attr_LaTeX: :environment tabularx :width \textwidth :align Xr|l
+#+attr_HTML: :frame void :width 100%
+| <l>                |    <r> | <l>                    |
+| /                  |      > |                        |
+|                    |  email | {{{email}}}            |
+| {{{resume-title}}} |  phone | {{{keyword(Phone)}}}   |
+| Ph.D. candidate    |    web | {{{keyword(Website)}}} |
+|                    | github | {{{keyword(Github)}}}  |
+# |                    | gitlab | {{{keyword(Gitlab)}}}  |
 
 * Sidebar header                                :ignore:
 :PROPERTIES:
@@ -318,15 +369,22 @@ it's unnecessary.
 #+LaTeX_header: \definecolor{ghostgray}{gray}{0.975}   
 #+LaTeX:   \backgroundcolor{c[1]}{ghostgray}
 #+LaTeX:   \switchcolumn % go to right column
-#+HTML: <div style="float:right; width: 15%">
+
+#+HTML: <div class="sidebar">
 
 # An alternative version without defining an environment
 # @@latex:\begin{wrapfigure}{r}{.25\textwidth}\begin{minipage}{.2\textwidth}@@
 
-* Image                                         :ignore:
+* COMMENT Image                                 :ignore:
 :PROPERTIES:
 :CUSTOM_ID: Image
 :END:
+
+# I'm not certain it's advisable to include an image in my resume;
+# in particular, it would mean I should produce a “printer friendly”
+# version, and probably having two versions is an irritation.
+# Instead, I will place it in the HTML footer, since that is not
+# intended for printing.
 
 #+attr_HTML: :width 100%
 [[file:me.jpg]]
@@ -387,7 +445,7 @@ Teaching, mentoring, developing documentation
 :END:
 
 #+LaTeX:   \switchcolumn % go to left column
-@@html:</div>@@
+#+HTML: </div>
 
 # Footer for the alternative version
 # @@latex:\end{minipage}\end{wrapfigure}@@
@@ -397,7 +455,7 @@ Teaching, mentoring, developing documentation
 :CUSTOM_ID: Main-header
 :END:
 
-@@html:<div style="float:left; width: 80%">@@
+#+HTML: <div class="left-of-sidebar">
 
 * Education
 :PROPERTIES:
@@ -483,10 +541,10 @@ Teaching, mentoring, developing documentation
 
 #+LaTeX: \end{paracol}
 #+LaTeX: \end{sloppypar}
-#+HTML: html:</div>
+#+HTML: </div>
 
 # Anything afterwards is not in the columns.
-#+HTML:<div style="clear:both"></div>
+#+HTML:<div style="clear:both">
 
 # At this point in the PDF, we should break the page.
 #+LaTeX: \newpage
