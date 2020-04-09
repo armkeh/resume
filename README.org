@@ -1,7 +1,6 @@
 #+Title: Mark Armstrong's Résumé
 #+Author: Mark Armstrong
 #+Description: My cross-format résumé
-#+Export_file_name: index
 
 Welcome to my résumé/CV homepage.
 
