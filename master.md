@@ -4,17 +4,14 @@
 
 
 
-|                 |  |        |                                                                            |
-| --------------- |  | ------ | -------------------------------------------------------------------------- |
-|                 |  | email  | <markparmstrong@gmail.com>                                                 |
-|                 |  | phone  | 289-689-8404                                                               |
-| Mark Armstrong  |  | web    | [`armkeh.github.io`](https://armkeh.github.io)                             |
-| Ph.D. candidate |  | github | [`github.com/armkeh`](https://github.com/armkeh)                           |
-|                 |  | gitlab | [`gitlab.cas.mcmaster.ca/armstmp`](https://gitlab.cas.mcmaster.ca/armstmp) |
+|                 |        |                                                  |
+| --------------- | ------ | ------------------------------------------------ |
+|                 | email  | markparmstrong@gmail.com                         |
+| Mark Armstrong  | phone  | 289-689-8404                                     |
+| Ph.D. candidate | web    | [`armkeh.github.io`](https://armkeh.github.io)   |
+|                 | github | [`github.com/armkeh`](https://github.com/armkeh) |
 
-<div style="float:right; width: 15%">
-
-![](me.jpg)
+<div class="sidebar">
 
 # Objectives
 
@@ -48,24 +45,31 @@ Git, subversion, Emacs, Org mode, LaTeX
 
 ## Soft skills
 
-Teaching, mentoring, developing documentation
+Teaching, mentoring, developing
+documentation
+
+</div>
+
+<div class="left-of-sidebar">
 
 # Education
 
-## Ph.D. in Computer Science <span style="float:right"> McMaster University, 2015 - Present </span>
+## Ph.D. in Computer Science <span style="padding-left:3em; float:right"> McMaster University, 2015 - Present </span>
 
   - Mechanising models of computability theory.
   - 3<sup>rd</sup> place in 2019 Computing and Software poster
     competition.
-  - GPA: 11.75 on 12 point scale.
+  - GPA: 11.75 on 12 point
+scale.
 
-## M.Sc. in Computer Science <span style="float:right"> McMaster University, 2013 - 2015 </span>
+## M.Sc. in Computer Science <span style="padding-left:3em; float:right"> McMaster University, 2013 - 2015 </span>
 
   - Investigated results from classical computability theory in the
     context of computability over the real numbers.
-  - GPA: 11.75 on 12 point scale. Graduated with distinction.
+  - GPA: 11.75 on 12 point scale. Graduated with
+distinction.
 
-## B.A.Sc. in Computer Science <span style="float:right"> McMaster University, 2008 - 2013 </span>
+## B.A.Sc. in Computer Science <span style="padding-left:3em; float:right"> McMaster University, 2008 - 2013 </span>
 
   - Research projects:
       - Summer 2010: on (theoretical) models of concurrency with
@@ -73,39 +77,42 @@ Teaching, mentoring, developing documentation
       - Summer 2013: on mechanising mathematical knowledge with
         Dr. Jacques Carette.
   - GPA: 11.1 on 12 point scale. Graduated with distinction. On Dean's
-    Honour List in every year.
+    Honour List in every
+year.
 
 # Employment
 
-## Sessional faculty <span style="float:right"> McMaster University, 2013 - Dec 2019 </span>
+## Sessional faculty <span style="padding-left:3em; float:right"> McMaster University, 2013 - Dec 2019 </span>
 
   - 4 appointments for Computer Science 3MI3, “Principles of Programming
     Languages”.
   - Planned and prepared lecture materials and assignments/tests
     including both written and programming evaluations.
-  - Supervised teaching assistants.
+  - Supervised teaching
+assistants.
 
-## Teaching assistant <span style="float:right"> McMaster University, 2013 - Dec 2019 </span>
+## Teaching assistant <span style="padding-left:3em; float:right"> McMaster University, 2013 - Dec 2019 </span>
 
   - 13 appointments, primarily to courses on programming language theory
     and discrete mathematics.
   - Prepared and led tutorial sessions and office hours, marked student
     work.
-  - In some cases, appointed to supervise other teaching assistants.
+  - In some cases, appointed to supervise other teaching
+assistants.
 
-## Research assistant <span style="float:right"> McMaster University, Summers 2010 and 2012 </span>
+## Research assistant <span style="padding-left:3em; float:right"> McMaster University, Summers 2010 and 2012 </span>
 
   - Independently carried out research on topics selected by supervising
     professors.
 
-## Embedded Systems Test Dev, Intern <span style="float:right"> Blackberry, May 2011 - Aug 2012 </span>
+## Embedded Systems Test Dev, Intern <span style="padding-left:3em; float:right"> Blackberry, May 2011 - Aug 2012 </span>
 
   - Developed automated tests and testing systems for the GPS system of
     the BB10 operating system.
 
-html:</div>
+</div>
 
-<div style="clear:both"></div>
+<div style="clear:both">
 
 # Publications
 
@@ -115,7 +122,8 @@ html:</div>
     Jeffery](https://www.researchgate.net/profile/Jeffery_Zucker),
     [Notions of semicomputability in topological algebras over the
     reals](https://www.researchgate.net/publication/323301233),
-    Computability, vol. 8, no. 1, pp. 1-26, 2019
+    Computability, vol. 8, no. 1, pp. 1-26,
+2019
 
 # Awards
 
