@@ -11,37 +11,57 @@
 :END:
 
 This is the master document for my resumes, CVs, etc.
+It is constructable to present roughly the same
+in both PDF and HTML export, as well as looking decent
+in Github's rendering of markdown and Org.
 
-** Usage
+This is accomplished by sticking mostly to pure Org,
+with a good amount of LaTeX and HTML/CSS header setup
+and some small LaTeX and HTML snippets to control document flow.
+
+* User information                              :noexport:
 :PROPERTIES:
-:CUSTOM_ID: Usage
+:CUSTOM_ID: User-information
 :END:
 
-:TODO:
+We use these keywords in building the title table;
+see [[Title]].
 
-Make sure to set the keywords defined in settings!
+Make sure to set these if you are recreating this document,
+or only importing parts of it!
 
-* Settings                                      :noexport:
+Email and phone number should always be provided.
+#+Email: markparmstrong@gmail.com
+#+Phone: 289-689-8404
+
+You may have different additional contact information.
+#+Website: [[https://armkeh.github.io][~armkeh.github.io~]]
+#+Github: [[https://github.com/armkeh][~github.com/armkeh~]]
+#+Gitlab: [[https://gitlab.cas.mcmaster.ca/armstmp][~gitlab.cas.mcmaster.ca/armstmp~]]
+
+I choose to include an image in the footer of my HTML documents.
+Usually I make it part of the ~author~ keyword,
+but because that is used in the title here,
+I make a special keyword to store the HTML code for the image.
+#+HTML_footer_image: <img src="me.jpg" alt="Mark Armstrong" style="width:200px">
+
+* Org, LaTeX, HTML, CSS settings                :noexport:
 :PROPERTIES:
 :CUSTOM_ID: Settings
 :END:
 
-We manually enter the title, so do not put title, author, or date.
+** Org settings
+:PROPERTIES:
+:CUSTOM_ID: Org-settings
+:END:
+
+We manually enter a “title”, so do not put title, author, or date.
 #+Options: title:nil author:nil date:nil
 
 Also do not put in a table of contents or number sections.
 #+Options: toc:nil num:nil
 
-We use these keywords in building the title; make sure to set them
-when importing!
-#+Email: markparmstrong@gmail.com
-#+Phone: 289-689-8404
-#+Website: [[https://armkeh.github.io][~armkeh.github.io~]]
-#+Github: [[https://github.com/armkeh][~github.com/armkeh~]]
-#+Gitlab: [[https://gitlab.cas.mcmaster.ca/armstmp][~gitlab.cas.mcmaster.ca/armstmp~]]
-#+HTML_footer_image: <img src="me.jpg" alt="Mark Armstrong" style="width:200px">
-
-** LaTeX Org export settings
+*** LaTeX Org export settings
 :PROPERTIES:
 :CUSTOM_ID: LaTeX-Org-export-settings
 :END:
@@ -49,6 +69,7 @@ when importing!
 For ease of customisability, here we define
 a new ~org-latex-class~ which maps headings to
 our own custom commands, defined below.
+This means we avoid having to redefine the ~\(sub)section~ commands.
 #+begin_src emacs-lisp :exports results :results none :eval export
 (make-variable-buffer-local 'org-latex-hyperref-template)
 (add-to-list
@@ -61,258 +82,52 @@ our own custom commands, defined below.
 Résumés should not be deeply nested, so we only
 give two levels here. Lower levels would become lists.
 
-** “Global” LaTeX header settings
+** Common settings
 :PROPERTIES:
-:CUSTOM_ID: “Global”-LaTeX-header-settings
+:CUSTOM_ID: Shared-settings
 :END:
 
-More header settings may be included below, where they are relevant
-to the document. The ones here are “global” settings.
-
-*** Page layout
+*** Colours
 :PROPERTIES:
-:CUSTOM_ID: Page-layout
+:CUSTOM_ID: Colours
 :END:
 
-First, we'll use the ~resume~ class defined above.
-It's definition is added to ~org-latex-classes~ on export.
-#+LaTeX_class: resume
-#+LaTeX_class_options: [11pt]
-
-Don't show page numbers.
-#+LaTeX_header: \pagenumbering{gobble}
-
-We use ~geometry~ to decrease the margin size;
-the defaults for ~article~ are very large.
-Add ~showframe~ to the options to visualise the margins.
-#+LaTeX_header: \usepackage[margin=0.5in]{geometry}
-
-We don't define the margins directly here, because
-we will use different margins for different pages,
-to accomodate the sidebar.
-See [[Macros]] to see what sizes the margins are set to.
-
-*** Section headers
-:PROPERTIES:
-:CUSTOM_ID: Section-headers
-:END:
-
-We'll use ~tcolorbox~ to highlight the section and subsection headers
-with a background colour.
-#+LaTeX_header: \usepackage[most]{tcolorbox}
-
-Specifically, we want simple rectangles without coloured borders
-and with a customisable background colour.
-More options are included here from the source where I found this;
-it might be worth playing with later.
-#+LaTeX_header: \newtcolorbox{bgbox}[2][]{
-#+LaTeX_header:   width=\linewidth,
-# LaTeX_header:   frame code={}
-# LaTeX_header:   center title,
-#+LaTeX_header:   left=0pt,right=0pt,top=0pt,bottom=0pt, % No margins in the box
-#+LaTeX_header:   colback=#2,
-#+LaTeX_header:   colframe=#2, % Border on the box is same as background
-# LaTeX_header:   enlarge left by=0mm,
-# LaTeX_header:   boxsep=5pt,
-#+LaTeX_header:   arc=0pt,outer arc=0pt, % Don't round corners
-#+LaTeX_header:   }
-
-For section headers, define a slightly lighter grey,
-and put the header in a box with that background colour.
-#+LaTeX_header: \definecolor{lightgray}{gray}{0.8}
-#+LaTeX_header: \newcommand{\sectionhead}[1]{%
-#+LaTeX_header:   \begin{bgbox}{lightgray}%
-#+LaTeX_header:     {\Large #1}%
-#+LaTeX_header:   \end{bgbox}%
-#+LaTeX_header: }
-
-Subsection headers are similar, but an even lighter grey,
-and a smaller text size —smaller than normal,
-because these are often quite long.
-#+LaTeX_header: \definecolor{lightergray}{gray}{0.9}
-#+LaTeX_header: \newcommand{\subsectionhead}[1]{%
-#+LaTeX_header:   \begin{bgbox}{lightergray}%
-#+LaTeX_header:     {\small #1}%
-#+LaTeX_header:   \end{bgbox}%
-#+LaTeX_header: }
-
-*** Lists
-:PROPERTIES:
-:CUSTOM_ID: Lists
-:END:
-
-Remove the spacing around lists and between list items.
-#+LaTeX_header: \usepackage[shortlabels]{enumitem}
-#+LaTeX_header: \setlist{nosep}
-
-Redefine the bullets to nice unicode characters.
-The first one here is actually the default, but redefine it anyway.
-#+LaTeX_header: \renewcommand{\labelitemii}{•}
-#+LaTeX_header: \renewcommand{\labelitemii}{∘}
-
-*** Paragraphs
-:PROPERTIES:
-:CUSTOM_ID: Paragraphs
-:END:
-
-#+LaTeX_header: \setlength{\parindent}{0em}
-
-*** Hyperlinks
-:PROPERTIES:
-:CUSTOM_ID: Hyperlinks
-:END:
-
-Override the ~hypersetup~ settings for this file;
-I have inserted links, but don't want them coloured in the PDF.
-They'd be eyesores if printed.
-#+begin_src emacs-lisp :exports results :results none :eval export
-(make-variable-buffer-local 'org-latex-hyperref-template)
-(setq org-latex-hyperref-template
-  "\\hypersetup{
-colorlinks=false
-}\n")
-#+end_src
-
-** CSS
-:PROPERTIES:
-:CUSTOM_ID: CSS
-:END:
-
-For self-containedness, we'll just setup the styles inline here.
+In LaTeX, we need ~xcolor~ to give us ~definecolor~.
+#+LaTeX_header: \usepackage{xcolor}
+In the HTML, we should be in a ~style~ block
+so we can declare colour variables for the CSS.
 #+HTML_head: <style>
 
-*** Page layout
-:PROPERTIES:
-:CUSTOM_ID: Page-layout
-:END:
+I personally prefer to use gray's. Nice and printer friendly!
+But you are free to set whatever colours you wish.
 
-Note the sizing set here: 23% of the page for the sidebar,
-and 73% for the content to its left.
-This gives a small gap. Without that, the elements do tend to overlap
-at certain window sizes.
+First, in LaTeX. The ~HTML~ method lets us set the colour
+using a hex code.
+#+LaTeX_header: \definecolor{section}   {HTML}{CACACA}
+#+LaTeX_header: \definecolor{subsection}{HTML}{EAEAEA}
+#+LaTeX_header: \definecolor{sidebar}   {HTML}{FAFAFA}
 
-The sidebar does not look good if the window is too narrow,
-such as when the page is loaded on a phone.
-We can use media queries to set the CSS
-for the sidebar based on the window width.
-When the window is narrow, just treat it
-—and the content left of it—
-normally.
-#+HTML_head: .sidebar {}
-#+HTML_head: .left-of-sidebar {}
+Now in CSS.
+#+HTML_head: :root { --section:    #CACACA; }
+#+HTML_head: :root { --subsection: #EAEAEA; }
+#+HTML_head: :root { --sidebar:    #FAFAFA; }
 
-When we're in wide window, set up the sidebar.
-#+HTML_head: @media only screen and (min-width: 768px) {
-#+HTML_head:   .sidebar {
-#+HTML_head:     float: right;
-#+HTML_head:     width: 23%;
-#+HTML_head:     background-color: rgba(0.5,0.5,0.5,0.05);
-#+HTML_head:   }
-#+HTML_head:   .left-of-sidebar {
-#+HTML_head:     float: left;
-#+HTML_head:     width: 73%;
-#+HTML_head:   }
-#+HTML_head: }
+Note: I would extract the settings into a macro,
+but unfortunately Org macros don't expand in these settings. 🙁
 
-*** Section headers
-:PROPERTIES:
-:CUSTOM_ID: Section-headers
-:END:
-
-Sections are exported as ~h2~'s. Put them on a grey background,
-with sans-serif font, unbolded.
-Also put a little space on the left and right.
-#+HTML_head: h2 {
-#+HTML_head:   font-family: sans-serif;
-#+HTML_head:   font-weight: normal;
-#+HTML_head:   background-color: rgba(0.5,0.5,0.5,0.2);
-#+HTML_head:   padding-left: 0.5em;
-#+HTML_head:   padding-right: 0.5em;
-#+HTML_head:   width: 90%;
-#+HTML_head:   display: inline-block;
-#+HTML_head: }
-
-Subsections are similar; just a lighter grey.
-#+HTML_head: h3 {
-#+HTML_head:   font-family: sans-serif;
-#+HTML_head:   font-weight: normal;
-#+HTML_head:   background-color: rgba(0.5,0.5,0.5,0.1);
-#+HTML_head:   padding-left: 0.5em;
-#+HTML_head:   padding-right: 0.5em;
-#+HTML_head:   width: 90%;
-#+HTML_head:   display: inline-block;
-#+HTML_head: }
-
-*** The title (my name)
-:PROPERTIES:
-:CUSTOM_ID: The-title-(my-name)
-:END:
-
-The title is placed in a table, with the right column
-of the table being various contact information.
-
-In order to increase the fontsize of the title,
-without increasing the size of the row it is in,
-we set its ~line-height~ to 0, and set
-both ~white-space~ to ~nowrap~ and ~overflow~ to ~visible~ so that
-it is still displayed normally.
-
-As with the sidebar, a large title text can be problematic
-in small windows.
-So, we set the size conditionally.
-
-For small windows, only increase the size to 150%.
-#+HTML_head:   .the-title {
-#+HTML_head:     font-size: 1.5rem;
-#+HTML_head:     line-height: 0;
-#+HTML_head:     white-space: nowrap;
-#+HTML_head:     overflow: visible;
-#+HTML_head:   }
-
-In large windows, up it to 300%.
-#+HTML_head: @media only screen and (min-width: 768px) {
-#+HTML_head:   .the-title {
-#+HTML_head:     font-size: 3rem;
-#+HTML_head:   }
-#+HTML_head: }
-
-*** Footer
-:PROPERTIES:
-:CUSTOM_ID: Footer
-:END:
-
-End the style setup.
+Close the ~style~ block.
 #+HTML_head: </style>
 
-** HTML postamble
-:PROPERTIES:
-:CUSTOM_ID: HTML-postamble
-:END:
-
-#+Name: the-author
-{{{author}}}
-
-#+Name: the-image
-{{{keyword(HTML_footer_image)}}}
-
-#+begin_src emacs-lisp :results none :exports results :var author=the-author image=the-image
-(setq-local org-html-postamble-format
- `(("en"
-    ,(format
-     "<p class=\"author\">Author: %s</p>
-      <p class=\"author\">%s</p>
-      <p class=\"author\">Contact: %%e</p>
-      <p class=\"date\">Last updated: %%C</p>
-      <p class=\"creator\">Created using %%c</p>
-      <p class=\"validation\">%%v</p>" author image))))
-#+end_src
-
-* Macros                                        :noexport:
+*** Macros                                    :noexport:
 :PROPERTIES:
 :CUSTOM_ID: Macros
 :END:
 
-** Title (name) macros                         :noexport:
+These macros allow us to accomplish certain tasks inline
+simultaneously in HTML and in LaTeX,
+such as right alignment and fontification.
+
+**** Title (name) macros                     :noexport:
 :PROPERTIES:
 :CUSTOM_ID: Title-(name)-macros
 :END:
@@ -338,90 +153,360 @@ the title.
 Now, combine all those macros along with the ~author~ macro to create the title.
 #+Macro: resume-title {{{latexify-title({{{htmlize-title({{{author}}})}}})}}}
 
-** Horizontal filler, alignment
+**** Right alignment
 :PROPERTIES:
 :CUSTOM_ID: HOrizontal-fillers
 :END:
 
-This macro enforces a small amount of horizontal space;
-2 characters widths (~em~'s).
-#+Macro: space @@latex:\hspace{2em}@@@@html:<span style="width:2em"></span>@@
-
-These macros right align their content;
+This macro right aligns its content;
 in LaTeX, this is accomplished by ~hfill~'ing on the left,
-and in HTML, we use a right-aligned span
-#+Macro: begin-right @@latex:\hfill@@@@html:<span style="padding-left:3em; float:right">@@
-#+Macro: end-right @@html:</span>@@
+and in HTML, we use a right-aligned span.
+Just remember to escape any commas.
+#+Macro: right-align @@latex:\hfill @@@@html:<span style="padding-left:3em; float:right">@@$1@@html:</span>@@
 
-** LaTeX margin adjustments
-:PROPERTIES:
-:CUSTOM_ID: LaTeX-margin-adjustments
-:END:
-
-#+Macro: latex-margin-extend-right  @@latex:\newgeometry{left=\marginDefault,top=\marginDefault,bottom=\marginDefault,right=\marginDefault+\sidebarWidth+\sidebarPad}@@
-
-#+Macro: latex-margin-reset @@latex:\newgeometry{left=\marginDefault,top=\marginDefault,bottom=\marginDefault,right=\marginDefault}@@
-
-It may be useful to add a ~set~ macro, if you want the geometry set
-at the start. Since I start with the sidebar for now,
-it's unnecessary.
-
-** Table (foot)notes
+**** Scriptnotes
 :PROPERTIES:
 :CUSTOM_ID: Table-(foot)notes
 :END:
 
-#+Macro: tablenote @@html:<span style="font-size:0.5rem">@@@@latex:{\scriptsize@@$1@@latex:}@@@@html:</span>@@
+Use of footnotes is not ideal here, since they are placed at
+the bottom of the page/site. This macro instead makes a small note
+in place. Numbering is manual, though.
+
+#+Macro: scriptnote @@html:<span style="font-size:0.5rem">@@@@latex:{\scriptsize@@$1@@latex:}@@@@html:</span>@@
+
+*** LaTeX header
+:PROPERTIES:
+:CUSTOM_ID: “Global”-LaTeX-header-settings
+:END:
+
+**** Page layout
+:PROPERTIES:
+:CUSTOM_ID: Page-layout
+:END:
+
+First, we'll use the ~resume~ class defined in [[LaTeX Org export settings]].
+It's definition is added to ~org-latex-classes~ on export.
+#+LaTeX_class: resume
+#+LaTeX_class_options: [11pt]
+
+Don't show page numbers.
+#+LaTeX_header: \pagenumbering{gobble}
+
+We use ~geometry~ to decrease the margin size;
+the defaults for ~article~ are very large.
+Add ~showframe~ to the options to visualise the margins.
+#+LaTeX_header: \usepackage[margin=0.5in]{geometry}
+
+***** Columns
+:PROPERTIES:
+:CUSTOM_ID: Columns
+:END:
+
+I like a small column on the right of the first page
+to contain some point form information.
+We accomplish that by using the ~paracol~ package;
+an excellent package which supports exactly the settings
+I want for the sidebar.
+#+LaTeX_header: \usepackage{paracol}
+
+In particular, 
+
+**** Section headers
+:PROPERTIES:
+:CUSTOM_ID: Section-headers
+:END:
+
+We'll use ~tcolorbox~ to highlight the section and subsection headers
+with a background colour.
+#+LaTeX_header: \usepackage[most]{tcolorbox}
+
+Specifically, we want simple rectangles without coloured borders
+and with a customisable background colour.
+#+LaTeX_header: \newtcolorbox{bgbox}[2][]{
+The box should fill the whole horizontal area
+—the whole page or column.
+#+LaTeX_header:   width=\linewidth,
+Don't have any internal margins in the box.
+#+LaTeX_header:   left=0pt, right=0pt, top=0pt, bottom=0pt,
+Colour both the frame and its background the same.
+#+LaTeX_header:   colback=#2, colframe=#2,
+Don't round the corners.
+#+LaTeX_header:   arc=0pt,outer arc=0pt,
+#+LaTeX_header:   }
+
+Section headers appropriately use our ~section~ colour.
+Also, make the font large.
+#+LaTeX_header: \newcommand{\sectionhead}[1]{%
+#+LaTeX_header:   \begin{bgbox}{section}%
+#+LaTeX_header:     {\Large \textsf{#1}}%
+#+LaTeX_header:   \end{bgbox}%
+#+LaTeX_header: }
+
+Subsection headers are similar, but use a smaller font size
+—smaller than normal, because these are often quite long.
+#+LaTeX_header: \newcommand{\subsectionhead}[1]{%
+#+LaTeX_header:   \begin{bgbox}{subsection}%
+#+LaTeX_header:     {\small \textsf{#1}}%
+#+LaTeX_header:   \end{bgbox}%
+#+LaTeX_header: }
+
+**** Lists
+:PROPERTIES:
+:CUSTOM_ID: Lists
+:END:
+
+Remove the spacing around lists and between list items.
+#+LaTeX_header: \usepackage[shortlabels]{enumitem}
+#+LaTeX_header: \setlist{nosep}
+
+Redefine the bullets to nice unicode characters.
+The first one here is actually the default, but redefine it anyway.
+#+LaTeX_header: \renewcommand{\labelitemii}{•}
+#+LaTeX_header: \renewcommand{\labelitemii}{∘}
+
+**** Paragraphs
+:PROPERTIES:
+:CUSTOM_ID: Paragraphs
+:END:
+
+Don't indent paragraphs.
+#+LaTeX_header: \setlength{\parindent}{0em}
+
+**** Hyperlinks
+:PROPERTIES:
+:CUSTOM_ID: Hyperlinks
+:END:
+
+Override the ~hypersetup~ settings for this file;
+I have inserted links, but don't want them coloured in the PDF.
+They'd be eyesores if printed.
+#+begin_src emacs-lisp :exports results :results none :eval export
+(make-variable-buffer-local 'org-latex-hyperref-template)
+(setq org-latex-hyperref-template
+  "\\hypersetup{colorlinks=false}\n")
+#+end_src
+
+*** CSS
+:PROPERTIES:
+:CUSTOM_ID: CSS
+:END:
+
+**** Header
+:PROPERTIES:
+:CUSTOM_ID: Header
+:END:
+
+Start the style section of the HTML header.
+#+HTML_head: <style>
+
+**** Page layout
+:PROPERTIES:
+:CUSTOM_ID: Page-layout
+:END:
+
+As stated in the [[Columns]] portion of the LaTeX settings,
+I like a small column on the right of the first page
+to contain some point form information.
+We accomplish that by using ~float~'s in the HTML.
+
+Note the sizing set here: 23% of the page for the sidebar,
+and 73% for the content to its left.
+This gives a small gap. Without that, the elements tend to overlap
+at certain window sizes.
+
+The sidebar does not look good if the window is too narrow,
+such as when the page is loaded on a phone.
+We can use media queries to set the CSS
+for the sidebar based on the window width.
+When the window is narrow, just treat it
+—and the content left of it—
+normally.
+#+HTML_head: .sidebar {}
+#+HTML_head: .left-of-sidebar {}
+
+When we're in wide window, set up the sidebar.
+#+HTML_head: @media only screen and (min-width: 768px) {
+#+HTML_head:   .sidebar {
+#+HTML_head:     float: right;
+#+HTML_head:     width: 23%;
+#+HTML_head:     background-color: var(--sidebar);
+#+HTML_head:   }
+#+HTML_head:   .left-of-sidebar {
+#+HTML_head:     float: left;
+#+HTML_head:     width: 73%;
+#+HTML_head:   }
+#+HTML_head: }
+
+**** Section headers
+:PROPERTIES:
+:CUSTOM_ID: Section-headers
+:END:
+
+Sections are exported as ~h2~'s.
+with sans-serif font, unbolded.
+#+HTML_head: h2 {
+#+HTML_head:   font-family:      sans-serif;
+#+HTML_head:   font-weight:      normal;
+Use the ~--section~ colour we created above.
+#+HTML_head:   background-color: var(--section);
+Also put a little space on the left and right.
+#+HTML_head:   padding-left:     0.5em;
+#+HTML_head:   padding-right:    0.5em;
+Don't take up the whole width; they overlap other elements
+sometimes if we set it to 100%. 
+#+HTML_head:   width:            95%;
+Display as an inline block, so if a linebreak is necessary,
+the background colour is also applied to the newline.
+#+HTML_head:   display:          inline-block;
+#+HTML_head: }
+
+Subsections are similar, just using their own colour.
+#+HTML_head: h3 {
+#+HTML_head:   font-family:      sans-serif;
+#+HTML_head:   font-weight:      normal;
+#+HTML_head:   background-color: var(--subsection);
+#+HTML_head:   padding-left:     0.5em;
+#+HTML_head:   padding-right:    0.5em;
+#+HTML_head:   width:            90%;
+#+HTML_head:   display:          inline-block;
+#+HTML_head: }
+
+**** The title (my name)
+:PROPERTIES:
+:CUSTOM_ID: The-title-(my-name)
+:END:
+
+The title is placed in a table, with the right column
+of the table being various contact information.
+
+In order to increase the fontsize of the title,
+without increasing the size of the row it is in,
+we set its ~line-height~ to 0, and set
+both ~white-space~ to ~nowrap~ and ~overflow~ to ~visible~ so that
+it is still displayed normally.
+
+As with the sidebar, a large title text can be problematic
+in small windows. So, we set the size conditionally.
+
+For small windows, only increase the size to 150%.
+#+HTML_head:   .the-title {
+#+HTML_head:     font-size: 1.5rem;
+#+HTML_head:     line-height: 0;
+#+HTML_head:     white-space: nowrap;
+#+HTML_head:     overflow: visible;
+#+HTML_head:   }
+
+In large windows, up it to 300%.
+#+HTML_head: @media only screen and (min-width: 768px) {
+#+HTML_head:   .the-title {
+#+HTML_head:     font-size: 3rem;
+#+HTML_head:   }
+#+HTML_head: }
+
+**** Footer
+:PROPERTIES:
+:CUSTOM_ID: Footer
+:END:
+
+End the style section of the HTML header.
+#+HTML_head: </style>
+
+*** HTML postamble
+:PROPERTIES:
+:CUSTOM_ID: HTML-postamble
+:END:
+
+I add some details to the typical HTML postamble.
+In particular, my image, contact email, and the means
+by which the page was generated —Emacs and Org.
+
+#+Name: the-author
+{{{author}}}
+
+#+Name: the-image
+{{{keyword(HTML_footer_image)}}}
+
+#+begin_src emacs-lisp :results none :exports results :var author=the-author image=the-image
+(setq-local org-html-postamble-format
+ `(("en"
+    ,(format
+     "<p class=\"author\">Author: %s</p>
+      <p class=\"author\">%s</p>
+      <p class=\"author\">Contact: %%e</p>
+      <p class=\"date\">Last updated: %%C</p>
+      <p class=\"creator\">Created using %%c</p>
+      <p class=\"validation\">%%v</p>" author image))))
+#+end_src
 
 * Title                                         :ignore:
 :PROPERTIES:
 :CUSTOM_ID: Title
 :END:
 
-# Note: the alignment is done in the table, but repeated in the LaTeX attributes
-# in order to have the left column take up all remaining space.
+** Documentation                               :noexport:
+:PROPERTIES:
+:CUSTOM_ID: Documentation
+:END:
 
-# Note 2: Because the sidebar is included in the first page,
-# the table is widened to run past the margin by the sidebar's width and padding.
+The title is simply an Org table, with my name
+inserted large in the first column using the ~resume-title~ macro.
 
-#+attr_LaTeX: :environment tabularx :width \textwidth :align Xr|l
-#+attr_HTML: :frame void :width 100%
+Below my name is my title, and on the right
+is various contact information.
+
+For the LaTeX, we use the ~tabularx~ environment
+in order to better control table and column widths.
+
+For the HTML, we must specify ~:frame void~ or a frame is drawn,
+ruining the illusion that this is a carefully constructed
+title layout. 😀
+
+Note the use of Org table cookies for column alignments
+and groupings; there is a single vertical rule between
+the name of the contact information and the information itself.
+The alignment is repeated in the LaTeX attributes
+in order to have the left column take up all remaining space.
+
+** The title                                   :ignore:
+:PROPERTIES:
+:CUSTOM_ID: The-title
+:END:
+
+#+attr_LaTeX: :environment tabularx :width \textwidth :align Xr|l :font \sffamily
+#+attr_HTML: :frame void :width 100% :style font-family:sans
 | <l>                |    <r> | <l>                    |
 | /                  |      > |                        |
 |                    |  email | {{{email}}}            |
 | {{{resume-title}}} |  phone | {{{keyword(Phone)}}}   |
 | Ph.D. candidate    |    web | {{{keyword(Website)}}} |
 |                    | github | {{{keyword(Github)}}}  |
-# |                    | gitlab | {{{keyword(Gitlab)}}}  |
 
 * Sidebar header                                :ignore:
 :PROPERTIES:
 :CUSTOM_ID: Sidebar-header
 :END:
 
-#+LaTeX_header: \usepackage{paracol}
 #+LaTeX: \columnratio{0.7}
 #+LaTeX: \begin{sloppypar} % The smaller linewidth causes issues otherwise.
 #+LaTeX: \begin{paracol}{2}
-#+LaTeX_header: \definecolor{ghostgray}{gray}{0.975}   
-#+LaTeX:   \backgroundcolor{c[1]}{ghostgray}
+#+LaTeX:   \backgroundcolor{c[1]}{sidebar}
 #+LaTeX:   \switchcolumn % go to right column
 
 #+HTML: <div class="sidebar">
-
-# An alternative version without defining an environment
-# @@latex:\begin{wrapfigure}{r}{.25\textwidth}\begin{minipage}{.2\textwidth}@@
 
 * COMMENT Image                                 :ignore:
 :PROPERTIES:
 :CUSTOM_ID: Image
 :END:
 
-# I'm not certain it's advisable to include an image in my resume;
-# in particular, it would mean I should produce a “printer friendly”
-# version, and probably having two versions is an irritation.
-# Instead, I will place it in the HTML footer, since that is not
-# intended for printing.
+#+begin_comment
+I'm not certain it's advisable to include an image in my resume;
+in particular, it would mean I should produce a “printer friendly”
+version, and probably having two versions is an irritation.
+Instead, I will place it in the HTML footer, since that is not
+intended for printing.
+#+end_comment
 
 #+attr_HTML: :width 100%
 [[file:me.jpg]]
@@ -499,7 +584,7 @@ Teaching, mentoring, developing documentation
 :CUSTOM_ID: Education
 :END:
 
-** Ph.D. in Computer Science {{{begin-right}}} McMaster University, 2015 - Present {{{end-right}}}
+** Ph.D. in Computer Science {{{right-align(McMaster University\, 2015 - Present)}}}
 :PROPERTIES:
 :CUSTOM_ID: PhD-in-Computer-Science
 :END:
@@ -508,7 +593,7 @@ Teaching, mentoring, developing documentation
 - 3^{rd} place in 2019 Computing and Software poster competition.
 - GPA: 11.75 on 12 point scale.
 
-** M.Sc. in Computer Science {{{begin-right}}} McMaster University, 2013 - 2015 {{{end-right}}}
+** M.Sc. in Computer Science {{{right-align(McMaster University\, 2013 - 2015)}}}
 :PROPERTIES:
 :CUSTOM_ID: M.Sc. in-Computer-Science
 :END:
@@ -517,7 +602,7 @@ Teaching, mentoring, developing documentation
   in the context of computability over the real numbers.
 - GPA: 11.75 on 12 point scale. Graduated with distinction.
 
-** B.A.Sc. in Computer Science {{{begin-right}}} McMaster University, 2008 - 2013 {{{end-right}}}
+** B.A.Sc. in Computer Science {{{right-align(McMaster University\, 2008 - 2013)}}}
 :PROPERTIES:
 :CUSTOM_ID: B.A.Sc. in-Computer-Science
 :END:
@@ -533,7 +618,7 @@ Teaching, mentoring, developing documentation
 :CUSTOM_ID: Employment
 :END:
 
-** Sessional faculty {{{begin-right}}} McMaster University, 2013 - Dec 2019 {{{end-right}}}
+** Sessional faculty {{{right-align(McMaster University\, 2013 - Dec 2019)}}}
 :PROPERTIES:
 :CUSTOM_ID: Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}
 :END:
@@ -544,7 +629,7 @@ Teaching, mentoring, developing documentation
   both written and programming evaluations.
 - Supervised teaching assistants.
 
-** Teaching assistant {{{begin-right}}} McMaster University, 2013 - Dec 2019  {{{end-right}}}
+** Teaching assistant {{{right-align(McMaster University\, 2013 - Dec 2019)}}}
 :PROPERTIES:
 :CUSTOM_ID: Teaching-assistant-{{{begin-right}}}-McMaster-University,-2013---Dec-2019--{{{end-right}}}
 :END:
@@ -554,14 +639,14 @@ Teaching, mentoring, developing documentation
 - Prepared and led tutorial sessions and office hours, marked student work.
 - In some cases, appointed to supervise other teaching assistants.
 
-** Research assistant {{{begin-right}}} McMaster University, Summers 2010 and 2012 {{{end-right}}}
+** Research assistant {{{right-align(McMaster University\, Summers 2010 and 2012)}}}
 :PROPERTIES:
 :CUSTOM_ID: Research-assistant-{{{begin-right}}}-McMaster-University,-Summers-2010-and-2012-{{{end-right}}}
 :END:
 
 - Independently carried out research on topics selected by supervising professors.
 
-** Embedded Systems Test Dev, Intern {{{begin-right}}} Blackberry, May 2011 - Aug 2012 {{{end-right}}}
+** Embedded Systems Test Dev, Intern {{{right-align(Blackberry\, May 2011 - Aug 2012)}}}
 :PROPERTIES:
 :CUSTOM_ID: Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}
 :END:
@@ -615,7 +700,7 @@ Teaching, mentoring, developing documentation
 | NSERC Canadian Graduate Scholarship, Masters | 2014 - 2015 |   $17,500 |
 | Ontario Graduate Scholarship                 | 2013 - 2014 |   $15,000 |
 |----------------------------------------------+-------------+-----------|
-{{{tablenote(1. Included guaranteed teaching assistant employment income for those years.)}}}
+{{{scriptnote(1. Included guaranteed teaching assistant employment income for those years.)}}}
 
 ** Other
 :PROPERTIES:
@@ -653,13 +738,3 @@ Teaching, mentoring, developing documentation
 This document available in multiple formats from
 https://github.com/armkeh/resume/.
 
-* COMMENT Todos
-:PROPERTIES:
-:CUSTOM_ID: COMMENT-Todos
-:END:
-
-- Create macros for the regular and adjusted PDF margins.
-- Widen PDF title by the amount the margin is shrunk (using macro).
-- Investigate why list bullets are in the left margin in the PDF.
-- Detect if the screen is too narrow in the HTML version,
-  and redirect to the PDF?
