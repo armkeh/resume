@@ -175,12 +175,12 @@ in place. Numbering is manual, though.
 
 #+Macro: scriptnote @@html:<span style="font-size:0.5rem">@@@@latex:{\scriptsize@@$1@@latex:}@@@@html:</span>@@
 
-*** LaTeX header
+** LaTeX header
 :PROPERTIES:
 :CUSTOM_ID: “Global”-LaTeX-header-settings
 :END:
 
-**** Page layout
+*** Page layout
 :PROPERTIES:
 :CUSTOM_ID: Page-layout
 :END:
@@ -198,7 +198,7 @@ the defaults for ~article~ are very large.
 Add ~showframe~ to the options to visualise the margins.
 #+LaTeX_header: \usepackage[margin=0.5in]{geometry}
 
-***** Columns
+**** Columns
 :PROPERTIES:
 :CUSTOM_ID: Columns
 :END:
@@ -212,7 +212,7 @@ I want for the sidebar.
 
 In particular, 
 
-**** Section headers
+*** Section headers
 :PROPERTIES:
 :CUSTOM_ID: Section-headers
 :END:
@@ -251,7 +251,7 @@ Subsection headers are similar, but use a smaller font size
 #+LaTeX_header:   \end{bgbox}%
 #+LaTeX_header: }
 
-**** Lists
+*** Lists
 :PROPERTIES:
 :CUSTOM_ID: Lists
 :END:
@@ -265,7 +265,7 @@ The first one here is actually the default, but redefine it anyway.
 #+LaTeX_header: \renewcommand{\labelitemii}{•}
 #+LaTeX_header: \renewcommand{\labelitemii}{∘}
 
-**** Paragraphs
+*** Paragraphs
 :PROPERTIES:
 :CUSTOM_ID: Paragraphs
 :END:
@@ -273,7 +273,7 @@ The first one here is actually the default, but redefine it anyway.
 Don't indent paragraphs.
 #+LaTeX_header: \setlength{\parindent}{0em}
 
-**** Hyperlinks
+*** Hyperlinks
 :PROPERTIES:
 :CUSTOM_ID: Hyperlinks
 :END:
@@ -287,12 +287,12 @@ They'd be eyesores if printed.
   "\\hypersetup{colorlinks=false}\n")
 #+end_src
 
-*** CSS
+** CSS
 :PROPERTIES:
 :CUSTOM_ID: CSS
 :END:
 
-**** Header
+*** Header
 :PROPERTIES:
 :CUSTOM_ID: Header
 :END:
@@ -300,7 +300,7 @@ They'd be eyesores if printed.
 Start the style section of the HTML header.
 #+HTML_head: <style>
 
-**** Page layout
+*** Page layout
 :PROPERTIES:
 :CUSTOM_ID: Page-layout
 :END:
@@ -338,7 +338,7 @@ When we're in wide window, set up the sidebar.
 #+HTML_head:   }
 #+HTML_head: }
 
-**** Section headers
+*** Section headers
 :PROPERTIES:
 :CUSTOM_ID: Section-headers
 :END:
@@ -368,11 +368,11 @@ Subsections are similar, just using their own colour.
 #+HTML_head:   background-color: var(--subsection);
 #+HTML_head:   padding-left:     0.5em;
 #+HTML_head:   padding-right:    0.5em;
-#+HTML_head:   width:            90%;
+#+HTML_head:   width:            95%;
 #+HTML_head:   display:          inline-block;
 #+HTML_head: }
 
-**** The title (my name)
+*** The title (my name)
 :PROPERTIES:
 :CUSTOM_ID: The-title-(my-name)
 :END:
@@ -404,7 +404,7 @@ In large windows, up it to 300%.
 #+HTML_head:   }
 #+HTML_head: }
 
-**** Footer
+*** Footer
 :PROPERTIES:
 :CUSTOM_ID: Footer
 :END:
@@ -412,7 +412,7 @@ In large windows, up it to 300%.
 End the style section of the HTML header.
 #+HTML_head: </style>
 
-*** HTML postamble
+** HTML postamble
 :PROPERTIES:
 :CUSTOM_ID: HTML-postamble
 :END:

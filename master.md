@@ -1,9 +1,5 @@
 
 
-
-
-
-
 |                 |        |                                                  |
 | --------------- | ------ | ------------------------------------------------ |
 |                 | email  | markparmstrong@gmail.com                         |
@@ -54,7 +50,7 @@ documentation
 
 # Education
 
-## Ph.D. in Computer Science <span style="padding-left:3em; float:right"> McMaster University, 2015 - Present </span>
+## Ph.D. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2015 - Present</span>
 
   - Mechanising models of computability theory.
   - 3<sup>rd</sup> place in 2019 Computing and Software poster
@@ -62,14 +58,14 @@ documentation
   - GPA: 11.75 on 12 point
 scale.
 
-## M.Sc. in Computer Science <span style="padding-left:3em; float:right"> McMaster University, 2013 - 2015 </span>
+## M.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2013 - 2015</span>
 
   - Investigated results from classical computability theory in the
     context of computability over the real numbers.
   - GPA: 11.75 on 12 point scale. Graduated with
 distinction.
 
-## B.A.Sc. in Computer Science <span style="padding-left:3em; float:right"> McMaster University, 2008 - 2013 </span>
+## B.A.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2008 - 2013</span>
 
   - Research projects:
       - Summer 2010: on (theoretical) models of concurrency with
@@ -82,7 +78,7 @@ year.
 
 # Employment
 
-## Sessional faculty <span style="padding-left:3em; float:right"> McMaster University, 2013 - Dec 2019 </span>
+## Sessional faculty <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2019</span>
 
   - 4 appointments for Computer Science 3MI3, “Principles of Programming
     Languages”.
@@ -91,7 +87,7 @@ year.
   - Supervised teaching
 assistants.
 
-## Teaching assistant <span style="padding-left:3em; float:right"> McMaster University, 2013 - Dec 2019 </span>
+## Teaching assistant <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2019</span>
 
   - 13 appointments, primarily to courses on programming language theory
     and discrete mathematics.
@@ -100,12 +96,12 @@ assistants.
   - In some cases, appointed to supervise other teaching
 assistants.
 
-## Research assistant <span style="padding-left:3em; float:right"> McMaster University, Summers 2010 and 2012 </span>
+## Research assistant <span style="padding-left:3em; float:right">McMaster University, Summers 2010 and 2012</span>
 
   - Independently carried out research on topics selected by supervising
     professors.
 
-## Embedded Systems Test Dev, Intern <span style="padding-left:3em; float:right"> Blackberry, May 2011 - Aug 2012 </span>
+## Embedded Systems Test Dev, Intern <span style="padding-left:3em; float:right">Blackberry, May 2011 - Aug 2012</span>
 
   - Developed automated tests and testing systems for the GPS system of
     the BB10 operating system.
