@@ -11,10 +11,11 @@
 
 # Objectives
 
-Developing beautiful software projects, emphasising
+Employment in software development. In particular, I aim to develop
+software which exhibits
 
   - *beauty of purpose*,
-  - *correctness*,
+  - *correctness*, and
   - *generous documentation*.
 
 Learning new languages and design patterns.
@@ -33,11 +34,17 @@ projects.
     C, C++
 
   - Familiar  
-    Python, Ruby, Haskell
+    Python, Haskell, SML, Ruby, Prolog, Bash
+
+  - Learning  
+    Typescript
 
 ## Other software proficiencies
 
-Git, subversion, Emacs, Org mode, LaTeX
+  - Version control  
+    Git, subversion
+  - Tools  
+    Emacs, Org mode, LaTeX
 
 ## Soft skills
 

@@ -516,9 +516,10 @@ intended for printing.
 :CUSTOM_ID: Objectives
 :END:
 
-Developing beautiful software projects, emphasising
+Employment in software development.
+In particular, I aim to develop software which exhibits
 - /beauty of purpose/,
-- /correctness/,
+- /correctness/, and
 - /generous documentation/.
 
 Learning new languages and design patterns.
@@ -543,16 +544,22 @@ Gaining further experience with medium and large-scale development projects.
   C, C++
 
 - Familiar ::
-  Python, Ruby, Haskell
+  Python, Haskell, SML, Ruby, Prolog, Bash
+
+- Learning ::
+  Typescript
 
 ** Other software proficiencies
 :PROPERTIES:
 :CUSTOM_ID: Other-software
 :END:
 
-Git, subversion, 
-Emacs, Org mode,
-LaTeX
+- Version control ::
+  Git,
+  subversion
+- Tools ::
+  Emacs, Org mode,
+  LaTeX
 
 ** Soft skills
 :PROPERTIES:
