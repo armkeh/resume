@@ -1,0 +1,11 @@
+# Local backups
+*~
+*\#
+
+# Pre-Orgmode versions of my resume are preserved here.
+# They don't need to be backed up on Github or made public facing.
+deprecated/*
+
+# Actual application documents are to be kept private,
+# not back up on Github.
+applications/*
