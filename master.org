@@ -325,7 +325,7 @@ normally.
 #+HTML_head: .sidebar {}
 #+HTML_head: .left-of-sidebar {}
 
-When we're in wide window, set up the sidebar.
+When we're in a wide window, set up the sidebar.
 #+HTML_head: @media only screen and (min-width: 768px) {
 #+HTML_head:   .sidebar {
 #+HTML_head:     float: right;
@@ -558,6 +558,7 @@ Gaining further experience with medium and large-scale development projects.
   Git,
   subversion
 - Tools ::
+  Docker, LXD,
   Emacs, Org mode,
   LaTeX
 
