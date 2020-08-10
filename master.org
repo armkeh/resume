@@ -518,15 +518,18 @@ intended for printing.
 :CUSTOM_ID: Objectives
 :END:
 
-Employment in software development.
-In particular, I aim to develop software which exhibits
-- /beauty of purpose/,
-- /correctness/, and
-- /generous documentation/.
+- Gaining further skills related to
+  computer science and discrete mathmatics teaching.
 
-Learning new languages and design patterns.
+- Employment in software development.
+  In particular, I aim to develop software which exhibits
+  - /beauty of purpose/,
+  - /correctness/, and
+  - /generous documentation/.
 
-Gaining further experience with medium and large-scale development projects.
+- Learning new languages and design patterns.
+
+- Gaining further experience with medium and large-scale development projects.
 
 * Skills
 :PROPERTIES:
@@ -538,28 +541,28 @@ Gaining further experience with medium and large-scale development projects.
 :CUSTOM_ID: Programming
 :END:
 
-- Expert ::
+- *Expert*
   Agda,
   Emacs lisp
 
-- Experienced ::
+- *Experienced*
   C, C++
 
-- Familiar ::
+- *Familiar*
   Python, Haskell, SML, Ruby, Prolog, Bash
 
-- Learning ::
-  Typescript
+- *Learning*
+  Typescript, Javascript
 
 ** Other software proficiencies
 :PROPERTIES:
 :CUSTOM_ID: Other-software
 :END:
 
-- Version control ::
+- *Version control*
   Git,
   subversion
-- Tools ::
+- *Tools*
   Docker, LXD,
   Emacs, Org mode,
   LaTeX
@@ -569,7 +572,19 @@ Gaining further experience with medium and large-scale development projects.
 :CUSTOM_ID: Soft-skills
 :END:
 
-Teaching, mentoring, developing documentation
+- Mentoring
+- Literate programming
+
+** Teachables
+:PROPERTIES:
+:CUSTOM_ID: Teachables
+:END:
+
+- Principles of programming languages/programming language design
+- Discrete mathematics and logic
+- Theory of computation
+- Software specification and correctness
+- Functional programming
 
 * Sidebar footer                                :ignore:
 :PROPERTIES:
@@ -629,7 +644,7 @@ Teaching, mentoring, developing documentation
 :CUSTOM_ID: Employment
 :END:
 
-** Sessional faculty {{{right-align(McMaster University\, 2013 - Dec 2019)}}}
+** Sessional faculty {{{right-align(McMaster University\, 2013 - Present)}}}
 :PROPERTIES:
 :CUSTOM_ID: Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}
 :END:
@@ -662,10 +677,16 @@ Teaching, mentoring, developing documentation
 :CUSTOM_ID: Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}
 :END:
 
-
-
 - Developed automated tests and testing systems for
   the GPS system of the BB10 operating system.
+
+** COMMENT Summer camp counselor, volunteer {{{right-align(Church of the Nazarene Canada Central\, 2002 - 2008)}}}
+:PROPERTIES:
+:CUSTOM_ID: Summer-camp-counselor,-volunteer-{{{right-align(Church-of-the-Nazarene-Canada-Central\,-2002---2008)}}}
+:END:
+
+- Supervised children ages 8-12 in groups of roughly 10.
+- From 2006 onward, as a senior counselor, oversaw junior counselors.
 
 * Left of sidebar footer                        :ignore:
 :PROPERTIES:
@@ -736,9 +757,11 @@ Teaching, mentoring, developing documentation
 
 - Father of two.
 - Blog at [[https://armkeh.github.io]].
-- Occasional school trip volunteer at R.A. Riddell Elementary.
-- Church secretary, board member, music and youth leader
-  at Mountain Church of the Nazarene, 2007-2015.
+- Occasional school trip volunteer at R.A. Riddell Elementary
+  since 2016.
+- Church secretary, board member, music and youth leader,
+  and kids programming volunteer
+  at Hamilton Mountain Church of the Nazarene, 2007-2015.
 
 * Document footer                               :ignore:
 :PROPERTIES:
