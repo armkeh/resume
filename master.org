@@ -492,6 +492,8 @@ in order to have the left column take up all remaining space.
 #+LaTeX: \begin{paracol}{2}
 #+LaTeX:   \backgroundcolor{c[1]}{sidebar}
 #+LaTeX:   \switchcolumn % go to right column
+#+LaTeX:   \begin{raggedright}
+#+LaTeX:   \small
 
 #+HTML: <div class="sidebar">
 
@@ -574,6 +576,7 @@ Teaching, mentoring, developing documentation
 :CUSTOM_ID: Sidebar-footer
 :END:
 
+#+LaTeX:   \end{raggedright}
 #+LaTeX:   \switchcolumn % go to left column
 #+HTML: </div>
 
