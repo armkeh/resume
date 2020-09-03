@@ -1,4 +1,4 @@
-#+Title: Mark Armstrong Résumé
+#+Title: Mark Armstrong Resume
 #+Author: Mark Armstrong
 #+Description: Master document for my resume/CV.
 #+Description: Particular versions may import from this document
@@ -523,7 +523,7 @@ intended for printing.
 
 - Employment in software development.
   In particular, I aim to develop software which exhibits
-  - /beauty of purpose/,
+  - /functional design/,
   - /correctness/, and
   - /generous documentation/.
 
@@ -654,6 +654,8 @@ intended for printing.
 - Planned and prepared lecture materials and assignments/tests including
   both written and programming evaluations.
 - Supervised teaching assistants.
+- Current course contents can be viewed at
+  [[https://armkeh.github.io/principles-of-programming-languages/]]
 
 ** Teaching assistant {{{right-align(McMaster University\, 2013 - Dec 2019)}}}
 :PROPERTIES:
@@ -757,8 +759,13 @@ intended for printing.
 
 - Father of two.
 - Blog at [[https://armkeh.github.io]].
+- Participating in the McMaster Faculty of Engineering
+  Graduate Mentorship Progam, mentoring a new graduate student,
+  for the school year starting September 2020.
 - Occasional school trip volunteer at R.A. Riddell Elementary
   since 2016.
+- Represented McMaster Computing and Software
+  at the Ontario Universities Fair in 2015 and 2016.
 - Church secretary, board member, music and youth leader,
   and kids programming volunteer
   at Hamilton Mountain Church of the Nazarene, 2007-2015.

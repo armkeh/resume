@@ -11,45 +11,51 @@
 
 # Objectives
 
-Employment in software development. In particular, I aim to develop
-software which exhibits
+  - Gaining further skills related to computer science and discrete
+    mathmatics teaching.
 
-  - *beauty of purpose*,
-  - *correctness*, and
-  - *generous documentation*.
+  - Employment in software development. In particular, I aim to develop
+    software which exhibits
+    
+      - *functional design*,
+      - *correctness*, and
+      - *generous documentation*.
 
-Learning new languages and design patterns.
+  - Learning new languages and design patterns.
 
-Gaining further experience with medium and large-scale development
-projects.
+  - Gaining further experience with medium and large-scale development
+    projects.
 
 # Skills
 
 ## Programming
 
-  - Expert  
-    Agda, Emacs lisp
+  - **Expert** Agda, Emacs lisp
 
-  - Experienced  
-    C, C++
+  - **Experienced** C, C++
 
-  - Familiar  
-    Python, Haskell, SML, Ruby, Prolog, Bash
+  - **Familiar** Python, Haskell, SML, Ruby, Prolog, Bash
 
-  - Learning  
-    Typescript
+  - **Learning** Typescript, Javascript
 
 ## Other software proficiencies
 
-  - Version control  
-    Git, subversion
-  - Tools  
-    Emacs, Org mode, LaTeX
+  - **Version control** Git, subversion
+  - **Tools** Docker, LXD, Emacs, Org mode, LaTeX
 
 ## Soft skills
 
-Teaching, mentoring, developing
-documentation
+  - Mentoring
+  - Literate programming
+
+## Teachables
+
+  - Principles of programming languages/programming language design
+  - Discrete mathematics and logic
+  - Theory of computation
+  - Software specification and correctness
+  - Functional
+programming
 
 </div>
 
@@ -85,14 +91,15 @@ year.
 
 # Employment
 
-## Sessional faculty <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2019</span>
+## Sessional faculty <span style="padding-left:3em; float:right">McMaster University, 2013 - Present</span>
 
   - 4 appointments for Computer Science 3MI3, “Principles of Programming
     Languages”.
   - Planned and prepared lecture materials and assignments/tests
     including both written and programming evaluations.
-  - Supervised teaching
-assistants.
+  - Supervised teaching assistants.
+  - Current course contents can be viewed at
+    <https://armkeh.github.io/principles-of-programming-languages/>
 
 ## Teaching assistant <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2019</span>
 
@@ -158,9 +165,16 @@ assistants.
 
   - Father of two.
   - Blog at <https://armkeh.github.io>.
-  - Occasional school trip volunteer at R.A. Riddell Elementary.
-  - Church secretary, board member, music and youth leader at Mountain
-    Church of the Nazarene, 2007-2015.
+  - Participating in the McMaster Faculty of Engineering Graduate
+    Mentorship Progam, mentoring a new graduate student, for the school
+    year starting September 2020.
+  - Occasional school trip volunteer at R.A. Riddell Elementary since
+    2016.
+  - Represented McMaster Computing and Software at the Ontario
+    Universities Fair in 2015 and 2016.
+  - Church secretary, board member, music and youth leader, and kids
+    programming volunteer at Hamilton Mountain Church of the Nazarene,
+    2007-2015.
 
 This document available in multiple formats from
 <https://github.com/armkeh/resume/>.
