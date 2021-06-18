@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-09-03 Thu 16:56 -->
+<!-- 2021-06-18 Fri 02:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Mark Armstrong Resume</title>
@@ -43,7 +43,7 @@ to put things in the right order."
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -55,7 +55,7 @@ to put things in the right order."
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -245,51 +245,28 @@ font-size: 3rem;
 }
 }
 </style>
+<style>pre.src{background:#000000;color:white;} </style>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -336,7 +313,7 @@ for the JavaScript code in this tag.
 
 <div class="sidebar">
 
-<div id="outline-container-org71e88ed" class="outline-2">
+<div id="outline-container-Objectives" class="outline-2">
 <h2 id="Objectives">Objectives</h2>
 <div class="outline-text-2" id="text-Objectives">
 <ul class="org-ul">
@@ -358,12 +335,12 @@ In particular, I aim to develop software which exhibits
 </div>
 </div>
 
-<div id="outline-container-org84e6293" class="outline-2">
+<div id="outline-container-Hello-world" class="outline-2">
 <h2 id="Hello-world">Skills</h2>
 <div class="outline-text-2" id="text-Hello-world">
 </div>
 
-<div id="outline-container-org8b646bd" class="outline-3">
+<div id="outline-container-Programming" class="outline-3">
 <h3 id="Programming">Programming</h3>
 <div class="outline-text-3" id="text-Programming">
 <ul class="org-ul">
@@ -372,18 +349,21 @@ Agda,
 Emacs lisp</li>
 
 <li><b>Experienced</b>
-C, C++</li>
+C</li>
 
 <li><b>Familiar</b>
-Python, Haskell, SML, Ruby, Prolog, Bash</li>
+Elm, Purescript, Haskell, SML,
+Python, Ruby,
+Prolog,
+Bash</li>
 
 <li><b>Learning</b>
-Typescript, Javascript</li>
+Javascript, Scala</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org6cb41fd" class="outline-3">
+<div id="outline-container-Other-software" class="outline-3">
 <h3 id="Other-software">Other software proficiencies</h3>
 <div class="outline-text-3" id="text-Other-software">
 <ul class="org-ul">
@@ -398,17 +378,23 @@ LaTeX</li>
 </div>
 </div>
 
-<div id="outline-container-orgad3ebee" class="outline-3">
+<div id="outline-container-Soft-skills" class="outline-3">
 <h3 id="Soft-skills">Soft skills</h3>
 <div class="outline-text-3" id="text-Soft-skills">
 <ul class="org-ul">
 <li>Mentoring</li>
 <li>Literate programming</li>
+<li>Educated on supporting student mental health
+<ul class="org-ul">
+<li>McMaster
+<a href="https://github.com/armkeh/resume/blob/master/Professor%20Hippo%20on%20Campus%20Certificate%20--%20McMaster%20Student%20Mental%20Health%20Training.pdf">“Professor Hippo on Campus”</a>
+training completed</li>
+</ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org626c4ff" class="outline-3">
+<div id="outline-container-Teachables" class="outline-3">
 <h3 id="Teachables">Teachables</h3>
 <div class="outline-text-3" id="text-Teachables">
 <ul class="org-ul">
@@ -426,12 +412,12 @@ LaTeX</li>
 
 <div class="left-of-sidebar">
 
-<div id="outline-container-org4ade8cb" class="outline-2">
+<div id="outline-container-Education" class="outline-2">
 <h2 id="Education">Education</h2>
 <div class="outline-text-2" id="text-Education">
 </div>
 
-<div id="outline-container-org64097a6" class="outline-3">
+<div id="outline-container-PhD-in-Computer-Science" class="outline-3">
 <h3 id="PhD-in-Computer-Science">Ph.D. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2015 - Present</span></h3>
 <div class="outline-text-3" id="text-PhD-in-Computer-Science">
 <ul class="org-ul">
@@ -442,7 +428,7 @@ LaTeX</li>
 </div>
 </div>
 
-<div id="outline-container-org5ab2fdc" class="outline-3">
+<div id="outline-container-M.Sc. in-Computer-Science" class="outline-3">
 <h3 id="M.Sc. in-Computer-Science">M.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2013 - 2015</span></h3>
 <div class="outline-text-3" id="text-M.Sc. in-Computer-Science">
 <ul class="org-ul">
@@ -453,7 +439,7 @@ in the context of computability over the real numbers.</li>
 </div>
 </div>
 
-<div id="outline-container-org0bc6b37" class="outline-3">
+<div id="outline-container-B.A.Sc. in-Computer-Science" class="outline-3">
 <h3 id="B.A.Sc. in-Computer-Science">B.A.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2008 - 2013</span></h3>
 <div class="outline-text-3" id="text-B.A.Sc. in-Computer-Science">
 <ul class="org-ul">
@@ -469,12 +455,12 @@ On Dean's Honour List in every year.</li>
 </div>
 </div>
 
-<div id="outline-container-org6307182" class="outline-2">
+<div id="outline-container-Employment" class="outline-2">
 <h2 id="Employment">Employment</h2>
 <div class="outline-text-2" id="text-Employment">
 </div>
 
-<div id="outline-container-org592e4e4" class="outline-3">
+<div id="outline-container-Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}" class="outline-3">
 <h3 id="Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}">Sessional faculty <span style="padding-left:3em; float:right">McMaster University, 2013 - Present</span></h3>
 <div class="outline-text-3" id="text-Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}">
 <ul class="org-ul">
@@ -489,7 +475,7 @@ both written and programming evaluations.</li>
 </div>
 </div>
 
-<div id="outline-container-orgb65ec0c" class="outline-3">
+<div id="outline-container-Teaching-assistant-{{{begin-right}}}-McMaster-University,-2013---Dec-2019--{{{end-right}}}" class="outline-3">
 <h3 id="Teaching-assistant-{{{begin-right}}}-McMaster-University,-2013---Dec-2019--{{{end-right}}}">Teaching assistant <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2019</span></h3>
 <div class="outline-text-3" id="text-Teaching-assistant-{{{begin-right}}}-McMaster-University,-2013---Dec-2019--{{{end-right}}}">
 <ul class="org-ul">
@@ -501,7 +487,7 @@ and discrete mathematics.</li>
 </div>
 </div>
 
-<div id="outline-container-orgde3a101" class="outline-3">
+<div id="outline-container-Research-assistant-{{{begin-right}}}-McMaster-University,-Summers-2010-and-2012-{{{end-right}}}" class="outline-3">
 <h3 id="Research-assistant-{{{begin-right}}}-McMaster-University,-Summers-2010-and-2012-{{{end-right}}}">Research assistant <span style="padding-left:3em; float:right">McMaster University, Summers 2010 and 2012</span></h3>
 <div class="outline-text-3" id="text-Research-assistant-{{{begin-right}}}-McMaster-University,-Summers-2010-and-2012-{{{end-right}}}">
 <ul class="org-ul">
@@ -510,7 +496,7 @@ and discrete mathematics.</li>
 </div>
 </div>
 
-<div id="outline-container-orgda77437" class="outline-3">
+<div id="outline-container-Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}" class="outline-3">
 <h3 id="Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}">Embedded Systems Test Dev, Intern <span style="padding-left:3em; float:right">Blackberry, May 2011 - Aug 2012</span></h3>
 <div class="outline-text-3" id="text-Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}">
 <ul class="org-ul">
@@ -525,7 +511,7 @@ the GPS system of the BB10 operating system.</li>
 
 <div style="clear:both">
 
-<div id="outline-container-org92f8d2d" class="outline-2">
+<div id="outline-container-Publications" class="outline-2">
 <h2 id="Publications">Publications</h2>
 <div class="outline-text-2" id="text-Publications">
 <ul class="org-ul">
@@ -536,12 +522,12 @@ Computability, vol. 8, no. 1, pp. 1-26, 2019</li>
 </div>
 </div>
 
-<div id="outline-container-orgc56d87f" class="outline-2">
+<div id="outline-container-Awards" class="outline-2">
 <h2 id="Awards">Awards</h2>
 <div class="outline-text-2" id="text-Awards">
 </div>
 
-<div id="outline-container-org63bfbd5" class="outline-3">
+<div id="outline-container-Graduate-studies-scholarships-and-fellowships" class="outline-3">
 <h3 id="Graduate-studies-scholarships-and-fellowships">Graduate studies scholarships and fellowships</h3>
 <div class="outline-text-3" id="text-Graduate-studies-scholarships-and-fellowships">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -599,7 +585,7 @@ Computability, vol. 8, no. 1, pp. 1-26, 2019</li>
 </div>
 </div>
 
-<div id="outline-container-org0a4006d" class="outline-3">
+<div id="outline-container-Other" class="outline-3">
 <h3 id="Other">Other</h3>
 <div class="outline-text-3" id="text-Other">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -670,15 +656,12 @@ Computability, vol. 8, no. 1, pp. 1-26, 2019</li>
 </div>
 </div>
 
-<div id="outline-container-org6027587" class="outline-2">
+<div id="outline-container-Extracurricular" class="outline-2">
 <h2 id="Extracurricular">Extracurricular</h2>
 <div class="outline-text-2" id="text-Extracurricular">
 <ul class="org-ul">
 <li>Father of two.</li>
 <li>Blog at <a href="https://armkeh.github.io">https://armkeh.github.io</a>.</li>
-<li>Participating in the McMaster Faculty of Engineering
-Graduate Mentorship Progam, mentoring a new graduate student,
-for the school year starting September 2020.</li>
 <li>Occasional school trip volunteer at R.A. Riddell Elementary
 since 2016.</li>
 <li>Represented McMaster Computing and Software
@@ -701,9 +684,9 @@ This document available in multiple formats from
       <p class="author"><img src="me.jpg" alt="Mark Armstrong" style="width:200px">
 </p>
       <p class="author">Contact: <a href="mailto:markparmstrong@gmail.com">markparmstrong@gmail.com</a></p>
-      <p class="date">Last updated: 2020-09-03 Thu 16:56</p>
-      <p class="creator">Created using <a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.0.90 (<a href="https://orgmode.org">Org</a> mode 9.3.7)</p>
-      <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+      <p class="date">Last updated: 2021-06-18 Fri 02:26</p>
+      <p class="creator">Created using <a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.0.50 (<a href="https://orgmode.org">Org</a> mode 9.4.6)</p>
+      <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
