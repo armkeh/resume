@@ -518,22 +518,22 @@ intended for printing.
 :CUSTOM_ID: Objectives
 :END:
 
-- Gaining further skills related to
-  computer science and discrete mathmatics teaching.
-
 - Employment in software development.
-  In particular, I aim to develop software which exhibits
-  - /functional design/,
-  - /correctness/, and
-  - /generous documentation/.
+  In particular, I hope to find opportunities to develop software
+  with /generous documentation/ and
+  which is inherently /correct/ through careful design.
 
-- Learning new languages and design patterns.
+- Learning new languages and design patterns,
+  and furthering my experience with the languages I do know.
 
 - Gaining further experience with medium and large-scale development projects.
 
+- Gaining further skills relevant to
+  computer science and discrete mathmatics teaching.
+
 * Skills
 :PROPERTIES:
-:CUSTOM_ID: Hello-world
+:CUSTOM_ID: Skills
 :END:
 
 ** Programming
@@ -549,13 +549,13 @@ intended for printing.
   C
 
 - *Familiar*
-  Elm, Purescript, Haskell, SML,
+  Elm, Haskell, SML,
   Python, Ruby,
   Prolog,
   Bash
 
 - *Learning*
-  Javascript, Scala
+  Javascript, Scala, Purescript
 
 ** Other software proficiencies
 :PROPERTIES:
@@ -575,7 +575,7 @@ intended for printing.
 :CUSTOM_ID: Soft-skills
 :END:
 
-- Mentoring
+- Teaching and mentoring
 - Literate programming
 - Educated on supporting student mental health
   - McMaster
@@ -588,7 +588,7 @@ intended for printing.
 :END:
 
 - Principles of programming languages/programming language design
-- Discrete mathematics and logic
+- Discrete math and logic
 - Theory of computation
 - Software specification and correctness
 - Functional programming
@@ -622,8 +622,8 @@ intended for printing.
 :CUSTOM_ID: PhD-in-Computer-Science
 :END:
 
-- Mechanising models of computability theory.
-- 3^{rd} place in 2019 Computing and Software poster competition.
+- Mechanising models of computability theory using automated proof assistants.
+- Placed 3^{rd} in the 2019 McMaster Computing and Software poster competition.
 - GPA: 11.75 on 12 point scale.
 
 ** M.Sc. in Computer Science {{{right-align(McMaster University\, 2013 - 2015)}}}
@@ -651,12 +651,12 @@ intended for printing.
 :CUSTOM_ID: Employment
 :END:
 
-** Sessional faculty {{{right-align(McMaster University\, 2013 - Present)}}}
+** Sessional faculty {{{right-align(McMaster University\, 2013 - Dec 2020)}}}
 :PROPERTIES:
 :CUSTOM_ID: Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}
 :END:
 
-- 4 appointments for Computer Science 3MI3,
+- 5 appointments for Computer Science 3MI3,
   “Principles of Programming Languages”.
 - Planned and prepared lecture materials and assignments/tests including
   both written and programming evaluations.
@@ -664,15 +664,36 @@ intended for printing.
 - Current course contents can be viewed at
   [[https://armkeh.github.io/principles-of-programming-languages/]]
 
-** Teaching assistant {{{right-align(McMaster University\, 2013 - Dec 2019)}}}
+** Teaching assistant {{{right-align(McMaster University\, 2013 - Dec 2020)}}}
 :PROPERTIES:
 :CUSTOM_ID: Teaching-assistant-{{{begin-right}}}-McMaster-University,-2013---Dec-2019--{{{end-right}}}
 :END:
 
-- 13 appointments, primarily to courses on programming language theory
+- 15 appointments, primarily to courses on programming language theory
   and discrete mathematics.
 - Prepared and led tutorial sessions and office hours, marked student work.
 - In some cases, appointed to supervise other teaching assistants.
+
+*** COMMENT Appointment counter
+:PROPERTIES:
+:CUSTOM_ID: org-anchor-COMMENT-Appointment-counter^1
+:END:
+
+- W 13/14: 3mi3
+- F 14/15: 701
+- W 14/15: 3mi3
+- F 15/16: 3mi3
+- W 15/16: 2fa3
+- F 16/17: 
+- W 16/17: 2fa3, 3tc3
+- F 17/18: 3mi3
+- W 17/18: 2fa3
+- F 18/19: 2dm3
+- W 18/19: 3ea3
+- F 19/20: 2dm3, 4th3
+- W 19/20: 
+- F 20/21: 4th3
+- W 20/21: 3ac3 
 
 ** Research assistant {{{right-align(McMaster University\, Summers 2010 and 2012)}}}
 :PROPERTIES:
