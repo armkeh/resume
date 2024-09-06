@@ -17,3 +17,6 @@ applications/*
 *.fls
 *.log
 *.out
+
+# For this repo, we're also not interested in the raw LaTeX, only the finished product
+*.tex
