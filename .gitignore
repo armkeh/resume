@@ -9,3 +9,11 @@ deprecated/*
 # Actual application documents are to be kept private,
 # not back up on Github.
 applications/*
+
+# LaTeX artifacts
+*.aux
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.out
