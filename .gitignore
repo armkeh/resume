@@ -10,6 +10,10 @@ deprecated/*
 # not back up on Github.
 applications/*
 
+# Other files not for backup (such as family member's resumes which they may not want visible here)
+# can be placed in this hidden directory.
+private/*
+
 # LaTeX artifacts
 *.aux
 *.dvi
