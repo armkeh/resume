@@ -542,20 +542,18 @@ intended for printing.
 :END:
 
 - *Expert*
+  Go,
   Agda,
   Emacs lisp
 
 - *Experienced*
-  C
+  C,
+  Python,
+  Shell script
 
 - *Familiar*
   Elm, Haskell, SML,
-  Python, Ruby,
-  Prolog,
-  Bash
-
-- *Learning*
-  Javascript, Scala, Purescript
+  Ruby, Prolog, Scala
 
 ** Other software proficiencies
 :PROPERTIES:
@@ -624,8 +622,8 @@ intended for printing.
 :CUSTOM_ID: PhD-in-Computer-Science
 :END:
 
-- Mechanising models of computability theory using automated proof assistants.
-- Placed 3^{rd} in the 2019 McMaster Computing and Software poster competition.
+- Mechanising models of computability using automated proof assistants.
+- 3^{rd} place in 2019 McMaster Computing and Software poster competition.
 - GPA: 11.75 on 12 point scale.
 
 ** M.Sc. in Computer Science {{{right-align(McMaster University\, 2013 - 2015)}}}
@@ -633,8 +631,7 @@ intended for printing.
 :CUSTOM_ID: M.Sc. in-Computer-Science
 :END:
 
-- Investigated results from classical computability theory
-  in the context of computability over the real numbers.
+- Investigated classical computability results in context of computability over real numbers.
 - GPA: 11.75 on 12 point scale. Graduated with distinction.
 
 ** B.A.Sc. in Computer Science {{{right-align(McMaster University\, 2008 - 2013)}}}
@@ -643,15 +640,21 @@ intended for printing.
 :END:
 
 - Research projects:
-  - Summer 2010: on (theoretical) models of concurrency with Dr. Ryszard Janicki.
-  - Summer 2013: on mechanising mathematical knowledge with Dr. Jacques Carette.
+  - Summer 2010: on (theoretical) models of concurrency.
+  - Summer 2013: on mechanising mathematical knowledge.
 - GPA: 11.1 on 12 point scale. Graduated with distinction.
-  On Dean's Honour List in every year.
 
 * Employment
 :PROPERTIES:
 :CUSTOM_ID: Employment
 :END:
+
+** COMMENT Software Engineer {{{right-align(Index Exchange\, September 2021 - September 2024)}}}
+:PROPERTIES:
+:CUSTOM_ID: org-anchor-COMMENT-Software-Engineer-{{{right-align(Index-Exchange\,-September-2021---September-2024)}}}^1
+:END:
+
+...
 
 ** Sessional faculty {{{right-align(McMaster University\, 2013 - Dec 2020)}}}
 :PROPERTIES:
