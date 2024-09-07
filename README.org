@@ -6,9 +6,9 @@ Welcome to my résumé/CV repository.
 
 Through the use Org mode and its ability to export to many formats,
 I offer several ways to view this document: 
-- Printer-friendly [[https://github.com/armkeh/resume/raw/master/master.pdf][PDF]].
+- Printer-friendly [[https://github.com/armkeh/resume/raw/master/main.pdf][PDF]].
 - Screen-friendly [[https://armkeh.github.io/resume][HTML]].
-- Rendered markdown on [[https://github.com/armkeh/resume/blob/master/master.md][Github]].
-- Rendered Org code on [[https://github.com/armkeh/resume/blob/master/master.md][Github]].
+- Rendered markdown on [[https://github.com/armkeh/resume/blob/master/main.md][Github]].
+- Rendered Org code on [[https://github.com/armkeh/resume/blob/master/main.md][Github]].
   - The raw Org code contains source code which is hidden in the produced documents,
     along with documentation on how the styling of the documents is produced.
