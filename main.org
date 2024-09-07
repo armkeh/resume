@@ -479,7 +479,7 @@ in order to have the left column take up all remaining space.
 | /                  |      > |                        |
 |                    |  email | {{{email}}}            |
 | {{{resume-title}}} |  phone | {{{keyword(Phone)}}}   |
-| Ph.D. candidate    |    web | {{{keyword(Website)}}} |
+| Software Engineer  |    web | {{{keyword(Website)}}} |
 |                    | github | {{{keyword(Github)}}}  |
 
 * Sidebar header                                :ignore:
@@ -612,38 +612,6 @@ intended for printing.
 
 #+HTML: <div class="left-of-sidebar">
 
-* Education
-:PROPERTIES:
-:CUSTOM_ID: Education
-:END:
-
-** Ph.D. in Computer Science {{{right-align(McMaster University\, 2015 - Present)}}}
-:PROPERTIES:
-:CUSTOM_ID: PhD-in-Computer-Science
-:END:
-
-- Mechanising models of computability using automated proof assistants.
-- 3^{rd} place in 2019 McMaster Computing and Software poster competition.
-- GPA: 11.75 on 12 point scale.
-
-** M.Sc. in Computer Science {{{right-align(McMaster University\, 2013 - 2015)}}}
-:PROPERTIES:
-:CUSTOM_ID: M.Sc. in-Computer-Science
-:END:
-
-- Investigated classical computability results in context of computability over real numbers.
-- GPA: 11.75 on 12 point scale. Graduated with distinction.
-
-** B.A.Sc. in Computer Science {{{right-align(McMaster University\, 2008 - 2013)}}}
-:PROPERTIES:
-:CUSTOM_ID: B.A.Sc. in-Computer-Science
-:END:
-
-- Research projects:
-  - Summer 2010: on (theoretical) models of concurrency.
-  - Summer 2013: on mechanising mathematical knowledge.
-- GPA: 11.1 on 12 point scale. Graduated with distinction.
-
 * Employment
 :PROPERTIES:
 :CUSTOM_ID: Employment
@@ -722,6 +690,38 @@ intended for printing.
 
 - Supervised children ages 8-12 in groups of roughly 10.
 - From 2006 onward, as a senior counselor, oversaw junior counselors.
+
+* Education
+:PROPERTIES:
+:CUSTOM_ID: Education
+:END:
+
+** Ph.D. in Computer Science {{{right-align(McMaster University\, 2015 - Present)}}}
+:PROPERTIES:
+:CUSTOM_ID: PhD-in-Computer-Science
+:END:
+
+- Mechanising models of computability using automated proof assistants.
+- 3^{rd} place in 2019 McMaster Computing and Software poster competition.
+- GPA: 11.75 on 12 point scale.
+
+** M.Sc. in Computer Science {{{right-align(McMaster University\, 2013 - 2015)}}}
+:PROPERTIES:
+:CUSTOM_ID: M.Sc. in-Computer-Science
+:END:
+
+- Investigated classical computability results in context of computability over real numbers.
+- GPA: 11.75 on 12 point scale. Graduated with distinction.
+
+** B.A.Sc. in Computer Science {{{right-align(McMaster University\, 2008 - 2013)}}}
+:PROPERTIES:
+:CUSTOM_ID: B.A.Sc. in-Computer-Science
+:END:
+
+- Research projects:
+  - Summer 2010: on (theoretical) models of concurrency.
+  - Summer 2013: on mechanising mathematical knowledge.
+- GPA: 11.1 on 12 point scale. Graduated with distinction.
 
 * Left of sidebar footer                        :ignore:
 :PROPERTIES:

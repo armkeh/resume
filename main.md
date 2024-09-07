@@ -11,7 +11,7 @@ header-includes:
 |----------------------------------------------|--------|--------------------------------------------------|
 |                                              | email  | markparmstrong@gmail.com                         |
 | <div class=the-title>Mark Armstrong </div>   | phone  | 289-689-8404                                     |
-| Ph.D. candidate                              | web    | [`armkeh.github.io`](https://armkeh.github.io)   |
+| Software Engineer                            | web    | [`armkeh.github.io`](https://armkeh.github.io)   |
 |                                              | github | [`github.com/armkeh`](https://github.com/armkeh) |
 
 <div class="sidebar">
@@ -67,28 +67,6 @@ header-includes:
 </div>
 <div class="left-of-sidebar">
 
-# Education
-
-## Ph.D. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2015 - Present</span>
-
-- Mechanising models of computability using automated proof assistants.
-- 3<sup>rd</sup> place in 2019 McMaster Computing and Software poster
-  competition.
-- GPA: 11.75 on 12 point scale.
-
-## M.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2013 - 2015</span>
-
-- Investigated classical computability results in context of
-  computability over real numbers.
-- GPA: 11.75 on 12 point scale. Graduated with distinction.
-
-## B.A.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2008 - 2013</span>
-
-- Research projects:
-  - Summer 2010: on (theoretical) models of concurrency.
-  - Summer 2013: on mechanising mathematical knowledge.
-- GPA: 11.1 on 12 point scale. Graduated with distinction.
-
 # Employment
 
 ## Sessional faculty <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2020</span>
@@ -118,6 +96,28 @@ header-includes:
 
 - Developed automated tests and testing systems for the GPS system of
   the BB10 operating system.
+
+# Education
+
+## Ph.D. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2015 - Present</span>
+
+- Mechanising models of computability using automated proof assistants.
+- 3<sup>rd</sup> place in 2019 McMaster Computing and Software poster
+  competition.
+- GPA: 11.75 on 12 point scale.
+
+## M.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2013 - 2015</span>
+
+- Investigated classical computability results in context of
+  computability over real numbers.
+- GPA: 11.75 on 12 point scale. Graduated with distinction.
+
+## B.A.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2008 - 2013</span>
+
+- Research projects:
+  - Summer 2010: on (theoretical) models of concurrency.
+  - Summer 2013: on mechanising mathematical knowledge.
+- GPA: 11.1 on 12 point scale. Graduated with distinction.
 
 </div>
 <div style="clear:both">
