@@ -1,6 +1,6 @@
 #+Title: Mark Armstrong Resume
 #+Author: Mark Armstrong
-#+Description: Master document for my resume/CV.
+#+Description: Main document for my resume/CV.
 #+Description: Particular versions may import from this document
 #+Description: to put things in the right order.
 #+LaTeX_header: \usepackage{unicode}
@@ -10,7 +10,7 @@
 :CUSTOM_ID: Introduction
 :END:
 
-This is the master document for my resumes, CVs, etc.
+This is the main document for my resumes, CVs, etc.
 It is constructable to present roughly the same
 in both PDF and HTML export, as well as looking decent
 in Github's rendering of markdown and Org.
@@ -565,8 +565,10 @@ intended for printing.
 - *Version control*
   Git,
   subversion
+
 - *Tools*
   Docker, LXD,
+  Kubernetes, Helm,
   Emacs, Org mode,
   LaTeX
 
