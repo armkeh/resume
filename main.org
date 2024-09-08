@@ -615,12 +615,14 @@ intended for printing.
 :CUSTOM_ID: Employment
 :END:
 
-** COMMENT Software Engineer {{{right-align(Index Exchange\, September 2021 - September 2024)}}}
+** Software Engineer {{{right-align(Index Exchange\, September 2021 - September 2024)}}}
 :PROPERTIES:
-:CUSTOM_ID: org-anchor-COMMENT-Software-Engineer-{{{right-align(Index-Exchange\,-September-2021---September-2024)}}}^1
+:CUSTOM_ID: org-anchor-Software-Engineer-{{{right-align(Index-Exchange\,-September-2021---September-2024)}}}^1
 :END:
 
-...
+- Worked on the core application API team, developing backend APIs in Go.
+ - Incorporated technologies including Ansible and Redis.
+- Practiced DevOps engineering using Docker, Kubernetes, Helm, GitLab CI/CD and ArgoCD.
 
 ** Sessional faculty {{{right-align(McMaster University\, 2013 - Dec 2020)}}}
 :PROPERTIES:

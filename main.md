@@ -67,6 +67,14 @@ header-includes:
 
 # Employment
 
+## Software Engineer <span style="padding-left:3em; float:right">Index Exchange, September 2021 - September 2024</span>
+
+- Worked on the core application API team, developing backend APIs in
+  Go.
+  - Incorporated technologies including Ansible and Redis.
+- Practiced DevOps engineering using Docker, Kubernetes, Helm, GitLab
+  CI/CD and ArgoCD.
+
 ## Sessional faculty <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2020</span>
 
 - 5 appointments for Computer Science 3MI3, “Principles of Programming
