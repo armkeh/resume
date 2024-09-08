@@ -158,11 +158,10 @@ employment income for those years.</span>
 # Extracurricular
 
 - Father of two.
-- Blog at <https://armkeh.github.io>.
-- Occasional school trip volunteer at R.A. Riddell Elementary since
-  2016.
+
 - Represented McMaster Computing and Software at the Ontario
   Universities Fair in 2015 and 2016.
+
 - Church secretary, board member, music and youth leader, and kids
   programming volunteer at Hamilton Mountain Church of the Nazarene,
   2007-2015.
