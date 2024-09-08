@@ -788,7 +788,9 @@ intended for printing.
 :CUSTOM_ID: Extracurricular
 :END:
 
-- Father of two.
+- Maintaining my setup/configs for Emacs and other tools (https://github.com/armkeh/dotfiles),
+  to build a collection of well-documented tips and tricks.
+- Hiking locally.
 # - Blog at [[https://armkeh.github.io]].
 # - Occasional school trip volunteer at R.A. Riddell Elementary
 #   since 2016.
