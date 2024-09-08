@@ -518,18 +518,16 @@ intended for printing.
 :CUSTOM_ID: Objectives
 :END:
 
-- Employment in software development.
-  In particular, I hope to find opportunities to develop software
-  with /generous documentation/ and
-  which is inherently /correct/ through careful design.
+- Putting my backend, DevOps experience to use
+  building interesting, meaningful software.
 
-- Learning new languages and design patterns,
-  and furthering my experience with the languages I do know.
+- Working with excellent people,
+  in a culture fostering learning, teaching and growth.
 
-- Gaining further experience with medium and large-scale development projects.
+- Learn new languages, tools, and patterns.
 
-- Gaining further skills relevant to
-  computer science and discrete mathmatics teaching.
+- Take opportunities, either professional or personal,
+  to contribute back to open source projects.
 
 * Skills
 :PROPERTIES:
