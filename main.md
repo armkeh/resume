@@ -11,7 +11,7 @@ header-includes:
 |----------------------------------------------|--------|--------------------------------------------------|
 |                                              | email  | markparmstrong@gmail.com                         |
 | <div class=the-title>Mark Armstrong </div>   | phone  | 289-689-8404                                     |
-| Software Engineer                            | web    | [`armkeh.github.io`](https://armkeh.github.io)   |
+| Software Engineer, M.Sc. Computer Science    | web    | [`armkeh.github.io`](https://armkeh.github.io)   |
 |                                              | github | [`github.com/armkeh`](https://github.com/armkeh) |
 
 <div class="sidebar">
@@ -99,8 +99,9 @@ header-includes:
 
 # Education
 
-## Ph.D. in Computer Science <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2015 - 2022</span>
+## Ph.D. in Computer Science (inc) <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2015 - 2022</span>
 
+- Coursework and comprehensive exams completed. Thesis not completed.
 - Mechanising models of computability using automated proof assistants.
 - 3<sup>rd</sup> place in 2019 McMaster Computing and Software poster
   competition.

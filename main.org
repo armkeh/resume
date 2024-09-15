@@ -478,12 +478,12 @@ in order to have the left column take up all remaining space.
 
 #+attr_LaTeX: :environment tabularx :width \textwidth :align Xr|l :font \sffamily
 #+attr_HTML: :frame void :width 100% :style font-family:sans
-| <l>                |    <r> | <l>                    |
-| /                  |      > |                        |
-|                    |  email | {{{email}}}            |
-| {{{resume-title}}} |  phone | {{{keyword(Phone)}}}   |
-| Software Engineer  |    web | {{{keyword(Website)}}} |
-|                    | github | {{{keyword(Github)}}}  |
+| <l>                                       |    <r> | <l>                    |
+| /                                         |      > |                        |
+|                                           |  email | {{{email}}}            |
+| {{{resume-title}}}                        |  phone | {{{keyword(Phone)}}}   |
+| Software Engineer, M.Sc. Computer Science |    web | {{{keyword(Website)}}} |
+|                                           | github | {{{keyword(Github)}}}  |
 
 * Sidebar header                                :ignore:
 :PROPERTIES:
@@ -695,11 +695,12 @@ intended for printing.
 :CUSTOM_ID: Education
 :END:
 
-** Ph.D. in Computer Science {{{right-align(McMaster University\, Hamilton ON\, 2015 - 2022)}}}
+** Ph.D. in Computer Science (inc) {{{right-align(McMaster University\, Hamilton ON\, 2015 - 2022)}}}
 :PROPERTIES:
 :CUSTOM_ID: PhD-in-Computer-Science
 :END:
 
+- Coursework and comprehensive exams completed. Thesis not completed.
 - Mechanising models of computability using automated proof assistants.
 - 3^{rd} place in 2019 McMaster Computing and Software poster competition.
 - GPA: 11.75 on 12 point scale.
