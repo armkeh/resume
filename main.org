@@ -618,16 +618,16 @@ intended for printing.
 :CUSTOM_ID: Employment
 :END:
 
-** Software Engineer {{{right-align(Index Exchange\, September 2021 - September 2024)}}}
+** Software Engineer {{{right-align(Index Exchange\, Toronto ON\, Sept 2021 - Sept 2024)}}}
 :PROPERTIES:
-:CUSTOM_ID: org-anchor-Software-Engineer-{{{right-align(Index-Exchange\,-September-2021---September-2024)}}}^1
+:CUSTOM_ID: org-anchor-Software-Engineer-{{{right-align(Index-Exchange\,-Toronto-ON\,-Sept-2021---Sept-2024)}}}^1
 :END:
 
 - Worked on the core application API team, developing APIs in Go.
  - Incorporated technologies including Ansible and Redis.
 - Practiced DevOps using Docker, Kubernetes, Helm, GitLab CI/CD and ArgoCD.
 
-** Sessional faculty {{{right-align(McMaster University\, 2013 - Dec 2020)}}}
+** Sessional faculty {{{right-align(McMaster University\, Hamilton ON\, 2013 - Dec 2020)}}}
 :PROPERTIES:
 :CUSTOM_ID: Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}
 :END:
@@ -637,7 +637,7 @@ intended for printing.
   both written and programming evaluations.
 - Supervised teaching assistants.
 
-** Teaching assistant {{{right-align(McMaster University\, 2013 - Dec 2020)}}}
+** Teaching assistant {{{right-align(McMaster University\, Hamilton ON\, 2013 - Dec 2020)}}}
 :PROPERTIES:
 :CUSTOM_ID: Teaching-assistant-{{{begin-right}}}-McMaster-University,-2013---Dec-2019--{{{end-right}}}
 :END:
@@ -668,21 +668,21 @@ intended for printing.
 - F 20/21: 4th3
 - W 20/21: 3ac3 
 
-** Research assistant {{{right-align(McMaster University\, Summers 2010 and 2012)}}}
+** Research assistant {{{right-align(McMaster University\, Hamilton ON\, Summers 2010, 2012)}}}
 :PROPERTIES:
 :CUSTOM_ID: Research-assistant-{{{begin-right}}}-McMaster-University,-Summers-2010-and-2012-{{{end-right}}}
 :END:
 
 - Independently researched on topics selected by supervising professors.
 
-** Embedded Systems Test Dev, Intern {{{right-align(Blackberry\, May 2011 - Aug 2012)}}}
+** Embedded Systems Test Dev, Intern {{{right-align(Blackberry\, Missisauga ON\, May 2011 - Aug 2012)}}}
 :PROPERTIES:
 :CUSTOM_ID: Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}
 :END:
 
 - Developed automated tests and test systems for Blackberry GPS systems.
 
-** COMMENT Summer camp counselor, volunteer {{{right-align(Church of the Nazarene Canada Central\, 2002 - 2008)}}}
+** COMMENT Summer camp counselor, volunteer {{{right-align(Church of the Nazarene Canada Central\, Pefferlaw ON\, 2002 - 2008)}}}
 :PROPERTIES:
 :CUSTOM_ID: Summer-camp-counselor,-volunteer-{{{right-align(Church-of-the-Nazarene-Canada-Central\,-2002---2008)}}}
 :END:
@@ -695,7 +695,7 @@ intended for printing.
 :CUSTOM_ID: Education
 :END:
 
-** Ph.D. in Computer Science {{{right-align(McMaster University\, 2015 - Present)}}}
+** Ph.D. in Computer Science {{{right-align(McMaster University\, Hamilton ON\, 2015 - 2022)}}}
 :PROPERTIES:
 :CUSTOM_ID: PhD-in-Computer-Science
 :END:
@@ -704,7 +704,7 @@ intended for printing.
 - 3^{rd} place in 2019 McMaster Computing and Software poster competition.
 - GPA: 11.75 on 12 point scale.
 
-** M.Sc. in Computer Science {{{right-align(McMaster University\, 2013 - 2015)}}}
+** M.Sc. in Computer Science {{{right-align(McMaster University\, Hamilton ON\, 2013 - 2015)}}}
 :PROPERTIES:
 :CUSTOM_ID: M.Sc. in-Computer-Science
 :END:
@@ -712,7 +712,7 @@ intended for printing.
 - Investigated classical computability results in context of computability over real numbers.
 - GPA: 11.75 on 12 point scale. Graduated with distinction.
 
-** B.A.Sc. in Computer Science {{{right-align(McMaster University\, 2008 - 2013)}}}
+** B.A.Sc. in Computer Science {{{right-align(McMaster University\, Hamilton ON\, 2008 - 2013)}}}
 :PROPERTIES:
 :CUSTOM_ID: B.A.Sc. in-Computer-Science
 :END:

@@ -67,21 +67,21 @@ header-includes:
 
 # Employment
 
-## Software Engineer <span style="padding-left:3em; float:right">Index Exchange, September 2021 - September 2024</span>
+## Software Engineer <span style="padding-left:3em; float:right">Index Exchange, Toronto ON, Sept 2021 - Sept 2024</span>
 
 - Worked on the core application API team, developing APIs in Go.
   - Incorporated technologies including Ansible and Redis.
 - Practiced DevOps using Docker, Kubernetes, Helm, GitLab CI/CD and
   ArgoCD.
 
-## Sessional faculty <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2020</span>
+## Sessional faculty <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2013 - Dec 2020</span>
 
 - 5 appointments for teaching “Principles of Programming Languages”.
 - Planned and prepared lecture materials and assignments/tests including
   both written and programming evaluations.
 - Supervised teaching assistants.
 
-## Teaching assistant <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2020</span>
+## Teaching assistant <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2013 - Dec 2020</span>
 
 - 15 appointments, primarily to courses on programming language theory
   and discrete mathematics.
@@ -89,31 +89,30 @@ header-includes:
   work.
 - In some instances, appointed to supervise other teaching assistants.
 
-## Research assistant <span style="padding-left:3em; float:right">McMaster University, Summers 2010 and 2012</span>
+## Research assistant <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, Summers 2010</span>
 
 - Independently researched on topics selected by supervising professors.
 
-## Embedded Systems Test Dev, Intern <span style="padding-left:3em; float:right">Blackberry, May 2011 - Aug 2012</span>
+## Embedded Systems Test Dev, Intern <span style="padding-left:3em; float:right">Blackberry, Missisauga ON, May 2011 - Aug 2012</span>
 
-- Developed automated tests and test frameworks for Blackberry GPS
-  systems.
+- Developed automated tests and test systems for Blackberry GPS systems.
 
 # Education
 
-## Ph.D. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2015 - Present</span>
+## Ph.D. in Computer Science <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2015 - 2022</span>
 
 - Mechanising models of computability using automated proof assistants.
 - 3<sup>rd</sup> place in 2019 McMaster Computing and Software poster
   competition.
 - GPA: 11.75 on 12 point scale.
 
-## M.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2013 - 2015</span>
+## M.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2013 - 2015</span>
 
 - Investigated classical computability results in context of
   computability over real numbers.
 - GPA: 11.75 on 12 point scale. Graduated with distinction.
 
-## B.A.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2008 - 2013</span>
+## B.A.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2008 - 2013</span>
 
 - Summer 2010 research project on (theoretical) models of concurrency.
 - Summer 2013 research project on mechanising mathematical knowledge.
