@@ -265,6 +265,9 @@ The first one here is actually the default, but redefine it anyway.
 #+LaTeX_header: \renewcommand{\labelitemii}{•}
 #+LaTeX_header: \renewcommand{\labelitemii}{∘}
 
+Remove indent to the left of bullets and reduce space between the bullet and the contents.
+#+LaTeX_header: \setlist[itemize]{leftmargin=1.1em,labelsep=0.1em}
+
 *** Paragraphs
 :PROPERTIES:
 :CUSTOM_ID: Paragraphs
@@ -677,7 +680,7 @@ intended for printing.
 :CUSTOM_ID: Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}
 :END:
 
-- Developed automated tests and test frameworks for Blackberry GPS systems.
+- Developed automated tests and test systems for Blackberry GPS systems.
 
 ** COMMENT Summer camp counselor, volunteer {{{right-align(Church of the Nazarene Canada Central\, 2002 - 2008)}}}
 :PROPERTIES:
