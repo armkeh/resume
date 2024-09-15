@@ -70,6 +70,7 @@ header-includes:
 ## Software Engineer <span style="padding-left:3em; float:right">Index Exchange, Toronto ON, Sept 2021 - Sept 2024</span>
 
 - Worked on the core application API team, developing APIs in Go.
+  - Focus on user/account management, authentication and authorization.
   - Incorporated technologies including Ansible and Redis.
 - Practiced DevOps using Docker, Kubernetes, Helm, GitLab CI/CD and
   ArgoCD.
