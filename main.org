@@ -620,22 +620,19 @@ intended for printing.
 :CUSTOM_ID: org-anchor-Software-Engineer-{{{right-align(Index-Exchange\,-September-2021---September-2024)}}}^1
 :END:
 
-- Worked on the core application API team, developing backend APIs in Go.
+- Worked on the core application API team, developing APIs in Go.
  - Incorporated technologies including Ansible and Redis.
-- Practiced DevOps engineering using Docker, Kubernetes, Helm, GitLab CI/CD and ArgoCD.
+- Practiced DevOps using Docker, Kubernetes, Helm, GitLab CI/CD and ArgoCD.
 
 ** Sessional faculty {{{right-align(McMaster University\, 2013 - Dec 2020)}}}
 :PROPERTIES:
 :CUSTOM_ID: Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}
 :END:
 
-- 5 appointments for Computer Science 3MI3,
-  “Principles of Programming Languages”.
+- 5 appointments for teaching “Principles of Programming Languages”.
 - Planned and prepared lecture materials and assignments/tests including
   both written and programming evaluations.
 - Supervised teaching assistants.
-- Current course contents can be viewed at
-  [[https://armkeh.github.io/principles-of-programming-languages/]]
 
 ** Teaching assistant {{{right-align(McMaster University\, 2013 - Dec 2020)}}}
 :PROPERTIES:
@@ -645,7 +642,7 @@ intended for printing.
 - 15 appointments, primarily to courses on programming language theory
   and discrete mathematics.
 - Prepared and led tutorial sessions and office hours, marked student work.
-- In some cases, appointed to supervise other teaching assistants.
+- In some instances, appointed to supervise other teaching assistants.
 
 *** COMMENT Appointment counter
 :PROPERTIES:
@@ -673,15 +670,14 @@ intended for printing.
 :CUSTOM_ID: Research-assistant-{{{begin-right}}}-McMaster-University,-Summers-2010-and-2012-{{{end-right}}}
 :END:
 
-- Independently carried out research on topics selected by supervising professors.
+- Independently researched on topics selected by supervising professors.
 
 ** Embedded Systems Test Dev, Intern {{{right-align(Blackberry\, May 2011 - Aug 2012)}}}
 :PROPERTIES:
 :CUSTOM_ID: Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}
 :END:
 
-- Developed automated tests and testing systems for
-  the GPS system of the BB10 operating system.
+- Developed automated tests and test frameworks for Blackberry GPS systems.
 
 ** COMMENT Summer camp counselor, volunteer {{{right-align(Church of the Nazarene Canada Central\, 2002 - 2008)}}}
 :PROPERTIES:
@@ -718,9 +714,8 @@ intended for printing.
 :CUSTOM_ID: B.A.Sc. in-Computer-Science
 :END:
 
-- Research projects:
-  - Summer 2010: on (theoretical) models of concurrency.
-  - Summer 2013: on mechanising mathematical knowledge.
+- Summer 2010 research project on (theoretical) models of concurrency.
+- Summer 2013 research project on mechanising mathematical knowledge.
 - GPA: 11.1 on 12 point scale. Graduated with distinction.
 
 * Left of sidebar footer                        :ignore:

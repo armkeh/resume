@@ -69,21 +69,17 @@ header-includes:
 
 ## Software Engineer <span style="padding-left:3em; float:right">Index Exchange, September 2021 - September 2024</span>
 
-- Worked on the core application API team, developing backend APIs in
-  Go.
+- Worked on the core application API team, developing APIs in Go.
   - Incorporated technologies including Ansible and Redis.
-- Practiced DevOps engineering using Docker, Kubernetes, Helm, GitLab
-  CI/CD and ArgoCD.
+- Practiced DevOps using Docker, Kubernetes, Helm, GitLab CI/CD and
+  ArgoCD.
 
 ## Sessional faculty <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2020</span>
 
-- 5 appointments for Computer Science 3MI3, “Principles of Programming
-  Languages”.
+- 5 appointments for teaching “Principles of Programming Languages”.
 - Planned and prepared lecture materials and assignments/tests including
   both written and programming evaluations.
 - Supervised teaching assistants.
-- Current course contents can be viewed at
-  <https://armkeh.github.io/principles-of-programming-languages/>
 
 ## Teaching assistant <span style="padding-left:3em; float:right">McMaster University, 2013 - Dec 2020</span>
 
@@ -91,17 +87,16 @@ header-includes:
   and discrete mathematics.
 - Prepared and led tutorial sessions and office hours, marked student
   work.
-- In some cases, appointed to supervise other teaching assistants.
+- In some instances, appointed to supervise other teaching assistants.
 
 ## Research assistant <span style="padding-left:3em; float:right">McMaster University, Summers 2010 and 2012</span>
 
-- Independently carried out research on topics selected by supervising
-  professors.
+- Independently researched on topics selected by supervising professors.
 
 ## Embedded Systems Test Dev, Intern <span style="padding-left:3em; float:right">Blackberry, May 2011 - Aug 2012</span>
 
-- Developed automated tests and testing systems for the GPS system of
-  the BB10 operating system.
+- Developed automated tests and test frameworks for Blackberry GPS
+  systems.
 
 # Education
 
@@ -120,9 +115,8 @@ header-includes:
 
 ## B.A.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, 2008 - 2013</span>
 
-- Research projects:
-  - Summer 2010: on (theoretical) models of concurrency.
-  - Summer 2013: on mechanising mathematical knowledge.
+- Summer 2010 research project on (theoretical) models of concurrency.
+- Summer 2013 research project on mechanising mathematical knowledge.
 - GPA: 11.1 on 12 point scale. Graduated with distinction.
 
 </div>
