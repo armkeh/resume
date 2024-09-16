@@ -41,18 +41,14 @@ header-includes:
 
 ## Other software proficiencies
 
-- **Version control** Git, subversion
-
-- **Tools** Docker, LXD, Kubernetes, Helm, Emacs, Org mode, LaTeX
+Docker, LXD, Kubernetes, Helm, GitLab CI/CD, ArgoCD, Ansible, Redis,
+Keycloak, Emacs, Org mode, LaTeX
 
 ## Soft skills
 
 - Teaching and mentoring
 - Literate programming
-- Educated on supporting student mental health
-  - McMaster [“Professor Hippo on
-    Campus”](https://github.com/armkeh/resume/blob/master/Professor%20Hippo%20on%20Campus%20Certificate%20--%20McMaster%20Student%20Mental%20Health%20Training.pdf)
-    training completed
+- Mental health support
 
 ## Teachables
 

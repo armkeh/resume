@@ -561,15 +561,13 @@ intended for printing.
 :CUSTOM_ID: Other-software
 :END:
 
-- *Version control*
-  Git,
-  subversion
-
-- *Tools*
-  Docker, LXD,
-  Kubernetes, Helm,
-  Emacs, Org mode,
-  LaTeX
+Docker, LXD,
+Kubernetes, Helm,
+GitLab CI/CD, ArgoCD,
+Ansible,
+Redis,
+Keycloak,
+Emacs, Org mode, LaTeX
 
 ** Soft skills
 :PROPERTIES:
@@ -578,10 +576,10 @@ intended for printing.
 
 - Teaching and mentoring
 - Literate programming
-- Educated on supporting student mental health
-  - McMaster
-    [[https://github.com/armkeh/resume/blob/master/Professor%20Hippo%20on%20Campus%20Certificate%20--%20McMaster%20Student%20Mental%20Health%20Training.pdf][“Professor Hippo on Campus”]]
-    training completed
+- Mental health support
+  # - McMaster
+  #   [[https://github.com/armkeh/resume/blob/master/Professor%20Hippo%20on%20Campus%20Certificate%20--%20McMaster%20Student%20Mental%20Health%20Training.pdf][“Professor Hippo on Campus”]]
+  #   training completed
 
 ** Teachables
 :PROPERTIES:
