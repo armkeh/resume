@@ -792,14 +792,19 @@ Emacs, Org mode, LaTeX
 - Maintaining my setup/configs for Emacs and other tools (https://github.com/armkeh/dotfiles),
   to build a collection of well-documented tips and tricks.
 - Hiking locally.
-# - Blog at [[https://armkeh.github.io]].
-# - Occasional school trip volunteer at R.A. Riddell Elementary
-#   since 2016.
 - Represented McMaster Computing and Software
   at the Ontario Universities Fair in 2015 and 2016.
 - Church secretary, board member, music and youth leader,
   and kids programming volunteer
   at Hamilton Mountain Church of the Nazarene, 2007-2015.
+
+** COMMENT Out of date
+
+Maybe I'll resume these some day, but I can't in good faith claim them right now.
+
+- Blog at [[https://armkeh.github.io]].
+- Occasional school trip volunteer at R.A. Riddell Elementary
+  since 2016.
 
 * Document footer                               :ignore:
 :PROPERTIES:
