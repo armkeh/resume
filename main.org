@@ -799,6 +799,9 @@ Emacs, Org mode, LaTeX
   at Hamilton Mountain Church of the Nazarene, 2007-2015.
 
 ** COMMENT Out of date
+:PROPERTIES:
+:CUSTOM_ID: org-anchor-COMMENT-Out-of-date^1
+:END:
 
 Maybe I'll resume these some day, but I can't in good faith claim them right now.
 

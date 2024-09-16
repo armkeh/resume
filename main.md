@@ -159,12 +159,9 @@ employment income for those years.</span>
 - Maintaining my setup/configs for Emacs and other tools
   (<https://github.com/armkeh/dotfiles>), to build a collection of
   well-documented tips and tricks.
-
 - Hiking locally.
-
 - Represented McMaster Computing and Software at the Ontario
   Universities Fair in 2015 and 2016.
-
 - Church secretary, board member, music and youth leader, and kids
   programming volunteer at Hamilton Mountain Church of the Nazarene,
   2007-2015.
