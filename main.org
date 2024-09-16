@@ -567,6 +567,7 @@ GitLab CI/CD, ArgoCD,
 Ansible,
 Redis,
 Keycloak,
+Linux,
 Emacs, Org mode, LaTeX
 
 ** Soft skills
