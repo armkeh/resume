@@ -18,11 +18,11 @@ header-includes:
 
 # Objectives
 
-- Putting my backend, DevOps experience to use building interesting,
+- Put my backend, DevOps experience to use building interesting,
   meaningful software.
 
-- Working with excellent people, in a culture fostering learning,
-  teaching and growth.
+- Work with excellent people, in a culture fostering learning, teaching
+  and growth.
 
 - Learn new languages, tools, and patterns.
 
