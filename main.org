@@ -668,7 +668,7 @@ Emacs, Org mode, LaTeX
 - F 20/21: 4th3
 - W 20/21: 3ac3 
 
-** Research assistant {{{right-align(McMaster University\, Hamilton ON\, Summers 2010, 2012)}}}
+** Research assistant {{{right-align(McMaster University\, Hamilton ON\, Summers 2010 and 2012)}}}
 :PROPERTIES:
 :CUSTOM_ID: Research-assistant-{{{begin-right}}}-McMaster-University,-Summers-2010-and-2012-{{{end-right}}}
 :END:

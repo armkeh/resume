@@ -86,7 +86,7 @@ Keycloak, Linux, Emacs, Org mode, LaTeX
   work.
 - In some instances, appointed to supervise other teaching assistants.
 
-## Research assistant <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, Summers 2010</span>
+## Research assistant <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, Summers 2010 and 2012</span>
 
 - Independently researched on topics selected by supervising professors.
 
