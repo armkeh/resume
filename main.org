@@ -712,6 +712,7 @@ Emacs, Org mode, LaTeX
 
 - Investigated classical computability results in context of computability over real numbers.
 - GPA: 11.75 on 12 point scale. Graduated with distinction.
+# - 3.98 on 4 point scale
 
 ** B.A.Sc. in Computer Science {{{right-align(McMaster University\, Hamilton ON\, 2008 - 2013)}}}
 :PROPERTIES:
@@ -721,6 +722,7 @@ Emacs, Org mode, LaTeX
 - Summer 2010 research project on (theoretical) models of concurrency.
 - Summer 2013 research project on mechanising mathematical knowledge.
 - GPA: 11.1 on 12 point scale. Graduated with distinction.
+# - 3.84 on 4 point scale
 
 * Left of sidebar footer                        :ignore:
 :PROPERTIES:
