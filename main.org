@@ -637,9 +637,9 @@ Emacs, Org mode, LaTeX
   both written and programming evaluations.
 - Supervised teaching assistants.
 
-** Teaching assistant {{{right-align(McMaster University\, Hamilton ON\, 2013 - Dec 2020)}}}
+** Teaching assistant {{{right-align(McMaster University\, Hamilton ON\, 2013 - Apr 2021)}}}
 :PROPERTIES:
-:CUSTOM_ID: Teaching-assistant-{{{begin-right}}}-McMaster-University,-2013---Dec-2019--{{{end-right}}}
+:CUSTOM_ID: org-anchor-Teaching-assistant-{{{right-align(McMaster-University\,-Hamilton-ON\,-2013---Apr-2021)}}}^1
 :END:
 
 - 15 appointments, primarily to courses on programming language theory
