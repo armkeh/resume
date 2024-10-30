@@ -37,7 +37,7 @@ header-includes:
 
 - **Experienced** C, Python, Shell script
 
-- **Familiar** Elm, Haskell, SML, Ruby, Prolog, Scala
+- **Familiar** Typescript, Elm, Haskell, SML, Ruby, Scala
 
 ## Other software proficiencies
 

@@ -553,8 +553,8 @@ intended for printing.
   Shell script
 
 - *Familiar*
-  Elm, Haskell, SML,
-  Ruby, Prolog, Scala
+  Typescript, Elm, Haskell, SML,
+  Ruby, Scala
 
 ** Other software proficiencies
 :PROPERTIES:
