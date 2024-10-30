@@ -521,7 +521,7 @@ intended for printing.
 :CUSTOM_ID: Objectives
 :END:
 
-- Put my backend, DevOps experience to use
+- Put my backend, DevOps experience and programming language theory knowledge to use
   building interesting, meaningful software.
 
 - Work with excellent people,

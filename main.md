@@ -18,8 +18,8 @@ header-includes:
 
 # Objectives
 
-- Put my backend, DevOps experience to use building interesting,
-  meaningful software.
+- Put my backend, DevOps experience and programming language theory
+  knowledge to use building interesting, meaningful software.
 
 - Work with excellent people, in a culture fostering learning, teaching
   and growth.
