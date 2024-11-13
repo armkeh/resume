@@ -568,6 +568,8 @@ Ansible,
 Redis,
 Keycloak,
 Linux,
+Cucumber/Gherkin,
+Jira, Confluence,
 Emacs, Org mode, LaTeX
 
 ** Soft skills
