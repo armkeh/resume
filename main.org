@@ -542,19 +542,19 @@ intended for printing.
 :CUSTOM_ID: Programming
 :END:
 
-- *Expert*
+- *Proficient*
   Go,
-  Agda,
   Emacs lisp
 
 - *Experienced*
   C,
   Python,
-  Shell script
+  Typescript,
+  bash & zsh
 
 - *Familiar*
-  Typescript, Elm, Haskell, SML,
-  Ruby, Scala
+  Java, Ruby, Scala,
+  Elm, Haskell, SML
 
 ** Other software proficiencies
 :PROPERTIES:

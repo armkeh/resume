@@ -33,11 +33,11 @@ header-includes:
 
 ## Programming
 
-- **Expert** Go, Agda, Emacs lisp
+- **Proficient** Go, Emacs lisp
 
-- **Experienced** C, Python, Shell script
+- **Experienced** C, Python, Typescript, bash & zsh
 
-- **Familiar** Typescript, Elm, Haskell, SML, Ruby, Scala
+- **Familiar** Java, Ruby, Scala, Elm, Haskell, SML
 
 ## Other software proficiencies
 
