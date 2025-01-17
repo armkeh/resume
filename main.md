@@ -91,7 +91,7 @@ Emacs, Org mode, LaTeX
 
 - Independently researched on topics selected by supervising professors.
 
-## Embedded Systems Test Dev, Intern <span style="padding-left:3em; float:right">Blackberry, Missisauga ON, May 2011 - Aug 2012</span>
+## Embedded Systems Test Dev, Intern <span style="padding-left:3em; float:right">Blackberry, Mississauga ON, May 2011 - Aug 2012</span>
 
 - Developed automated tests and test systems for Blackberry GPS systems.
 

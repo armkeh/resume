@@ -678,7 +678,7 @@ Emacs, Org mode, LaTeX
 
 - Independently researched on topics selected by supervising professors.
 
-** Embedded Systems Test Dev, Intern {{{right-align(Blackberry\, Missisauga ON\, May 2011 - Aug 2012)}}}
+** Embedded Systems Test Dev, Intern {{{right-align(Blackberry\, Mississauga ON\, May 2011 - Aug 2012)}}}
 :PROPERTIES:
 :CUSTOM_ID: Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}
 :END:
