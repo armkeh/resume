@@ -41,9 +41,9 @@ header-includes:
 
 ## Other software proficiencies
 
-Docker, LXD, Kubernetes, Helm, GitLab CI/CD, ArgoCD, Ansible, Redis,
-Keycloak, Linux, Cucumber/Gherkin, Jira, Confluence, Emacs, Org mode,
-LaTeX
+Docker, LXD, Kubernetes, Helm, GitLab CI/CD, ArgoCD, Ansible, MySQL,
+PostgreSQL, Redis, Keycloak, Linux, Cucumber/Gherkin, Jira, Confluence,
+Emacs, Org mode, LaTeX
 
 ## Soft skills
 
