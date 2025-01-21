@@ -95,6 +95,21 @@ Emacs, Org mode, LaTeX
 
 - Developed automated tests and test systems for Blackberry GPS systems.
 
+# Portfolio <span style="padding-left:3em; float:right"><span style="font-size:0.5rem">Full version at [armkeh.github.io](https://armkeh.github.io/)</span></span>
+
+| Project                                                                               | Contributions                                                                   | Skills       |
+|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|--------------|
+| [consistent-window-splits](https://github.com/armkeh/consistent-window-splits/)       | Creator,                                                                        | Emacs lisp   |
+| Emacs package                                                                         | sole contributor                                                                |              |
+| Ansible [community.general](https://github.com/ansible-collections/community.general) | PR [\#9494](https://github.com/ansible-collections/community.general/pull/9494) | Python       |
+|                                                                                       |                                                                                 | Ansible      |
+|                                                                                       |                                                                                 | Keycloak     |
+| Sample [Breakout](https://armkeh.github.io/breakout-excaliburjs/) game                | Creator                                                                         | Typescript   |
+|                                                                                       | sole contributor                                                                | Excalibur.js |
+|                                                                                       |                                                                                 | Node         |
+
+</div>
+<div style="clear:both">
 # Education
 
 ## Ph.D. in Computer Science <span style="font-size:0.5rem">(incomplete)</span> <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2015 - 2022</span>
@@ -117,8 +132,6 @@ Emacs, Org mode, LaTeX
 - Summer 2013 research project on mechanising mathematical knowledge.
 - GPA: 11.1 on 12 point scale. Graduated with distinction.
 
-</div>
-<div style="clear:both">
 # Publications
 
 - [Armstrong,

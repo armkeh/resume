@@ -695,6 +695,41 @@ Emacs, Org mode, LaTeX
 - Supervised children ages 8-12 in groups of roughly 10.
 - From 2006 onward, as a senior counselor, oversaw junior counselors.
 
+* Portfolio {{{right-align({{{scriptsize(Full version at [[https://armkeh.github.io/][armkeh.github.io]])}}})}}}
+:PROPERTIES:
+:CUSTOM_ID: org-anchor-Portfolio-{{{right-align({{{scriptsize(Full-version-at-[[https://armkeh.github.io/][armkeh.github.io]])}}})}}}^1
+:END:
+
+| Project                   | Contributions    | Skills       |
+|---------------------------+------------------+--------------|
+| [[https://github.com/armkeh/consistent-window-splits/][consistent-window-splits]]  | Creator,         | Emacs lisp   |
+| Emacs package             | sole contributor |              |
+|---------------------------+------------------+--------------|
+| Ansible [[https://github.com/ansible-collections/community.general][community.general]] | PR [[https://github.com/ansible-collections/community.general/pull/9494][#9494]]         | Python       |
+|                           |                  | Ansible      |
+|                           |                  | Keycloak     |
+|---------------------------+------------------+--------------|
+| Sample [[https://armkeh.github.io/breakout-excaliburjs/][Breakout]] game      | Creator          | Typescript   |
+|                           | sole contributor | Excalibur.js |
+|                           |                  | Node         |
+
+* Left of sidebar footer                        :ignore:
+:PROPERTIES:
+:CUSTOM_ID: Main-footer
+:END:
+
+#+LaTeX: \end{paracol}
+#+LaTeX: \end{sloppypar}
+#+HTML: </div>
+
+# Anything afterwards is not in the columns.
+#+HTML:<div style="clear:both">
+
+* Force new page in PDF                         :ignore:
+
+# At this point in the PDF, we should break the page.
+#+LaTeX: \newpage
+
 * Education
 :PROPERTIES:
 :CUSTOM_ID: Education
@@ -728,23 +763,6 @@ Emacs, Org mode, LaTeX
 - Summer 2013 research project on mechanising mathematical knowledge.
 - GPA: 11.1 on 12 point scale. Graduated with distinction.
 # - 3.84 on 4 point scale
-
-* Left of sidebar footer                        :ignore:
-:PROPERTIES:
-:CUSTOM_ID: Main-footer
-:END:
-
-#+LaTeX: \end{paracol}
-#+LaTeX: \end{sloppypar}
-#+HTML: </div>
-
-# Anything afterwards is not in the columns.
-#+HTML:<div style="clear:both">
-
-* Force new page in PDF                         :ignore:
-
-# At this point in the PDF, we should break the page.
-#+LaTeX: \newpage
 
 * Publications
 :PROPERTIES:
