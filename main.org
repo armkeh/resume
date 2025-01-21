@@ -144,7 +144,7 @@ this way, we can add larger text into tables without affecting the row height.
 #+Macro: latex-zero-height @@latex:\raisebox{0pt}[0pt][0pt]{@@$1 @@latex:}@@
 
 Then, code to “hugify” LaTeX text.
-#+Macro: latex-hugify @@latex:{\huge @@$1 @@latex:}@@  
+#+Macro: latex-hugify @@latex:{\huge @@$1 @@latex:}@@
 
 Combine the LaTeX “zero height” and “hugify” macros to “LaTeXify”
 the title.
@@ -155,7 +155,7 @@ Now, combine all those macros along with the ~author~ macro to create the title.
 
 **** Right alignment
 :PROPERTIES:
-:CUSTOM_ID: HOrizontal-fillers
+:CUSTOM_ID: Horizontal-fillers
 :END:
 
 This macro right aligns its content;
