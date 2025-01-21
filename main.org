@@ -490,7 +490,7 @@ in order to have the left column take up all remaining space.
 :CUSTOM_ID: Sidebar-header
 :END:
 
-#+LaTeX: \columnratio{0.7}
+#+LaTeX: \columnratio{0.75}
 #+LaTeX: \begin{sloppypar} % The smaller linewidth causes issues otherwise.
 #+LaTeX: \begin{paracol}{2}
 #+LaTeX:   \backgroundcolor{c[1]}{sidebar}
