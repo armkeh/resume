@@ -495,8 +495,8 @@ in order to have the left column take up all remaining space.
 #+LaTeX: \columnratio{0.25}
 #+LaTeX: \begin{sloppypar} % The smaller linewidth causes issues otherwise.
 #+LaTeX: \begin{paracol}{2}
-#+LaTeX:   \backgroundcolor{c[1]}{sidebar}
-#+LaTeX:   % \switchcolumn % toggle sidebar side
+#+LaTeX:   \backgroundcolor{c[0]}{sidebar}
+#+LaTeX:   % \switchcolumn % toggle sidebar side; also change columnratio and backgroundcolor column
 #+LaTeX:   \begin{raggedright}
 #+LaTeX:   \small
 
