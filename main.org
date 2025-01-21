@@ -492,11 +492,11 @@ in order to have the left column take up all remaining space.
 :CUSTOM_ID: Sidebar-header
 :END:
 
-#+LaTeX: \columnratio{0.75}
+#+LaTeX: \columnratio{0.25}
 #+LaTeX: \begin{sloppypar} % The smaller linewidth causes issues otherwise.
 #+LaTeX: \begin{paracol}{2}
 #+LaTeX:   \backgroundcolor{c[1]}{sidebar}
-#+LaTeX:   \switchcolumn % go to right column
+#+LaTeX:   % \switchcolumn % toggle sidebar side
 #+LaTeX:   \begin{raggedright}
 #+LaTeX:   \small
 
@@ -604,7 +604,7 @@ Emacs, Org mode, LaTeX
 :END:
 
 #+LaTeX:   \end{raggedright}
-#+LaTeX:   \switchcolumn % go to left column
+#+LaTeX:   \switchcolumn
 #+HTML: </div>
 
 # Footer for the alternative version
@@ -740,6 +740,8 @@ Emacs, Org mode, LaTeX
 
 # Anything afterwards is not in the columns.
 #+HTML:<div style="clear:both">
+
+* Force new page in PDF                         :ignore:
 
 # At this point in the PDF, we should break the page.
 #+LaTeX: \newpage
