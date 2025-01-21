@@ -210,7 +210,9 @@ an excellent package which supports exactly the settings
 I want for the sidebar.
 #+LaTeX_header: \usepackage{paracol}
 
-In particular, 
+In an attempt to improve parsability of the PDF,
+add a vertical rule between the columns.
+#+LaTeX_header: \setlength{\columnseprule}{0.5pt}
 
 *** Section headers
 :PROPERTIES:
