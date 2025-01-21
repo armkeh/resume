@@ -173,7 +173,7 @@ Use of footnotes is not ideal here, since they are placed at
 the bottom of the page/site. This macro instead makes a small note
 in place. Numbering is manual, though.
 
-#+Macro: scriptnote @@html:<span style="font-size:0.5rem">@@@@latex:{\scriptsize@@$1@@latex:}@@@@html:</span>@@
+#+Macro: scriptsize @@html:<span style="font-size:0.5rem">@@@@latex:{\scriptsize @@$1@@latex:}@@@@html:</span>@@
 
 ** LaTeX header
 :PROPERTIES:
@@ -700,7 +700,7 @@ Emacs, Org mode, LaTeX
 :CUSTOM_ID: Education
 :END:
 
-** Ph.D. in Computer Science (inc) {{{right-align(McMaster University\, Hamilton ON\, 2015 - 2022)}}}
+** Ph.D. in Computer Science {{{scriptsize((incomplete))}}} {{{right-align(McMaster University\, Hamilton ON\, 2015 - 2022)}}}
 :PROPERTIES:
 :CUSTOM_ID: PhD-in-Computer-Science
 :END:
@@ -775,7 +775,7 @@ Emacs, Org mode, LaTeX
 | NSERC Canadian Graduate Scholarship, Masters | 2014 - 2015 |   $17,500 |
 | Ontario Graduate Scholarship                 | 2013 - 2014 |   $15,000 |
 |----------------------------------------------+-------------+-----------|
-{{{scriptnote(1. Included guaranteed teaching assistant employment income for those years.)}}}
+{{{scriptsize(1. Included guaranteed teaching assistant employment income for those years.)}}}
 
 ** Other
 :PROPERTIES:

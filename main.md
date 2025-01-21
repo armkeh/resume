@@ -97,7 +97,7 @@ Emacs, Org mode, LaTeX
 
 # Education
 
-## Ph.D. in Computer Science (inc) <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2015 - 2022</span>
+## Ph.D. in Computer Science <span style="font-size:0.5rem">(incomplete)</span> <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2015 - 2022</span>
 
 - Coursework and comprehensive exams completed. Thesis not completed.
 - Mechanising models of computability using automated proof assistants.
