@@ -283,13 +283,16 @@ Don't indent paragraphs.
 :CUSTOM_ID: Hyperlinks
 :END:
 
-Override the ~hypersetup~ settings for this file;
-I have inserted links, but don't want them coloured in the PDF.
-They'd be eyesores if printed.
+Override the ~hypersetup~ settings for this file,
+to make the links this darker blue colour.
+The regular lighter blue stands out too much
+against the rest of the black text.
+#+LaTeX_header: \definecolor{darkblue}{rgb}{0.0, 0.0, 0.75}
+
 #+begin_src emacs-lisp :exports results :results none :eval export
 (make-variable-buffer-local 'org-latex-hyperref-template)
 (setq org-latex-hyperref-template
-  "\\hypersetup{colorlinks=false}\n")
+  "\\hypersetup{colorlinks=true,urlcolor=darkblue}\n")
 #+end_src
 
 ** CSS
