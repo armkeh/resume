@@ -33,7 +33,7 @@ header-includes:
 
 ## Programming
 
-- **Proficient** Go, Emacs lisp
+- **Proficient** Go, Emacs Lisp
 
 - **Experienced** C, Python, Typescript, bash & zsh
 
@@ -97,16 +97,18 @@ Emacs, Org mode, LaTeX
 
 # Portfolio <span style="padding-left:3em; float:right"><span style="font-size:0.5rem">Full version at [armkeh.github.io](https://armkeh.github.io/)</span></span>
 
-| Project                                                                               | Contributions                                                                   | Skills       |
-|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|--------------|
-| [consistent-window-splits](https://github.com/armkeh/consistent-window-splits/)       | Creator,                                                                        | Emacs lisp   |
-| Emacs package                                                                         | sole contributor                                                                |              |
-| Ansible [community.general](https://github.com/ansible-collections/community.general) | PR [\#9494](https://github.com/ansible-collections/community.general/pull/9494) | Python       |
-|                                                                                       |                                                                                 | Ansible      |
-|                                                                                       |                                                                                 | Keycloak     |
-| Sample [Breakout](https://armkeh.github.io/breakout-excaliburjs/) game                | Creator                                                                         | Typescript   |
-|                                                                                       | sole contributor                                                                | Excalibur.js |
-|                                                                                       |                                                                                 | Node         |
+| **Project**                                                                           | **Contributions**                                                               | **Skills**                                                               |
+|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| [consistent-window-splits](https://github.com/armkeh/consistent-window-splits/)       | Creator,                                                                        | Emacs Lisp                                                               |
+| (Emacs package)                                                                       | sole contributor                                                                |                                                                          |
+| Ansible [community.general](https://github.com/ansible-collections/community.general) | PR [\#9494](https://github.com/ansible-collections/community.general/pull/9494) | Python, Ansible, Keycloak                                                |
+| Keycloak modules                                                                      |                                                                                 |                                                                          |
+| Sample [Breakout](https://armkeh.github.io/breakout-excaliburjs/) game                | Creator,                                                                        | Typescript, GitHub actions,                                              |
+|                                                                                       | sole contributor                                                                | Excalibur.js engine                                                      |
+| [org-agda-mode](https://github.com/alhassy/org-agda-mode)                             | Co-creator,                                                                     | Emacs Lisp                                                               |
+| (Emacs package)                                                                       | contributor                                                                     |                                                                          |
+| [unicode-sty](https://github.com/armkeh/unicode-sty)                                  | Co-creator,                                                                     | LaTeX, GitHub pages                                                      |
+| (LaTeX package)                                                                       | contributor                                                                     | ([armkeh.github.io/unicode-sty/](https://armkeh.github.io/unicode-sty/)) |
 
 </div>
 <div style="clear:both">

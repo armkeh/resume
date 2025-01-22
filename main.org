@@ -546,7 +546,7 @@ intended for printing.
 
 - *Proficient*
   Go,
-  Emacs lisp
+  Emacs Lisp
 
 - *Experienced*
   C,
@@ -700,18 +700,26 @@ Emacs, Org mode, LaTeX
 :CUSTOM_ID: org-anchor-Portfolio-{{{right-align({{{scriptsize(Full-version-at-[[https://armkeh.github.io/][armkeh.github.io]])}}})}}}^1
 :END:
 
-| Project                   | Contributions    | Skills       |
-|---------------------------+------------------+--------------|
-| [[https://github.com/armkeh/consistent-window-splits/][consistent-window-splits]]  | Creator,         | Emacs lisp   |
-| Emacs package             | sole contributor |              |
-|---------------------------+------------------+--------------|
-| Ansible [[https://github.com/ansible-collections/community.general][community.general]] | PR [[https://github.com/ansible-collections/community.general/pull/9494][#9494]]         | Python       |
-|                           |                  | Ansible      |
-|                           |                  | Keycloak     |
-|---------------------------+------------------+--------------|
-| Sample [[https://armkeh.github.io/breakout-excaliburjs/][Breakout]] game      | Creator          | Typescript   |
-|                           | sole contributor | Excalibur.js |
-|                           |                  | Node         |
+# Based on experimentation, with PDF column ratio set to 75% for main column, keep this to 80 columns.
+# I.e.,                                                                    here ↓
+|---------------------------+------------------+---------------------------------|
+| *Project*                   | *Contributions*    | *Skills*                          |
+|---------------------------+------------------+---------------------------------|
+| [[https://github.com/armkeh/consistent-window-splits/][consistent-window-splits]]  | Creator,         | Emacs Lisp                      |
+| (Emacs package)           | sole contributor |                                 |
+|---------------------------+------------------+---------------------------------|
+| Ansible [[https://github.com/ansible-collections/community.general][community.general]] | PR [[https://github.com/ansible-collections/community.general/pull/9494][#9494]]         | Python, Ansible, Keycloak       |
+| Keycloak modules          |                  |                                 |
+|---------------------------+------------------+---------------------------------|
+| Sample [[https://armkeh.github.io/breakout-excaliburjs/][Breakout]] game      | Creator,         | Typescript, GitHub actions,     |
+|                           | sole contributor | Excalibur.js engine             |
+|---------------------------+------------------+---------------------------------|
+| [[https://github.com/alhassy/org-agda-mode][org-agda-mode]]             | Co-creator,      | Emacs Lisp                      |
+| (Emacs package)           | contributor      |                                 |
+|---------------------------+------------------+---------------------------------|
+| [[https://github.com/armkeh/unicode-sty][unicode-sty]]               | Co-creator,      | LaTeX, GitHub pages             |
+| (LaTeX package)           | contributor      | ([[https://armkeh.github.io/unicode-sty/][armkeh.github.io/unicode-sty/]]) |
+|---------------------------+------------------+---------------------------------|
 
 * Left of sidebar footer                        :ignore:
 :PROPERTIES:
