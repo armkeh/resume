@@ -782,7 +782,7 @@ Emacs, Org mode, LaTeX
 
 - [[https://www.researchgate.net/profile/Mark_Armstrong12][Armstrong, Mark]] & [[https://www.researchgate.net/profile/Jeffery_Zucker][Zucker, Jeffery]],
   [[https://www.researchgate.net/publication/323301233][Notions of semicomputability in topological algebras over the reals]],
-  Computability, vol. 8, no. 1, pp. 1-26, 2019
+  Computability, vol. 8, no. 1, pp. 1-26, 2018
 
 * Awards
 :PROPERTIES:
