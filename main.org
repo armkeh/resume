@@ -7,7 +7,7 @@
 
 * Introduction                                  :noexport:
 :PROPERTIES:
-:CUSTOM_ID: Introduction
+:CUSTOM_ID: introduction
 :END:
 
 This is the main document for my resumes, CVs, etc.
@@ -21,7 +21,7 @@ and some small LaTeX and HTML snippets to control document flow.
 
 * User information                              :noexport:
 :PROPERTIES:
-:CUSTOM_ID: User-information
+:CUSTOM_ID: user-information
 :END:
 
 We use these keywords in building the title table;
@@ -47,12 +47,12 @@ I make a special keyword to store the HTML code for the image.
 
 * Org, LaTeX, HTML, CSS settings                :noexport:
 :PROPERTIES:
-:CUSTOM_ID: Settings
+:CUSTOM_ID: settings
 :END:
 
 ** Org settings
 :PROPERTIES:
-:CUSTOM_ID: Org-settings
+:CUSTOM_ID: org-settings
 :END:
 
 We manually enter a “title”, so do not put title, author, or date.
@@ -63,7 +63,7 @@ Also do not put in a table of contents or number sections.
 
 *** LaTeX Org export settings
 :PROPERTIES:
-:CUSTOM_ID: LaTeX-Org-export-settings
+:CUSTOM_ID: latex-export-settings
 :END:
 
 For ease of customisability, here we define
@@ -84,12 +84,12 @@ give two levels here. Lower levels would become lists.
 
 ** Common settings
 :PROPERTIES:
-:CUSTOM_ID: Shared-settings
+:CUSTOM_ID: common-settings
 :END:
 
 *** Colours
 :PROPERTIES:
-:CUSTOM_ID: Colours
+:CUSTOM_ID: colours
 :END:
 
 In LaTeX, we need ~xcolor~ to give us ~definecolor~.
@@ -120,7 +120,7 @@ Close the ~style~ block.
 
 *** Macros                                    :noexport:
 :PROPERTIES:
-:CUSTOM_ID: Macros
+:CUSTOM_ID: macros
 :END:
 
 These macros allow us to accomplish certain tasks inline
@@ -129,7 +129,7 @@ such as right alignment and fontification.
 
 **** Title (name) macros                     :noexport:
 :PROPERTIES:
-:CUSTOM_ID: Title-(name)-macros
+:CUSTOM_ID: title-macros
 :END:
 
 Here, we introduce a sequence of Org macros to
@@ -155,7 +155,7 @@ Now, combine all those macros along with the ~author~ macro to create the title.
 
 **** Right alignment
 :PROPERTIES:
-:CUSTOM_ID: Horizontal-fillers
+:CUSTOM_ID: horizontal-fillers
 :END:
 
 This macro right aligns its content;
@@ -166,7 +166,7 @@ Just remember to escape any commas.
 
 **** Scriptnotes
 :PROPERTIES:
-:CUSTOM_ID: Table-(foot)notes
+:CUSTOM_ID: scriptnotes
 :END:
 
 Use of footnotes is not ideal here, since they are placed at
@@ -177,12 +177,12 @@ in place. Numbering is manual, though.
 
 ** LaTeX header
 :PROPERTIES:
-:CUSTOM_ID: “Global”-LaTeX-header-settings
+:CUSTOM_ID: latex-header
 :END:
 
 *** Page layout
 :PROPERTIES:
-:CUSTOM_ID: Page-layout
+:CUSTOM_ID: latex-page-layout
 :END:
 
 First, we'll use the ~resume~ class defined in [[LaTeX Org export settings]].
@@ -200,7 +200,7 @@ Add ~showframe~ to the options to visualise the margins.
 
 **** Columns
 :PROPERTIES:
-:CUSTOM_ID: Columns
+:CUSTOM_ID: latex-columns
 :END:
 
 I like a small column on the right of the first page
@@ -216,7 +216,7 @@ add a vertical rule between the columns.
 
 *** Section headers
 :PROPERTIES:
-:CUSTOM_ID: Section-headers
+:CUSTOM_ID: latex-section-headers
 :END:
 
 We'll use ~tcolorbox~ to highlight the section and subsection headers
@@ -255,7 +255,7 @@ Subsection headers are similar, but use a smaller font size
 
 *** Lists
 :PROPERTIES:
-:CUSTOM_ID: Lists
+:CUSTOM_ID: latex-lists
 :END:
 
 Remove the spacing around lists and between list items.
@@ -272,7 +272,7 @@ Remove indent to the left of bullets and reduce space between the bullet and the
 
 *** Paragraphs
 :PROPERTIES:
-:CUSTOM_ID: Paragraphs
+:CUSTOM_ID: latex-paragraphs
 :END:
 
 Don't indent paragraphs.
@@ -280,7 +280,7 @@ Don't indent paragraphs.
 
 *** Hyperlinks
 :PROPERTIES:
-:CUSTOM_ID: Hyperlinks
+:CUSTOM_ID: latex-hyperlinks
 :END:
 
 Override the ~hypersetup~ settings for this file,
@@ -297,12 +297,12 @@ against the rest of the black text.
 
 ** CSS
 :PROPERTIES:
-:CUSTOM_ID: CSS
+:CUSTOM_ID: css
 :END:
 
 *** Header
 :PROPERTIES:
-:CUSTOM_ID: Header
+:CUSTOM_ID: css-header
 :END:
 
 Start the style section of the HTML header.
@@ -310,7 +310,7 @@ Start the style section of the HTML header.
 
 *** Page layout
 :PROPERTIES:
-:CUSTOM_ID: Page-layout
+:CUSTOM_ID: css-page-layout
 :END:
 
 As stated in the [[Columns]] portion of the LaTeX settings,
@@ -348,7 +348,7 @@ When we're in a wide window, set up the sidebar.
 
 *** Section headers
 :PROPERTIES:
-:CUSTOM_ID: Section-headers
+:CUSTOM_ID: css-section-headers
 :END:
 
 Sections are exported as ~h2~'s.
@@ -362,7 +362,7 @@ Also put a little space on the left and right.
 #+HTML_head:   padding-left:     0.5em;
 #+HTML_head:   padding-right:    0.5em;
 Don't take up the whole width; they overlap other elements
-sometimes if we set it to 100%. 
+sometimes if we set it to 100%.
 #+HTML_head:   width:            95%;
 Display as an inline block, so if a linebreak is necessary,
 the background colour is also applied to the newline.
@@ -382,7 +382,7 @@ Subsections are similar, just using their own colour.
 
 *** The title (my name)
 :PROPERTIES:
-:CUSTOM_ID: The-title-(my-name)
+:CUSTOM_ID: css-title
 :END:
 
 The title is placed in a table, with the right column
@@ -414,7 +414,7 @@ In large windows, up it to 300%.
 
 *** Footer
 :PROPERTIES:
-:CUSTOM_ID: Footer
+:CUSTOM_ID: css-footer
 :END:
 
 End the style section of the HTML header.
@@ -422,7 +422,7 @@ End the style section of the HTML header.
 
 ** HTML postamble
 :PROPERTIES:
-:CUSTOM_ID: HTML-postamble
+:CUSTOM_ID: html-postamble
 :END:
 
 I add some details to the typical HTML postamble.
@@ -449,12 +449,12 @@ by which the page was generated —Emacs and Org.
 
 * Title                                         :ignore:
 :PROPERTIES:
-:CUSTOM_ID: Title
+:CUSTOM_ID: title
 :END:
 
 ** Documentation                               :noexport:
 :PROPERTIES:
-:CUSTOM_ID: Documentation
+:CUSTOM_ID: title-documentation
 :END:
 
 The title is simply an Org table, with my name
@@ -478,7 +478,7 @@ in order to have the left column take up all remaining space.
 
 ** The title                                   :ignore:
 :PROPERTIES:
-:CUSTOM_ID: The-title
+:CUSTOM_ID: the-title
 :END:
 
 #+attr_LaTeX: :environment tabularx :width \textwidth :align Xr|l :font \sffamily
@@ -492,7 +492,7 @@ in order to have the left column take up all remaining space.
 
 * Sidebar header                                :ignore:
 :PROPERTIES:
-:CUSTOM_ID: Sidebar-header
+:CUSTOM_ID: sidebar-header
 :END:
 
 #+LaTeX: \columnratio{0.25}
@@ -523,7 +523,7 @@ intended for printing.
 
 * Objectives
 :PROPERTIES:
-:CUSTOM_ID: Objectives
+:CUSTOM_ID: objectives
 :END:
 
 - Put my backend, DevOps experience and programming language theory knowledge to use
@@ -539,12 +539,12 @@ intended for printing.
 
 * Skills
 :PROPERTIES:
-:CUSTOM_ID: Skills
+:CUSTOM_ID: skills
 :END:
 
 ** Programming
 :PROPERTIES:
-:CUSTOM_ID: Programming
+:CUSTOM_ID: programming-skills
 :END:
 
 - *Proficient*
@@ -563,7 +563,7 @@ intended for printing.
 
 ** Other software proficiencies
 :PROPERTIES:
-:CUSTOM_ID: Other-software
+:CUSTOM_ID: other-software-skills
 :END:
 
 Docker, LXD,
@@ -580,7 +580,7 @@ Emacs, Org mode, LaTeX
 
 ** Soft skills
 :PROPERTIES:
-:CUSTOM_ID: Soft-skills
+:CUSTOM_ID: soft-skills
 :END:
 
 - Teaching and mentoring
@@ -592,7 +592,7 @@ Emacs, Org mode, LaTeX
 
 ** Teachables
 :PROPERTIES:
-:CUSTOM_ID: Teachables
+:CUSTOM_ID: teachables
 :END:
 
 - Principles of programming languages/programming language design
@@ -603,7 +603,7 @@ Emacs, Org mode, LaTeX
 
 * Sidebar footer                                :ignore:
 :PROPERTIES:
-:CUSTOM_ID: Sidebar-footer
+:CUSTOM_ID: sidebar-footer
 :END:
 
 #+LaTeX:   \end{raggedright}
@@ -615,19 +615,19 @@ Emacs, Org mode, LaTeX
 
 * Left of sidebar header                        :ignore:
 :PROPERTIES:
-:CUSTOM_ID: Main-header
+:CUSTOM_ID: main-header
 :END:
 
 #+HTML: <div class="left-of-sidebar">
 
 * Employment
 :PROPERTIES:
-:CUSTOM_ID: Employment
+:CUSTOM_ID: employment
 :END:
 
 ** Software Engineer {{{right-align(Index Exchange\, Toronto ON\, Sept 2021 - Sept 2024)}}}
 :PROPERTIES:
-:CUSTOM_ID: org-anchor-Software-Engineer-{{{right-align(Index-Exchange\,-Toronto-ON\,-Sept-2021---Sept-2024)}}}^1
+:CUSTOM_ID: software-engineer-index-exchange
 :END:
 
 - Worked on the core application API team, developing APIs in Go.
@@ -637,7 +637,7 @@ Emacs, Org mode, LaTeX
 
 ** Sessional faculty {{{right-align(McMaster University\, Hamilton ON\, 2014 - Dec 2020)}}}
 :PROPERTIES:
-:CUSTOM_ID: Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}
+:CUSTOM_ID: sessional-faculty
 :END:
 
 - 5 appointments for teaching “Principles of Programming Languages”.
@@ -647,7 +647,7 @@ Emacs, Org mode, LaTeX
 
 ** Teaching assistant {{{right-align(McMaster University\, Hamilton ON\, 2014 - Apr 2021)}}}
 :PROPERTIES:
-:CUSTOM_ID: org-anchor-Teaching-assistant-{{{right-align(McMaster-University\,-Hamilton-ON\,-2014---Apr-2021)}}}^1
+:CUSTOM_ID: teaching-assistant
 :END:
 
 - 15 appointments, primarily to courses on programming language theory
@@ -657,7 +657,7 @@ Emacs, Org mode, LaTeX
 
 *** COMMENT Appointment counter
 :PROPERTIES:
-:CUSTOM_ID: org-anchor-COMMENT-Appointment-counter^1
+:CUSTOM_ID: teaching-assistant-appointment-counter
 :END:
 
 - W 13/14: 3mi3
@@ -665,34 +665,34 @@ Emacs, Org mode, LaTeX
 - W 14/15: 3mi3
 - F 15/16: 3mi3
 - W 15/16: 2fa3
-- F 16/17: 
+- F 16/17:
 - W 16/17: 2fa3, 3tc3
 - F 17/18: 3mi3
 - W 17/18: 2fa3
 - F 18/19: 2dm3
 - W 18/19: 3ea3
 - F 19/20: 2dm3, 4th3
-- W 19/20: 
+- W 19/20:
 - F 20/21: 4th3
-- W 20/21: 3ac3 
+- W 20/21: 3ac3
 
 ** Research assistant {{{right-align(McMaster University\, Hamilton ON\, Summers 2010 and 2012)}}}
 :PROPERTIES:
-:CUSTOM_ID: Research-assistant-{{{begin-right}}}-McMaster-University,-Summers-2010-and-2012-{{{end-right}}}
+:CUSTOM_ID: research-assistant
 :END:
 
 - Independently researched on topics selected by supervising professors.
 
 ** Embedded Systems Test Dev, Intern {{{right-align(Blackberry\, Mississauga ON\, May 2011 - Aug 2012)}}}
 :PROPERTIES:
-:CUSTOM_ID: Embedded-Systems-Test-Developer,-Intern-{{{begin-right}}}-Blackberry,-May-2011---Aug-2012-{{{end-right}}}
+:CUSTOM_ID: embedded-systems-test-developer-intern
 :END:
 
 - Developed automated tests and test systems for Blackberry GPS systems.
 
 ** COMMENT Summer camp counselor, volunteer {{{right-align(Church of the Nazarene Canada Central\, Pefferlaw ON\, 2002 - 2008)}}}
 :PROPERTIES:
-:CUSTOM_ID: Summer-camp-counselor,-volunteer-{{{right-align(Church-of-the-Nazarene-Canada-Central\,-2002---2008)}}}
+:CUSTOM_ID: summer-camp-counselor
 :END:
 
 - Supervised children ages 8-12 in groups of roughly 10.
@@ -700,7 +700,7 @@ Emacs, Org mode, LaTeX
 
 * Portfolio {{{right-align({{{scriptsize(Full version at [[https://armkeh.github.io/][armkeh.github.io]])}}})}}}
 :PROPERTIES:
-:CUSTOM_ID: org-anchor-Portfolio-{{{right-align({{{scriptsize(Full-version-at-[[https://armkeh.github.io/][armkeh.github.io]])}}})}}}^1
+:CUSTOM_ID: portfolio
 :END:
 
 # Based on experimentation, with PDF column ratio set to 75% for main column, keep this to 80 columns.
@@ -726,7 +726,7 @@ Emacs, Org mode, LaTeX
 
 * Left of sidebar footer                        :ignore:
 :PROPERTIES:
-:CUSTOM_ID: Main-footer
+:CUSTOM_ID: main-footer
 :END:
 
 #+LaTeX: \end{paracol}
@@ -743,12 +743,12 @@ Emacs, Org mode, LaTeX
 
 * Education
 :PROPERTIES:
-:CUSTOM_ID: Education
+:CUSTOM_ID: education
 :END:
 
 ** Ph.D. in Computer Science {{{scriptsize((incomplete))}}} {{{right-align(McMaster University\, Hamilton ON\, 2015 - 2022)}}}
 :PROPERTIES:
-:CUSTOM_ID: PhD-in-Computer-Science
+:CUSTOM_ID: phd
 :END:
 
 - Coursework and comprehensive exams completed. Thesis not completed.
@@ -758,7 +758,7 @@ Emacs, Org mode, LaTeX
 
 ** M.Sc. in Computer Science {{{right-align(McMaster University\, Hamilton ON\, 2013 - 2015)}}}
 :PROPERTIES:
-:CUSTOM_ID: M.Sc. in-Computer-Science
+:CUSTOM_ID: masters
 :END:
 
 - Investigated classical computability results in context of computability over real numbers.
@@ -767,7 +767,7 @@ Emacs, Org mode, LaTeX
 
 ** B.A.Sc. in Computer Science {{{right-align(McMaster University\, Hamilton ON\, 2008 - 2013)}}}
 :PROPERTIES:
-:CUSTOM_ID: B.A.Sc. in-Computer-Science
+:CUSTOM_ID: bachelors
 :END:
 
 - Summer 2010 research project on (theoretical) models of concurrency.
@@ -777,7 +777,7 @@ Emacs, Org mode, LaTeX
 
 * Publications
 :PROPERTIES:
-:CUSTOM_ID: Publications
+:CUSTOM_ID: publications
 :END:
 
 - [[https://www.researchgate.net/profile/Mark_Armstrong12][Armstrong, Mark]] & [[https://www.researchgate.net/profile/Jeffery_Zucker][Zucker, Jeffery]],
@@ -786,12 +786,12 @@ Emacs, Org mode, LaTeX
 
 * Awards
 :PROPERTIES:
-:CUSTOM_ID: Awards
+:CUSTOM_ID: awards
 :END:
 
 ** Graduate studies scholarships and fellowships
 :PROPERTIES:
-:CUSTOM_ID: Graduate-studies-scholarships-and-fellowships
+:CUSTOM_ID: graduate-studies-awards
 :END:
 
 |----------------------------------------------+-------------+-----------|
@@ -808,7 +808,7 @@ Emacs, Org mode, LaTeX
 
 ** Other
 :PROPERTIES:
-:CUSTOM_ID: Other
+:CUSTOM_ID: other-awards
 :END:
 
 |------------------------------------+------+-------+--------------------------------------------------|
@@ -824,7 +824,7 @@ Emacs, Org mode, LaTeX
 
 * Extracurricular
 :PROPERTIES:
-:CUSTOM_ID: Extracurricular
+:CUSTOM_ID: extracurricular
 :END:
 
 - Maintaining my setup/configs for Emacs and other tools (https://github.com/armkeh/dotfiles),
@@ -837,7 +837,7 @@ Emacs, Org mode, LaTeX
 
 ** COMMENT Out of date
 :PROPERTIES:
-:CUSTOM_ID: org-anchor-COMMENT-Out-of-date^1
+:CUSTOM_ID: out-of-date-extracurriculars
 :END:
 
 Maybe I'll resume these some day, but I can't in good faith claim them right now.
@@ -848,10 +848,9 @@ Maybe I'll resume these some day, but I can't in good faith claim them right now
 
 * Document footer                               :ignore:
 :PROPERTIES:
-:CUSTOM_ID: Document-footer
+:CUSTOM_ID: document-footer
 :END:
 
 #+LaTeX: \vfill
 This document available in multiple formats from
 https://github.com/armkeh/resume/.
-
