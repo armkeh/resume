@@ -770,8 +770,11 @@ Emacs, Org mode, LaTeX
 :CUSTOM_ID: bachelors
 :END:
 
-- Summer 2010 research project on (theoretical) models of concurrency.
-- Summer 2013 research project on mechanising mathematical knowledge.
+# COMMENT: These research projects are listed under experience currently. Consider adding back here if removed.
+# - Summer 2010 research project on (theoretical) models of concurrency.
+# - Summer 2013 research project on mechanising mathematical knowledge.
+- Awards each year for academic excellence and/or highest GPA in computer science program.
+  - Including Gerald L. Keech medal for highest graduating GPA in computer science, 2013.
 - GPA: 11.1 on 12 point scale. Graduated with distinction.
 # - 3.84 on 4 point scale
 
@@ -806,7 +809,7 @@ Emacs, Org mode, LaTeX
 |----------------------------------------------+-------------+-----------|
 {{{scriptsize(1. Included guaranteed teaching assistant employment income for those years.)}}}
 
-** Other
+** COMMENT Other
 :PROPERTIES:
 :CUSTOM_ID: other-awards
 :END:

@@ -130,8 +130,10 @@ Emacs, Org mode, LaTeX
 
 ## B.A.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2008 - 2013</span>
 
-- Summer 2010 research project on (theoretical) models of concurrency.
-- Summer 2013 research project on mechanising mathematical knowledge.
+- Awards each year for academic excellence and/or highest GPA in
+  computer science program.
+  - Including Gerald L. Keech medal for highest graduating GPA in
+    computer science, 2013.
 - GPA: 11.1 on 12 point scale. Graduated with distinction.
 
 # Publications
@@ -158,17 +160,6 @@ Emacs, Org mode, LaTeX
 
 <span style="font-size:0.5rem">1. Included guaranteed teaching assistant
 employment income for those years.</span>
-
-## Other
-
-| Name                               | Date | Value  | Description                                      |
-|------------------------------------|------|--------|--------------------------------------------------|
-| Gerald L. Keech Medal              | 2013 | ––––   | For highest graduating GPA in program that year. |
-| Ruth and Jack Hall Prize           | 2011 | \$225  | For highest 3<sup>rd</sup> year GPA in program.  |
-| Dr. Harry Lyman Hooker Scholarship | 2011 | \$1500 | For academic excellence.                         |
-| Createch Scholarship               | 2010 | \$1000 | For highest 2<sup>nd</sup> year GPA in program.  |
-| Nortel Networks Scholarship        | 2009 | \$1000 | For academic excellence.                         |
-| McMaster entry scholarship         | 2008 | \$2000 |                                                  |
 
 # Extracurricular
 
