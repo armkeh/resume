@@ -62,7 +62,7 @@ Emacs, Org mode, LaTeX
 </div>
 <div class="left-of-sidebar">
 
-# Employment
+# Experience
 
 ## Software Engineer <span style="padding-left:3em; float:right">Index Exchange, Toronto ON, Sept 2021 - Sept 2024</span>
 

@@ -620,9 +620,9 @@ Emacs, Org mode, LaTeX
 
 #+HTML: <div class="left-of-sidebar">
 
-* Employment
+* Experience
 :PROPERTIES:
-:CUSTOM_ID: employment
+:CUSTOM_ID: experience
 :END:
 
 ** Software Engineer {{{right-align(Index Exchange\, Toronto ON\, Sept 2021 - Sept 2024)}}}
