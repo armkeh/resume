@@ -116,10 +116,12 @@ Emacs, Org mode, LaTeX
 
 ## Ph.D. in Computer Science <span style="font-size:0.5rem">(incomplete)</span> <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2015 - 2022</span>
 
-- Coursework and comprehensive exams completed. Thesis not completed.
-- Mechanising models of computability using automated proof assistants.
+- Investigated mechanising models of computability over real numbers
+  using automated proof assistants.
 - 3<sup>rd</sup> place in 2019 McMaster Computing and Software poster
   competition.
+- Coursework and comprehensive examinations completed. Thesis not
+  completed.
 - GPA: 11.75 on 12 point scale.
 
 ## M.Sc. in Computer Science <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2013 - 2015</span>
