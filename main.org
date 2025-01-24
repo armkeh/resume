@@ -635,7 +635,7 @@ Emacs, Org mode, LaTeX
  - Incorporated technologies including Ansible and Redis.
 - Practiced DevOps using Docker, Kubernetes, Helm, GitLab CI/CD and ArgoCD.
 
-** Sessional faculty {{{right-align(McMaster University\, Hamilton ON\, 2013 - Dec 2020)}}}
+** Sessional faculty {{{right-align(McMaster University\, Hamilton ON\, 2014 - Dec 2020)}}}
 :PROPERTIES:
 :CUSTOM_ID: Sessional-faculty-{{{begin-right}}}-McMaster-University,-2013---Dec-2019-{{{end-right}}}
 :END:
@@ -645,9 +645,9 @@ Emacs, Org mode, LaTeX
   both written and programming evaluations.
 - Supervised teaching assistants.
 
-** Teaching assistant {{{right-align(McMaster University\, Hamilton ON\, 2013 - Apr 2021)}}}
+** Teaching assistant {{{right-align(McMaster University\, Hamilton ON\, 2014 - Apr 2021)}}}
 :PROPERTIES:
-:CUSTOM_ID: org-anchor-Teaching-assistant-{{{right-align(McMaster-University\,-Hamilton-ON\,-2013---Apr-2021)}}}^1
+:CUSTOM_ID: org-anchor-Teaching-assistant-{{{right-align(McMaster-University\,-Hamilton-ON\,-2014---Apr-2021)}}}^1
 :END:
 
 - 15 appointments, primarily to courses on programming language theory

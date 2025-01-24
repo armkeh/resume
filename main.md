@@ -72,14 +72,14 @@ Emacs, Org mode, LaTeX
 - Practiced DevOps using Docker, Kubernetes, Helm, GitLab CI/CD and
   ArgoCD.
 
-## Sessional faculty <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2013 - Dec 2020</span>
+## Sessional faculty <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2014 - Dec 2020</span>
 
 - 5 appointments for teaching “Principles of Programming Languages”.
 - Planned and prepared lecture materials and assignments/tests including
   both written and programming evaluations.
 - Supervised teaching assistants.
 
-## Teaching assistant <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2013 - Apr 2021</span>
+## Teaching assistant <span style="padding-left:3em; float:right">McMaster University, Hamilton ON, 2014 - Apr 2021</span>
 
 - 15 appointments, primarily to courses on programming language theory
   and discrete mathematics.
