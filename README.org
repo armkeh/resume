@@ -1,11 +1,11 @@
-#+Title: Mark Armstrong's Résumé
+#+Title: Mark Armstrong's Resume
 #+Author: Mark Armstrong
 #+Description: My cross-format résumé
 
-Welcome to my résumé/CV repository.
+Welcome to my resume/CV repository.
 
 Through the use Org mode and its ability to export to many formats,
-I offer several ways to view this document: 
+I offer several ways to view this document:
 - Printer-friendly [[https://github.com/armkeh/resume/raw/master/main.pdf][PDF]].
 - Screen-friendly [[https://armkeh.github.io/resume][HTML]].
 - Rendered markdown on [[https://github.com/armkeh/resume/blob/master/main.md][Github]].
