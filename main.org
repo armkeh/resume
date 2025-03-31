@@ -552,14 +552,19 @@ intended for printing.
   Emacs Lisp
 
 - *Experienced*
+  Kotlin,
   C,
   Python,
   Typescript,
   bash & zsh
 
 - *Familiar*
-  Java, Ruby, Scala,
-  Elm, Haskell, SML
+  Java,
+  Ruby,
+  Scala,
+  Elm,
+  Haskell,
+  SML
 
 ** Other software proficiencies
 :PROPERTIES:
@@ -624,6 +629,13 @@ Emacs, Org mode, LaTeX
 :PROPERTIES:
 :CUSTOM_ID: experience
 :END:
+
+** Software Engineer {{{right-align(Kubra\, Mississauga ON\, Mar 2025 - Present)}}}
+:PROPERTIES:
+:CUSTOM_ID: software-engineer-kubra
+:END:
+
+- Developing APIs in Kotlin as a member of the customer experience team.
 
 ** Software Engineer {{{right-align(Index Exchange\, Toronto ON\, Sept 2021 - Sept 2024)}}}
 :PROPERTIES:

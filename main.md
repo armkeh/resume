@@ -35,7 +35,7 @@ header-includes:
 
 - **Proficient** Go, Emacs Lisp
 
-- **Experienced** C, Python, Typescript, bash & zsh
+- **Experienced** Kotlin, C, Python, Typescript, bash & zsh
 
 - **Familiar** Java, Ruby, Scala, Elm, Haskell, SML
 
@@ -63,6 +63,10 @@ Emacs, Org mode, LaTeX
 <div class="left-of-sidebar">
 
 # Experience
+
+## Software Engineer <span style="padding-left:3em; float:right">Kubra, Mississauga ON, Mar 2025 - Present</span>
+
+- Developing APIs in Kotlin as a member of the customer experience team.
 
 ## Software Engineer <span style="padding-left:3em; float:right">Index Exchange, Toronto ON, Sept 2021 - Sept 2024</span>
 
